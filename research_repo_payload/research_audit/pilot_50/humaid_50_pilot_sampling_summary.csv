@@ -1,0 +1,11 @@
+event,source_rows,source_agreements,source_disagreements,selected_agreements,selected_disagreements,selected_low_confidence,selected_medium_confidence,selected_high_confidence,selected_total,source_path,source_sha
+california_wildfires_2018,5163,3714,1449,2,3,1,2,2,5,data/pseudo-labelled/gpt-4o/california_wildfires_2018/california_wildfires_2018_train_pred.csv,4ff8c4946b30f8eea4d17f31e760e89119587e38
+canada_wildfires_2016,1569,1238,331,2,3,0,2,3,5,data/pseudo-labelled/gpt-4o/canada_wildfires_2016/canada_wildfires_2016_train_pred.csv,a97ca25b9fe789bcc096a073b8c24cfd140cc535
+cyclone_idai_2019,2753,2044,709,2,3,1,2,2,5,data/pseudo-labelled/gpt-4o/cyclone_idai_2019/cyclone_idai_2019_train_pred.csv,b48343c62be1bbaa5a43af348ed83e9400a1f7b6
+hurricane_dorian_2019,5329,3350,1979,2,3,0,3,2,5,data/pseudo-labelled/gpt-4o/hurricane_dorian_2019/hurricane_dorian_2019_train_pred.csv,99636c941ffabd92a8edc950fde42c0b14153f3f
+hurricane_florence_2018,4384,3265,1119,2,3,0,2,3,5,data/pseudo-labelled/gpt-4o/hurricane_florence_2018/hurricane_florence_2018_train_pred.csv,dc6afc72cea4d6d1e9ba15208f248d5375711b12
+hurricane_harvey_2017,6378,4162,2216,3,2,0,3,2,5,data/pseudo-labelled/gpt-4o/hurricane_harvey_2017/hurricane_harvey_2017_train_pred.csv,0f1c5ab0b01567bf1d8f3f18d63efc4e6c924fa4
+hurricane_irma_2017,6579,4071,2508,3,2,0,2,3,5,data/pseudo-labelled/gpt-4o/hurricane_irma_2017/hurricane_irma_2017_train_pred.csv,22eaceb4055725c64d57a6f72b68831c3ce970c3
+hurricane_maria_2017,5094,3376,1718,3,2,0,3,2,5,data/pseudo-labelled/gpt-4o/hurricane_maria_2017/hurricane_maria_2017_train_pred.csv,b7b215ed55b6f1db0f1dbb5b3221e27b8540d8e6
+kaikoura_earthquake_2016,1536,1103,433,3,2,0,2,3,5,data/pseudo-labelled/gpt-4o/kaikoura_earthquake_2016/kaikoura_earthquake_2016_train_pred.csv,cec60827ffe7ce59b256fac099d90580a9b2960b
+kerala_floods_2018,5588,3934,1654,3,2,1,2,2,5,data/pseudo-labelled/gpt-4o/kerala_floods_2018/kerala_floods_2018_train_pred.csv,bc63719c0c62fdf181a895f3d58a3017b95ca5d1

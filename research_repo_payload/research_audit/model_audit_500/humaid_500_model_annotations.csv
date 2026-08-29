@@ -1,0 +1,501 @@
+annotation_id,assistant_primary_label,assistant_secondary_label,assistant_confidence_1to3,assistant_ambiguous,assistant_notes
+AUDIT0001,caution_and_advice,other_relevant_information,2,Yes,Disease-risk warning with prevention framing.
+AUDIT0002,other_relevant_information,rescue_volunteering_or_donation_effort,2,Yes,Mentions a rescue as a news story rather than organizing aid.
+AUDIT0003,other_relevant_information,,3,No,Fire-size context/map comparison.
+AUDIT0004,rescue_volunteering_or_donation_effort,other_relevant_information,3,No,Firefighters actively battling the wildfire.
+AUDIT0005,rescue_volunteering_or_donation_effort,,3,No,Pilots plan to deliver supplies.
+AUDIT0006,displaced_people_and_evacuations,caution_and_advice,3,No,Evacuation alerts being lifted.
+AUDIT0007,other_relevant_information,infrastructure_and_utility_damage,2,Yes,Economic/production impact rather than direct utility damage.
+AUDIT0008,requests_or_urgent_needs,other_relevant_information,2,Yes,"Scarcity of gas, water, groceries during preparation."
+AUDIT0009,injured_or_dead_people,missing_or_found_people,3,Yes,Both mass-grave deaths and 60 missing.
+AUDIT0010,caution_and_advice,,3,No,Explicit flood do/don't guidance.
+AUDIT0011,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Relief support call.
+AUDIT0012,other_relevant_information,infrastructure_and_utility_damage,2,Yes,Forecast discussion plus local flooding said unrelated.
+AUDIT0013,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Offers assistance to affected musicians.
+AUDIT0014,injured_or_dead_people,,3,No,Reports a suicide linked to flood loss.
+AUDIT0015,requests_or_urgent_needs,,3,No,People stuck with rising water explicitly ask for rescue.
+AUDIT0016,other_relevant_information,,3,No,Storm-size visual/context.
+AUDIT0017,sympathy_and_support,,3,No,Emotional support and solidarity.
+AUDIT0018,infrastructure_and_utility_damage,sympathy_and_support,2,Yes,Widespread destruction is the concrete information.
+AUDIT0019,other_relevant_information,,3,No,Official visit to survey damage.
+AUDIT0020,not_humanitarian,,3,No,"Generic political/mental-health commentary, no crisis aid information."
+AUDIT0021,caution_and_advice,,3,No,Instructions for returning home after floods.
+AUDIT0022,sympathy_and_support,,3,No,Prayer for people and responders.
+AUDIT0023,not_humanitarian,other_relevant_information,2,Yes,Primarily political rhetoric using wildfire context.
+AUDIT0024,injured_or_dead_people,displaced_people_and_evacuations,3,Yes,Deaths foregrounded; also large-scale stranding/displacement.
+AUDIT0025,other_relevant_information,,2,No,Post-event discussion of confusion.
+AUDIT0026,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,Yes,Organization supporting evacuated people.
+AUDIT0027,caution_and_advice,sympathy_and_support,3,No,Stay-safe message with shelter information.
+AUDIT0028,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Call to support recovery/humanitarian aid.
+AUDIT0029,infrastructure_and_utility_damage,other_relevant_information,2,Yes,Assessment of storm damage.
+AUDIT0030,not_humanitarian,,2,No,"Hypothetical/ideological scenario, not an actual crisis update."
+AUDIT0031,rescue_volunteering_or_donation_effort,,3,No,Collecting food and cleaning-supply donations.
+AUDIT0032,missing_or_found_people,displaced_people_and_evacuations,3,Yes,Separated children/missing people plus camps.
+AUDIT0033,caution_and_advice,other_relevant_information,3,No,Official tropical-storm warning and hazard bulletin.
+AUDIT0034,other_relevant_information,,3,No,Climate-change interpretation of flooding.
+AUDIT0035,caution_and_advice,infrastructure_and_utility_damage,3,No,Explicit water-conservation/use guidance.
+AUDIT0036,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,Yes,Animal shelter explicitly needs help.
+AUDIT0037,not_humanitarian,,3,No,Unrelated personal homelessness request in Seoul.
+AUDIT0038,rescue_volunteering_or_donation_effort,other_relevant_information,3,No,Financial aid offered for flood response.
+AUDIT0039,requests_or_urgent_needs,,3,No,Affected town explicitly needs help.
+AUDIT0040,infrastructure_and_utility_damage,,3,No,Significant physical damage to a center.
+AUDIT0041,infrastructure_and_utility_damage,other_relevant_information,3,No,Reports local flooding.
+AUDIT0042,rescue_volunteering_or_donation_effort,,3,No,Relief efforts bringing needed help.
+AUDIT0043,displaced_people_and_evacuations,not_humanitarian,2,Yes,Concrete fire homelessness embedded in political rhetoric.
+AUDIT0044,infrastructure_and_utility_damage,displaced_people_and_evacuations,3,No,Communications down and failing dam.
+AUDIT0045,caution_and_advice,,3,No,Food-safety guide after power/flood damage.
+AUDIT0046,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Donation appeal for wildfire relief.
+AUDIT0047,rescue_volunteering_or_donation_effort,,3,No,Call to support affected people.
+AUDIT0048,not_humanitarian,,2,Yes,Donation message lacks a clear disaster/humanitarian link.
+AUDIT0049,other_relevant_information,injured_or_dead_people,2,Yes,Current-storm tracking uses historical fatality context.
+AUDIT0050,rescue_volunteering_or_donation_effort,sympathy_and_support,2,No,Praises selfless flood-response service.
+AUDIT0051,injured_or_dead_people,displaced_people_and_evacuations,3,Yes,Reports deaths and displaced families.
+AUDIT0052,not_humanitarian,other_relevant_information,2,Yes,"Technical app query, not humanitarian information."
+AUDIT0053,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,Displaced foster children sheltered in a home.
+AUDIT0054,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,Yes,Points readers to a way to help desperate victims.
+AUDIT0055,rescue_volunteering_or_donation_effort,,3,No,Rescue team joining earthquake response.
+AUDIT0056,sympathy_and_support,rescue_volunteering_or_donation_effort,3,No,Prayers and charity references; prayer is primary.
+AUDIT0057,infrastructure_and_utility_damage,caution_and_advice,3,Yes,Water-supply shutdown due contamination plus warning.
+AUDIT0058,caution_and_advice,,3,No,Food-poisoning prevention instruction.
+AUDIT0059,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Donation call while expressing support for responders.
+AUDIT0060,other_relevant_information,,3,No,Policy/legal analysis of flood aftermath.
+AUDIT0061,displaced_people_and_evacuations,,3,No,Families forced to live in a cemetery after floods.
+AUDIT0062,other_relevant_information,infrastructure_and_utility_damage,2,No,Leader traveling to assess damage.
+AUDIT0063,sympathy_and_support,infrastructure_and_utility_damage,2,Yes,Emotional framing of widespread destruction.
+AUDIT0064,not_humanitarian,,3,No,Political attack about presidential visit.
+AUDIT0065,other_relevant_information,not_humanitarian,2,Yes,Disaster-aid distribution allegation in political framing.
+AUDIT0066,other_relevant_information,,3,No,Historical/comparative disaster analysis.
+AUDIT0067,other_relevant_information,,2,No,Post-hurricane housing topic without specific impact/need.
+AUDIT0068,infrastructure_and_utility_damage,other_relevant_information,3,No,Flooding and stressed dams.
+AUDIT0069,displaced_people_and_evacuations,other_relevant_information,3,No,Explicit internally displaced refugees.
+AUDIT0070,other_relevant_information,caution_and_advice,2,Yes,Warns that an old fire video is outdated.
+AUDIT0071,sympathy_and_support,,3,No,Hope and mourning after cyclone.
+AUDIT0072,requests_or_urgent_needs,other_relevant_information,3,No,Calls for international aircraft assistance.
+AUDIT0073,other_relevant_information,sympathy_and_support,2,No,Video/story about hope inside fires.
+AUDIT0074,caution_and_advice,other_relevant_information,3,No,Malaria warning plus mosquito-net prevention.
+AUDIT0075,other_relevant_information,,3,No,Storm tracking update.
+AUDIT0076,caution_and_advice,displaced_people_and_evacuations,3,No,Tsunami evacuation-zone maps are safety guidance.
+AUDIT0077,rescue_volunteering_or_donation_effort,,3,No,Donation reference toward cyclone response.
+AUDIT0078,not_humanitarian,other_relevant_information,3,No,Political commentary about relief motives.
+AUDIT0079,requests_or_urgent_needs,injured_or_dead_people,3,No,Explicit plea for help amid deaths.
+AUDIT0080,rescue_volunteering_or_donation_effort,,3,No,Benefit event expanded to Irma relief.
+AUDIT0081,caution_and_advice,rescue_volunteering_or_donation_effort,2,Yes,Advice about where not to donate.
+AUDIT0082,caution_and_advice,displaced_people_and_evacuations,3,No,Explicit instruction to obey evacuation orders.
+AUDIT0083,rescue_volunteering_or_donation_effort,sympathy_and_support,3,Yes,Donation appeal alongside prayers/support.
+AUDIT0084,other_relevant_information,displaced_people_and_evacuations,2,Yes,Consumer/economic issue during evacuation.
+AUDIT0085,not_humanitarian,,3,No,Partisan abortion rhetoric using disaster deaths.
+AUDIT0086,requests_or_urgent_needs,,3,No,Direct plea for help.
+AUDIT0087,other_relevant_information,sympathy_and_support,2,Yes,Reflective story about hometown damage.
+AUDIT0088,other_relevant_information,infrastructure_and_utility_damage,3,No,Reservoir/dam status measurements without stated damage.
+AUDIT0089,sympathy_and_support,,3,No,Hope that everyone is okay.
+AUDIT0090,not_humanitarian,,3,No,Political/ideological attack rather than aid information.
+AUDIT0091,injured_or_dead_people,infrastructure_and_utility_damage,3,No,Reports deaths and major damage; deaths primary.
+AUDIT0092,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Donation appeal to support Kerala.
+AUDIT0093,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Staff traveling to provide medical response support.
+AUDIT0094,rescue_volunteering_or_donation_effort,other_relevant_information,3,No,Assistance to wildfire victim.
+AUDIT0095,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,3,No,Explicit demand that aid reach Puerto Rico now.
+AUDIT0096,sympathy_and_support,infrastructure_and_utility_damage,3,Yes,Prayer/support dominates despite mentions of destruction/evacuation.
+AUDIT0097,sympathy_and_support,,3,No,Hearts/support for victims.
+AUDIT0098,injured_or_dead_people,,3,No,Family believed dead in floodwaters.
+AUDIT0099,caution_and_advice,,3,No,Safety guidance for children after flooding.
+AUDIT0100,injured_or_dead_people,rescue_volunteering_or_donation_effort,3,Yes,Deaths foregrounded with rescue-access difficulty.
+AUDIT0101,not_humanitarian,injured_or_dead_people,3,No,Partisan attack using disaster deaths.
+AUDIT0102,injured_or_dead_people,missing_or_found_people,3,Yes,Deaths and missing people both explicit.
+AUDIT0103,displaced_people_and_evacuations,,3,No,Returning home after evacuation.
+AUDIT0104,requests_or_urgent_needs,,3,No,Explicit emergency help appeal.
+AUDIT0105,caution_and_advice,other_relevant_information,2,Yes,Landfall/hazard alert with warning framing.
+AUDIT0106,rescue_volunteering_or_donation_effort,,3,No,Animal rescue effort.
+AUDIT0107,other_relevant_information,caution_and_advice,1,Yes,References useful hurricane info but omits the actual content.
+AUDIT0108,other_relevant_information,caution_and_advice,2,No,Storm-impact forecast without directive.
+AUDIT0109,injured_or_dead_people,requests_or_urgent_needs,3,Yes,Death toll foregrounded with relief-funding context.
+AUDIT0110,requests_or_urgent_needs,infrastructure_and_utility_damage,3,No,House destroyed and implicit request for help.
+AUDIT0111,caution_and_advice,,3,No,Emergency-management preparedness instruction.
+AUDIT0112,infrastructure_and_utility_damage,displaced_people_and_evacuations,3,Yes,House destruction and evacuation.
+AUDIT0113,other_relevant_information,,3,No,Climate-resilience commentary.
+AUDIT0114,requests_or_urgent_needs,,3,No,Explicit request for outside assistance.
+AUDIT0115,rescue_volunteering_or_donation_effort,,3,No,Supplies and assistance airlifted.
+AUDIT0116,requests_or_urgent_needs,,3,No,Citizens described as in dire need of help.
+AUDIT0117,missing_or_found_people,rescue_volunteering_or_donation_effort,3,Yes,Missing victims and proposed recovery/search resources.
+AUDIT0118,infrastructure_and_utility_damage,requests_or_urgent_needs,3,Yes,Total power outage and hospital generator risk.
+AUDIT0119,rescue_volunteering_or_donation_effort,,3,No,Disaster-relief organization responding on the ground.
+AUDIT0120,sympathy_and_support,,3,No,Prayer for flood victims.
+AUDIT0121,sympathy_and_support,infrastructure_and_utility_damage,3,Yes,Emotional support dominates despite destruction mention.
+AUDIT0122,infrastructure_and_utility_damage,other_relevant_information,2,No,Severe flooding impacts farm region.
+AUDIT0123,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Firefighting task force returning from response.
+AUDIT0124,caution_and_advice,,3,No,Urges people to heed evacuation warnings.
+AUDIT0125,rescue_volunteering_or_donation_effort,other_relevant_information,1,Yes,"Relief offer, but promotional/coupon framing."
+AUDIT0126,requests_or_urgent_needs,,3,No,Victim lost everything and asks for help.
+AUDIT0127,caution_and_advice,sympathy_and_support,3,Yes,Tsunami warning plus blessing/support.
+AUDIT0128,requests_or_urgent_needs,,3,No,Pregnant woman in urgent rescue/medical need.
+AUDIT0129,sympathy_and_support,,3,No,Solidarity with overseas flood victims.
+AUDIT0130,injured_or_dead_people,,3,No,Reports cholera deaths.
+AUDIT0131,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Shelters ask public for help.
+AUDIT0132,other_relevant_information,missing_or_found_people,2,Yes,Weather affects firefighting and recovery of remains.
+AUDIT0133,not_humanitarian,sympathy_and_support,3,No,Gloating partisan comment about storm impacts.
+AUDIT0134,rescue_volunteering_or_donation_effort,,3,No,Rescue personnel and machinery sent to help.
+AUDIT0135,requests_or_urgent_needs,,3,No,Explicit statement that Puerto Ricans need help.
+AUDIT0136,caution_and_advice,,3,No,Tsunami warning status update.
+AUDIT0137,missing_or_found_people,rescue_volunteering_or_donation_effort,3,No,Missing-person tracing service.
+AUDIT0138,not_humanitarian,other_relevant_information,2,Yes,Mostly a telecom-cost complaint despite victim support context.
+AUDIT0139,caution_and_advice,infrastructure_and_utility_damage,3,No,School closures pending damage assessment.
+AUDIT0140,not_humanitarian,,3,No,Personal joke about dying before a concert.
+AUDIT0141,not_humanitarian,other_relevant_information,2,Yes,Political blame about fire preparedness.
+AUDIT0142,caution_and_advice,infrastructure_and_utility_damage,3,No,Flooding emergency alert/radar warning.
+AUDIT0143,rescue_volunteering_or_donation_effort,,3,No,Water/Gatorade aid headed to Key West.
+AUDIT0144,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,3,No,Disaster-assistance volunteers assessing damage.
+AUDIT0145,infrastructure_and_utility_damage,,3,No,Flood-damage photo report.
+AUDIT0146,injured_or_dead_people,,3,No,Death toll report.
+AUDIT0147,requests_or_urgent_needs,injured_or_dead_people,3,Yes,Basic shelter/food/water needs foregrounded amid deaths.
+AUDIT0148,other_relevant_information,requests_or_urgent_needs,2,Yes,Reports survivors lacking water/power via commentary.
+AUDIT0149,other_relevant_information,,2,No,News about animals affected by wildfire.
+AUDIT0150,requests_or_urgent_needs,,3,No,Direct plea for rescue/help.
+AUDIT0151,injured_or_dead_people,infrastructure_and_utility_damage,3,Yes,Large death toll plus extensive destruction.
+AUDIT0152,not_humanitarian,,2,No,Vague political statement without actionable crisis information.
+AUDIT0153,other_relevant_information,rescue_volunteering_or_donation_effort,3,No,Policy context on accepting foreign aid.
+AUDIT0154,infrastructure_and_utility_damage,other_relevant_information,3,No,Road and bus-service restoration update.
+AUDIT0155,other_relevant_information,,3,No,General event commentary.
+AUDIT0156,other_relevant_information,caution_and_advice,3,No,Storm intensity/track and expected impacts.
+AUDIT0157,not_humanitarian,displaced_people_and_evacuations,3,No,Hostile opinion about evacuees.
+AUDIT0158,rescue_volunteering_or_donation_effort,,3,No,Considering on-the-ground charity response.
+AUDIT0159,rescue_volunteering_or_donation_effort,,2,No,Call to help with instructions linked.
+AUDIT0160,infrastructure_and_utility_damage,,2,No,References visible/cosmetic damage.
+AUDIT0161,injured_or_dead_people,rescue_volunteering_or_donation_effort,3,Yes,Death toll with firefighting response.
+AUDIT0162,injured_or_dead_people,not_humanitarian,2,Yes,"References 3,000 disaster deaths in argumentative framing."
+AUDIT0163,other_relevant_information,not_humanitarian,2,Yes,News roundup includes Dorian tracking and unrelated incidents.
+AUDIT0164,sympathy_and_support,displaced_people_and_evacuations,2,Yes,Gratitude/reflection tied to evacuation.
+AUDIT0165,not_humanitarian,,3,No,Unrelated animal-shelter event.
+AUDIT0166,displaced_people_and_evacuations,not_humanitarian,2,Yes,"Evacuees are central, though story is lifestyle-oriented."
+AUDIT0167,other_relevant_information,not_humanitarian,2,Yes,Animal deaths/political dispute; no human-impact class fits.
+AUDIT0168,other_relevant_information,infrastructure_and_utility_damage,2,No,General destruction update.
+AUDIT0169,rescue_volunteering_or_donation_effort,injured_or_dead_people,3,No,Texas sends firefighting help to California.
+AUDIT0170,caution_and_advice,infrastructure_and_utility_damage,2,Yes,Warning that wildfire could endanger water supply.
+AUDIT0171,requests_or_urgent_needs,,3,No,Specific areas need help.
+AUDIT0172,caution_and_advice,displaced_people_and_evacuations,3,No,Direct evacuation command.
+AUDIT0173,other_relevant_information,rescue_volunteering_or_donation_effort,2,No,General front-lines report.
+AUDIT0174,requests_or_urgent_needs,,3,No,Explicit help appeal.
+AUDIT0175,other_relevant_information,,2,No,Recovery-cost/tax commentary.
+AUDIT0176,caution_and_advice,displaced_people_and_evacuations,3,No,Detailed evacuation safety instructions.
+AUDIT0177,missing_or_found_people,,3,No,Reports 228 people still missing.
+AUDIT0178,infrastructure_and_utility_damage,sympathy_and_support,3,Yes,Damage videos plus prayer/support.
+AUDIT0179,rescue_volunteering_or_donation_effort,,3,No,Utility crews deploy for relief.
+AUDIT0180,missing_or_found_people,rescue_volunteering_or_donation_effort,3,No,Missing-person registry/search service.
+AUDIT0181,rescue_volunteering_or_donation_effort,sympathy_and_support,3,Yes,Prayer plus link to help.
+AUDIT0182,other_relevant_information,caution_and_advice,2,No,Health/climate implication of wildfire smoke.
+AUDIT0183,infrastructure_and_utility_damage,caution_and_advice,3,No,Ongoing road/river flooding update.
+AUDIT0184,requests_or_urgent_needs,,3,No,Kerala explicitly asks for help.
+AUDIT0185,rescue_volunteering_or_donation_effort,,3,No,Fundraiser for wildfire response.
+AUDIT0186,other_relevant_information,,3,No,Corrects false/misattributed cyclone images.
+AUDIT0187,injured_or_dead_people,,3,No,Family feared dead.
+AUDIT0188,requests_or_urgent_needs,displaced_people_and_evacuations,3,Yes,People stranded without food/water and evacuation requested.
+AUDIT0189,missing_or_found_people,,3,No,Missing-person names sought.
+AUDIT0190,caution_and_advice,other_relevant_information,3,No,Official warning of worsening fire conditions.
+AUDIT0191,other_relevant_information,,3,No,Fire-detection/tracking system update.
+AUDIT0192,other_relevant_information,displaced_people_and_evacuations,2,Yes,Looting after evacuations is relevant safety information.
+AUDIT0193,infrastructure_and_utility_damage,displaced_people_and_evacuations,3,No,Highway flooding blocks safe return.
+AUDIT0194,rescue_volunteering_or_donation_effort,,3,No,Call to help dogs affected by Harvey.
+AUDIT0195,other_relevant_information,rescue_volunteering_or_donation_effort,3,No,Explains disaster classification and relief funding.
+AUDIT0196,other_relevant_information,caution_and_advice,2,No,Analysis of ignored environmental warnings.
+AUDIT0197,sympathy_and_support,,3,No,Condolences to victims and families.
+AUDIT0198,rescue_volunteering_or_donation_effort,,3,No,Advocates accepting donated foreign relief funds.
+AUDIT0199,other_relevant_information,rescue_volunteering_or_donation_effort,2,No,Officials view recovery efforts and meet residents.
+AUDIT0200,other_relevant_information,displaced_people_and_evacuations,2,Yes,Disease outbreak at an evacuation center.
+AUDIT0201,displaced_people_and_evacuations,sympathy_and_support,3,No,Self-identifies as an earthquake refugee.
+AUDIT0202,not_humanitarian,,3,No,Partisan statement unrelated to crisis facts or aid.
+AUDIT0203,displaced_people_and_evacuations,,3,No,Convoy moving wildfire evacuees.
+AUDIT0204,rescue_volunteering_or_donation_effort,,3,No,Large in-kind donation to shelter victims.
+AUDIT0205,displaced_people_and_evacuations,,3,No,Evacuees remaining after Irma.
+AUDIT0206,infrastructure_and_utility_damage,,3,No,Damage and cleanup after Florence.
+AUDIT0207,not_humanitarian,other_relevant_information,2,Yes,Personal aftershock experience without humanitarian information.
+AUDIT0208,infrastructure_and_utility_damage,other_relevant_information,3,No,Record/major flooding and rising rivers.
+AUDIT0209,rescue_volunteering_or_donation_effort,sympathy_and_support,3,Yes,Says affected people will need help.
+AUDIT0210,infrastructure_and_utility_damage,,3,No,"12,000 homes destroyed."
+AUDIT0211,infrastructure_and_utility_damage,displaced_people_and_evacuations,3,Yes,Returning residents/business owners assess damage.
+AUDIT0212,infrastructure_and_utility_damage,,3,No,Aerial footage of earthquake damage.
+AUDIT0213,caution_and_advice,,3,No,Official hurricane/tropical-storm warnings.
+AUDIT0214,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Disaster Response Tool activated.
+AUDIT0215,caution_and_advice,,3,No,Explicit floodwater food-safety guidance.
+AUDIT0216,rescue_volunteering_or_donation_effort,,3,No,UN-coordinated supply delivery.
+AUDIT0217,injured_or_dead_people,rescue_volunteering_or_donation_effort,3,Yes,Rising death toll plus call to act.
+AUDIT0218,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Animal-aid organization mobilizing response.
+AUDIT0219,not_humanitarian,other_relevant_information,2,Yes,Political climate-policy advocacy rather than crisis aid information.
+AUDIT0220,missing_or_found_people,injured_or_dead_people,3,Yes,203 missing and death toll 88.
+AUDIT0221,caution_and_advice,sympathy_and_support,3,Yes,Authority-advisory guidance plus supportive message.
+AUDIT0222,injured_or_dead_people,requests_or_urgent_needs,3,Yes,Higher death toll alongside water/health crisis.
+AUDIT0223,rescue_volunteering_or_donation_effort,,3,No,Refugees helping wildfire victims.
+AUDIT0224,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Pet-aid appeal and many requests for help.
+AUDIT0225,caution_and_advice,not_humanitarian,2,Yes,Critiques unsafe reporting during a tsunami warning.
+AUDIT0226,caution_and_advice,,3,No,Current tsunami-hazard information.
+AUDIT0227,not_humanitarian,,3,No,Conspiracy/political claim about ISIS and fires.
+AUDIT0228,other_relevant_information,infrastructure_and_utility_damage,2,No,Presidential visit to survey hurricane damage.
+AUDIT0229,other_relevant_information,infrastructure_and_utility_damage,2,No,Storm status with limited damage.
+AUDIT0230,not_humanitarian,,3,No,Unrelated location/status post.
+AUDIT0231,sympathy_and_support,infrastructure_and_utility_damage,3,Yes,Asks for good vibes while island is being damaged.
+AUDIT0232,rescue_volunteering_or_donation_effort,other_relevant_information,2,No,Highlights longstanding disaster-relief work.
+AUDIT0233,rescue_volunteering_or_donation_effort,sympathy_and_support,3,Yes,WFP supporting assessment; also expresses sympathy and impacts.
+AUDIT0234,other_relevant_information,caution_and_advice,2,No,Communities prepare for possible impacts.
+AUDIT0235,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,Campgrounds opened for evacuees.
+AUDIT0236,caution_and_advice,other_relevant_information,3,No,State-of-emergency and track warning.
+AUDIT0237,missing_or_found_people,injured_or_dead_people,3,Yes,Nearly 900 missing and death toll 81.
+AUDIT0238,rescue_volunteering_or_donation_effort,,3,No,Fundraising for disaster relief.
+AUDIT0239,missing_or_found_people,requests_or_urgent_needs,3,Yes,Missing children foregrounded amid worsening aid needs.
+AUDIT0240,infrastructure_and_utility_damage,other_relevant_information,2,No,River/bridge/road conditions contributing to flooding.
+AUDIT0241,other_relevant_information,infrastructure_and_utility_damage,2,No,Floodwater recession timing information.
+AUDIT0242,not_humanitarian,,3,No,Hostile political commentary.
+AUDIT0243,caution_and_advice,,3,No,Wildfire-smoke guidance for horses.
+AUDIT0244,other_relevant_information,infrastructure_and_utility_damage,2,Yes,Personal comparison to prior town destruction.
+AUDIT0245,caution_and_advice,displaced_people_and_evacuations,3,No,Warning/evacuation-notice concern.
+AUDIT0246,requests_or_urgent_needs,not_humanitarian,2,Yes,Repeated explicit call for help despite political framing.
+AUDIT0247,rescue_volunteering_or_donation_effort,caution_and_advice,3,Yes,Donation guidance directing aid to local charities.
+AUDIT0248,not_humanitarian,,3,No,Joke about wanting a day off without damage.
+AUDIT0249,infrastructure_and_utility_damage,other_relevant_information,3,No,Historical account of wildfire destroying a community.
+AUDIT0250,injured_or_dead_people,not_humanitarian,3,No,"Explicit deaths, though framed as political blame."
+AUDIT0251,sympathy_and_support,caution_and_advice,3,Yes,Hope for safety during tsunami warning.
+AUDIT0252,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,Organization shelters earthquake refugees.
+AUDIT0253,injured_or_dead_people,not_humanitarian,2,Yes,Lives lost amid partisan blame and wider impacts.
+AUDIT0254,injured_or_dead_people,rescue_volunteering_or_donation_effort,3,Yes,Large death toll plus explicit call to send help.
+AUDIT0255,not_humanitarian,,3,No,Religious/political invective.
+AUDIT0256,requests_or_urgent_needs,other_relevant_information,3,No,Bottled-water shortage during hurricane preparation.
+AUDIT0257,infrastructure_and_utility_damage,not_humanitarian,2,Yes,"Home destroyed, but tweet is celebratory/insulting."
+AUDIT0258,caution_and_advice,requests_or_urgent_needs,3,No,Continue conserving water; drinking supply constrained.
+AUDIT0259,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,3,No,"Safe refuge and supplies, with help instructions."
+AUDIT0260,caution_and_advice,,3,No,Preparedness tip for keeping drinks/water cold.
+AUDIT0261,not_humanitarian,sympathy_and_support,3,No,Partisan criticism despite disaster hashtags.
+AUDIT0262,not_humanitarian,,1,Yes,Insufficient/fragmentary content.
+AUDIT0263,injured_or_dead_people,displaced_people_and_evacuations,3,No,Questions post-hurricane nursing-home deaths.
+AUDIT0264,displaced_people_and_evacuations,requests_or_urgent_needs,3,Yes,Temporary housing sought for evacuees/refugees.
+AUDIT0265,caution_and_advice,other_relevant_information,2,No,Wildfire-prevention information.
+AUDIT0266,other_relevant_information,infrastructure_and_utility_damage,2,No,Flood-insurance context for affected people.
+AUDIT0267,not_humanitarian,,3,No,Earthquake alert unrelated to the Irma event.
+AUDIT0268,displaced_people_and_evacuations,caution_and_advice,3,No,Mandatory evacuation order.
+AUDIT0269,caution_and_advice,rescue_volunteering_or_donation_effort,2,Yes,Anti-rumor instruction plus response/financial-aid context.
+AUDIT0270,injured_or_dead_people,,3,No,Death toll rises to seven.
+AUDIT0271,sympathy_and_support,infrastructure_and_utility_damage,3,Yes,Prayer dominates despite damage mention.
+AUDIT0272,requests_or_urgent_needs,,3,No,Direct request for outside help.
+AUDIT0273,infrastructure_and_utility_damage,other_relevant_information,2,No,Hurricane described as having destroyed areas; recovery ahead.
+AUDIT0274,infrastructure_and_utility_damage,requests_or_urgent_needs,3,No,No power and home damage after Irma.
+AUDIT0275,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,3,Yes,Donation appeal by responders after water-system damage.
+AUDIT0276,sympathy_and_support,injured_or_dead_people,3,Yes,Condolence/support message noting deaths.
+AUDIT0277,infrastructure_and_utility_damage,,3,No,Photos of hurricane destruction.
+AUDIT0278,rescue_volunteering_or_donation_effort,,3,No,Fundraiser event.
+AUDIT0279,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,Yes,Lists shelter needs to facilitate donations.
+AUDIT0280,rescue_volunteering_or_donation_effort,,3,No,Explicit donation request.
+AUDIT0281,other_relevant_information,rescue_volunteering_or_donation_effort,2,No,Praises defense-force role in explaining/assessing damage.
+AUDIT0282,not_humanitarian,,3,No,Political joke about hurricane protection.
+AUDIT0283,caution_and_advice,injured_or_dead_people,2,Yes,Warns of looming deaths from disease/hunger/exposure.
+AUDIT0284,injured_or_dead_people,not_humanitarian,3,No,Explicit 330 deaths amid political/religious commentary.
+AUDIT0285,other_relevant_information,,3,No,Emergency regulatory waiver for commodities.
+AUDIT0286,requests_or_urgent_needs,displaced_people_and_evacuations,3,No,Family asks where to evacuate and needs two nights of help.
+AUDIT0287,other_relevant_information,,2,No,Flood-insurance availability commentary.
+AUDIT0288,injured_or_dead_people,,3,No,Anticipates much higher death toll.
+AUDIT0289,injured_or_dead_people,not_humanitarian,3,No,Death-toll reference in political criticism.
+AUDIT0290,caution_and_advice,other_relevant_information,3,No,UNICEF warning to prevent disease spread.
+AUDIT0291,sympathy_and_support,rescue_volunteering_or_donation_effort,3,No,"Prayer for victims, survivors, rescuers."
+AUDIT0292,other_relevant_information,displaced_people_and_evacuations,2,Yes,Speculates about medical evacuations.
+AUDIT0293,rescue_volunteering_or_donation_effort,,3,No,Firefighting crews actively responding.
+AUDIT0294,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,3,No,Search/rescue and multi-sector response teams.
+AUDIT0295,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,3,Yes,People need help now while aid/rescue continue.
+AUDIT0296,requests_or_urgent_needs,missing_or_found_people,2,Yes,Asks for assistance/status of people after quake.
+AUDIT0297,infrastructure_and_utility_damage,injured_or_dead_people,3,Yes,Island-wide power loss plus deaths.
+AUDIT0298,sympathy_and_support,caution_and_advice,3,No,Prayers and stay-safe support.
+AUDIT0299,injured_or_dead_people,missing_or_found_people,3,Yes,Death toll and hundreds missing.
+AUDIT0300,other_relevant_information,rescue_volunteering_or_donation_effort,2,Yes,Aid-distribution failure rather than direct need statement.
+AUDIT0301,caution_and_advice,infrastructure_and_utility_damage,3,Yes,Cat-5 impact warning describes catastrophic damage/outages.
+AUDIT0302,not_humanitarian,,3,No,Unrelated Twitter-chat flood joke.
+AUDIT0303,infrastructure_and_utility_damage,,3,No,Official surveys earthquake damage.
+AUDIT0304,other_relevant_information,infrastructure_and_utility_damage,2,No,Analysis of changing flood-frequency designations.
+AUDIT0305,other_relevant_information,injured_or_dead_people,2,Yes,Historical animal losses used to forecast current Florence impact.
+AUDIT0306,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Donation campaign to provide food.
+AUDIT0307,requests_or_urgent_needs,,2,No,"Explicitly marked urgent flood-relief item, though content is sparse."
+AUDIT0308,other_relevant_information,caution_and_advice,3,No,Preparedness monitoring for nursing-home generators.
+AUDIT0309,other_relevant_information,not_humanitarian,2,Yes,Normative statement about disaster aid politicization.
+AUDIT0310,sympathy_and_support,,3,No,Explicit request for love/support during quake/tsunami.
+AUDIT0311,other_relevant_information,rescue_volunteering_or_donation_effort,3,No,State-of-emergency support action for Puerto Rico.
+AUDIT0312,other_relevant_information,sympathy_and_support,2,Yes,Vague wildfire update with sadness.
+AUDIT0313,rescue_volunteering_or_donation_effort,,3,No,Fire crews responding to wildfire.
+AUDIT0314,other_relevant_information,,3,No,Storm-status downgrade update.
+AUDIT0315,requests_or_urgent_needs,not_humanitarian,2,Yes,Criticizes lack of military help to Puerto Rico.
+AUDIT0316,other_relevant_information,displaced_people_and_evacuations,2,No,Policy discussion about evacuation decisions.
+AUDIT0317,infrastructure_and_utility_damage,,3,No,Family home destroyed by wildfire.
+AUDIT0318,injured_or_dead_people,,3,No,Explicitly foregrounds deaths.
+AUDIT0319,infrastructure_and_utility_damage,other_relevant_information,3,Yes,Near-total town destruction with recovery-policy commentary.
+AUDIT0320,infrastructure_and_utility_damage,other_relevant_information,2,No,Catastrophic storm conditions imply severe impact.
+AUDIT0321,other_relevant_information,infrastructure_and_utility_damage,2,Yes,Mixed news roundup includes Irma flooding.
+AUDIT0322,displaced_people_and_evacuations,caution_and_advice,3,No,New mandatory evacuations.
+AUDIT0323,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Military response praised/blessed.
+AUDIT0324,rescue_volunteering_or_donation_effort,,3,No,Harvey rescue story.
+AUDIT0325,caution_and_advice,,3,No,Explicit no-tsunami-threat safety update.
+AUDIT0326,infrastructure_and_utility_damage,requests_or_urgent_needs,3,Yes,People lost homes and household possessions.
+AUDIT0327,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,"First Nation shelters 5,000 evacuees."
+AUDIT0328,other_relevant_information,,3,No,Compares storm rainfall volume.
+AUDIT0329,caution_and_advice,missing_or_found_people,3,Yes,Warns of mudslides/flash floods while victim search continues.
+AUDIT0330,other_relevant_information,,2,No,Article pointer about Kerala floods.
+AUDIT0331,infrastructure_and_utility_damage,other_relevant_information,2,Yes,Water-system contamination and agricultural impacts.
+AUDIT0332,rescue_volunteering_or_donation_effort,missing_or_found_people,2,Yes,Aid workers expand search for cyclone survivors.
+AUDIT0333,requests_or_urgent_needs,,3,No,Direct appeal for platform/help for affected areas.
+AUDIT0334,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,3,No,Salvation Army relief at evacuation centers.
+AUDIT0335,infrastructure_and_utility_damage,,3,No,School completely destroyed.
+AUDIT0336,injured_or_dead_people,,3,No,Casualties reported after earthquake.
+AUDIT0337,caution_and_advice,,2,Yes,Asks whether tap water is safe after quake.
+AUDIT0338,other_relevant_information,infrastructure_and_utility_damage,2,No,Question about sea-level-rise effect on damage.
+AUDIT0339,other_relevant_information,displaced_people_and_evacuations,2,No,Evacuation-psychology article/topic.
+AUDIT0340,sympathy_and_support,other_relevant_information,2,No,Concern for relatives while hurricane hits.
+AUDIT0341,not_humanitarian,,3,No,Consumer-service complaint unrelated to humanitarian response.
+AUDIT0342,other_relevant_information,rescue_volunteering_or_donation_effort,2,Yes,Debate over allocation of foreign flood aid.
+AUDIT0343,missing_or_found_people,injured_or_dead_people,3,Yes,"Over 1,000 missing and 71 killed."
+AUDIT0344,injured_or_dead_people,other_relevant_information,3,Yes,Cyclone death toll embedded in broader climate-event summary.
+AUDIT0345,rescue_volunteering_or_donation_effort,sympathy_and_support,3,No,Large donation to help wildfire victims rebuild.
+AUDIT0346,injured_or_dead_people,infrastructure_and_utility_damage,3,Yes,Rising death toll and major destruction.
+AUDIT0347,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,Yes,Asks for future help in affected states.
+AUDIT0348,injured_or_dead_people,infrastructure_and_utility_damage,3,No,Death toll explicit with worsening flood threat.
+AUDIT0349,rescue_volunteering_or_donation_effort,,3,No,Food/materials provided to relief camp.
+AUDIT0350,injured_or_dead_people,infrastructure_and_utility_damage,3,Yes,Deaths and massive destruction.
+AUDIT0351,infrastructure_and_utility_damage,injured_or_dead_people,3,Yes,"Cutoff, power/phone outages and confirmed deaths."
+AUDIT0352,not_humanitarian,injured_or_dead_people,2,Yes,"Historical tsunami-death recollection, not event-specific aid info."
+AUDIT0353,injured_or_dead_people,infrastructure_and_utility_damage,3,No,Wildfire deaths and possibility of higher toll.
+AUDIT0354,infrastructure_and_utility_damage,other_relevant_information,3,No,Scope and social impact of homes lost.
+AUDIT0355,rescue_volunteering_or_donation_effort,caution_and_advice,3,No,State resources mobilized for hurricane preparedness.
+AUDIT0356,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,Yes,Medical evacuations plus donation appeal.
+AUDIT0357,rescue_volunteering_or_donation_effort,,3,No,Ongoing Maria relief efforts.
+AUDIT0358,caution_and_advice,displaced_people_and_evacuations,3,No,Explicit warning not to disobey evacuation orders.
+AUDIT0359,sympathy_and_support,rescue_volunteering_or_donation_effort,2,Yes,Resilience/rebuilding solidarity message.
+AUDIT0360,rescue_volunteering_or_donation_effort,,3,No,Water/fund donation drive.
+AUDIT0361,requests_or_urgent_needs,other_relevant_information,2,Yes,Calls for rapid compensation/rebuilding support.
+AUDIT0362,sympathy_and_support,caution_and_advice,3,No,Asks for prayers while facing life-threatening storm.
+AUDIT0363,other_relevant_information,rescue_volunteering_or_donation_effort,2,No,Policy on accepting international wildfire assistance.
+AUDIT0364,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Donation appeal for emerging humanitarian needs.
+AUDIT0365,injured_or_dead_people,caution_and_advice,3,Yes,Two deaths and tsunami alert.
+AUDIT0366,other_relevant_information,,2,No,News about hurricane reconnaissance pilot.
+AUDIT0367,infrastructure_and_utility_damage,,3,No,Storm remnants causing roof/water damage.
+AUDIT0368,infrastructure_and_utility_damage,other_relevant_information,2,No,Story about damage to hometown.
+AUDIT0369,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Union directly helping members prepare/respond.
+AUDIT0370,rescue_volunteering_or_donation_effort,,3,No,Collection drive for hurricane victims.
+AUDIT0371,not_humanitarian,,3,No,Unrelated school/open-house fundraising complaint.
+AUDIT0372,requests_or_urgent_needs,,3,No,"Explicit need for food, shelter and necessities."
+AUDIT0373,sympathy_and_support,,3,No,Thoughts for wildfire-affected people.
+AUDIT0374,other_relevant_information,,3,No,Scientific analysis of earthquake sequence.
+AUDIT0375,sympathy_and_support,other_relevant_information,2,Yes,Emotional concern for abandoned livestock.
+AUDIT0376,other_relevant_information,rescue_volunteering_or_donation_effort,2,Yes,Red Cross volunteer-related post with little detail.
+AUDIT0377,missing_or_found_people,requests_or_urgent_needs,3,Yes,Thousands missing plus destitution/basic-service loss.
+AUDIT0378,rescue_volunteering_or_donation_effort,,3,No,Red Cross donation page for quake victims.
+AUDIT0379,not_humanitarian,,3,No,Political joke about nuking hurricane/property.
+AUDIT0380,injured_or_dead_people,missing_or_found_people,3,Yes,"Deaths, missing and mass evacuation all reported."
+AUDIT0381,displaced_people_and_evacuations,caution_and_advice,3,No,Cannot return home due tsunami warning.
+AUDIT0382,requests_or_urgent_needs,other_relevant_information,3,No,"Stores lack water, batteries and canned food."
+AUDIT0383,infrastructure_and_utility_damage,sympathy_and_support,3,No,"Landslides erased about 1,800 homes."
+AUDIT0384,not_humanitarian,sympathy_and_support,3,No,Political insult dominates.
+AUDIT0385,rescue_volunteering_or_donation_effort,,3,No,Strangers assist a wildfire victim.
+AUDIT0386,other_relevant_information,,3,No,Latest hurricane strength/path update.
+AUDIT0387,infrastructure_and_utility_damage,not_humanitarian,2,Yes,Power loss/damage context framed as scolding.
+AUDIT0388,rescue_volunteering_or_donation_effort,,3,No,Government sends rice to flood-hit Kerala.
+AUDIT0389,caution_and_advice,requests_or_urgent_needs,2,Yes,Evacuation uncertainty and water availability during preparation.
+AUDIT0390,rescue_volunteering_or_donation_effort,,3,No,How-to-help victims post.
+AUDIT0391,other_relevant_information,not_humanitarian,2,Yes,Forest-management analogy plus vague potential need.
+AUDIT0392,other_relevant_information,,3,No,Claims/analysis about causes of Kerala floods.
+AUDIT0393,requests_or_urgent_needs,not_humanitarian,3,Yes,Demands delivery of food to starving people amid partisan rhetoric.
+AUDIT0394,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Appeal to help animals after quake.
+AUDIT0395,infrastructure_and_utility_damage,other_relevant_information,3,No,Homes still damaged from prior hurricane and exposed again.
+AUDIT0396,injured_or_dead_people,not_humanitarian,3,No,"References 3,000 hurricane deaths in political argument."
+AUDIT0397,rescue_volunteering_or_donation_effort,,3,No,Pledge to donate to hurricane relief.
+AUDIT0398,not_humanitarian,other_relevant_information,2,Yes,Political accusation about obstructing aid.
+AUDIT0399,other_relevant_information,,3,No,Aftershock activity update.
+AUDIT0400,rescue_volunteering_or_donation_effort,,3,No,Helping flood victims.
+AUDIT0401,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,General public call to help Kerala.
+AUDIT0402,rescue_volunteering_or_donation_effort,,3,No,Financial firm extends help to wildfire victims.
+AUDIT0403,other_relevant_information,displaced_people_and_evacuations,2,Yes,Discussion of charter schools as hurricane shelters.
+AUDIT0404,sympathy_and_support,rescue_volunteering_or_donation_effort,3,No,Respect/support for firefighters.
+AUDIT0405,not_humanitarian,injured_or_dead_people,3,No,Earthquake deaths unrelated to the Irma event.
+AUDIT0406,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Critical need for volunteers.
+AUDIT0407,not_humanitarian,injured_or_dead_people,2,Yes,Political analogy dominates despite disaster-loss language.
+AUDIT0408,sympathy_and_support,,3,No,Prayers and solidarity for fire-affected people.
+AUDIT0409,caution_and_advice,other_relevant_information,3,No,No-damage update with stay-safe guidance.
+AUDIT0410,displaced_people_and_evacuations,caution_and_advice,3,No,Prepared for possible repeat evacuation.
+AUDIT0411,caution_and_advice,other_relevant_information,2,No,Preparedness supplies and safety framing.
+AUDIT0412,other_relevant_information,infrastructure_and_utility_damage,3,No,Satellite imagery showing flood extent.
+AUDIT0413,infrastructure_and_utility_damage,,3,No,Island-wide outage and massive damage.
+AUDIT0414,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,Shelter consolidation for evacuees.
+AUDIT0415,caution_and_advice,,3,No,Preparedness packing for hurricane coverage.
+AUDIT0416,sympathy_and_support,,3,No,Thoughts/prayers after earthquake.
+AUDIT0417,other_relevant_information,,3,No,State-of-emergency declaration.
+AUDIT0418,not_humanitarian,,1,Yes,Context-poor political/government complaint.
+AUDIT0419,rescue_volunteering_or_donation_effort,,3,No,Donation appeal for affected pilots/families.
+AUDIT0420,requests_or_urgent_needs,other_relevant_information,3,No,Asks whether international help is needed.
+AUDIT0421,sympathy_and_support,injured_or_dead_people,2,Yes,Compassion-focused statement about displaced/hurt/killed people.
+AUDIT0422,other_relevant_information,rescue_volunteering_or_donation_effort,2,No,Emergency declaration to support devastated states.
+AUDIT0423,displaced_people_and_evacuations,infrastructure_and_utility_damage,3,Yes,Dam burst triggers town evacuations.
+AUDIT0424,other_relevant_information,displaced_people_and_evacuations,2,Yes,Mentions a notable evacuee without useful logistics.
+AUDIT0425,caution_and_advice,other_relevant_information,3,No,Extreme wildfire-condition warning.
+AUDIT0426,sympathy_and_support,displaced_people_and_evacuations,3,No,Praises compassion for victims/evacuees.
+AUDIT0427,caution_and_advice,other_relevant_information,2,No,Adverse weather hitting quake-affected areas.
+AUDIT0428,rescue_volunteering_or_donation_effort,,3,No,Pledges income share to Red Cross wildfire relief.
+AUDIT0429,other_relevant_information,,3,No,Status update that fires are still raging.
+AUDIT0430,rescue_volunteering_or_donation_effort,,3,No,Search-and-rescue effort update.
+AUDIT0431,other_relevant_information,infrastructure_and_utility_damage,2,No,Premier tours wildfire damage.
+AUDIT0432,not_humanitarian,other_relevant_information,3,No,Political comparison about presidential disaster visits.
+AUDIT0433,other_relevant_information,requests_or_urgent_needs,2,Yes,Grocery restocking/supply-chain recovery after Harvey.
+AUDIT0434,other_relevant_information,infrastructure_and_utility_damage,2,No,"Tsunami-after-earthquake event update, truncated."
+AUDIT0435,rescue_volunteering_or_donation_effort,,3,No,FEMA relief staging base.
+AUDIT0436,caution_and_advice,requests_or_urgent_needs,3,No,Instruction to include contact details so help can reach requester.
+AUDIT0437,not_humanitarian,,3,No,Meme/personal reaction to aftershocks.
+AUDIT0438,rescue_volunteering_or_donation_effort,,3,No,How-to-help Harvey victims.
+AUDIT0439,caution_and_advice,infrastructure_and_utility_damage,3,No,Flooding-rain forecast/update.
+AUDIT0440,infrastructure_and_utility_damage,sympathy_and_support,3,Yes,Destruction in Bahamas with hope storm changes course.
+AUDIT0441,not_humanitarian,,3,No,Political insult about wildfire causation.
+AUDIT0442,other_relevant_information,rescue_volunteering_or_donation_effort,2,Yes,Appeal to keep Puerto Rico crisis visible in media.
+AUDIT0443,infrastructure_and_utility_damage,other_relevant_information,3,No,Forecast of major monetary damage.
+AUDIT0444,rescue_volunteering_or_donation_effort,not_humanitarian,2,Yes,Political demand framed as funding victims.
+AUDIT0445,caution_and_advice,displaced_people_and_evacuations,3,No,Traffic changes during evacuation.
+AUDIT0446,caution_and_advice,,3,No,Urgent appeal to share emergency information.
+AUDIT0447,not_humanitarian,,3,No,Unrelated Alaska earthquake.
+AUDIT0448,sympathy_and_support,caution_and_advice,3,No,Thoughts/prayers with safety encouragement.
+AUDIT0449,infrastructure_and_utility_damage,other_relevant_information,3,No,Thousands of buildings and extensive roads/bridges damaged.
+AUDIT0450,rescue_volunteering_or_donation_effort,,2,No,People at a food bank in disaster-response context.
+AUDIT0451,other_relevant_information,injured_or_dead_people,3,No,Official update reports no Dorian deaths on Abaco.
+AUDIT0452,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,Food-assistance benefits released early.
+AUDIT0453,injured_or_dead_people,other_relevant_information,3,Yes,Thousands feared dead; survivor priority also noted.
+AUDIT0454,requests_or_urgent_needs,,3,No,Explicit request to send coffee to affected area.
+AUDIT0455,requests_or_urgent_needs,infrastructure_and_utility_damage,3,Yes,"Millions may lack clean water, food, refrigeration and medical supplies."
+AUDIT0456,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,3,No,NGO response and immediate-needs update.
+AUDIT0457,injured_or_dead_people,infrastructure_and_utility_damage,3,No,Police death and injuries reported; flights halted.
+AUDIT0458,injured_or_dead_people,caution_and_advice,3,Yes,Death toll plus warning that conditions are worsening.
+AUDIT0459,rescue_volunteering_or_donation_effort,,3,No,Large medical team and supplies for flood relief.
+AUDIT0460,not_humanitarian,injured_or_dead_people,3,No,Historical Haiti event unrelated to Irma.
+AUDIT0461,caution_and_advice,other_relevant_information,3,No,Maps disease-outbreak risk areas.
+AUDIT0462,sympathy_and_support,,3,No,Prayers for multiple disaster-affected regions.
+AUDIT0463,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,129k displaced in transit centers.
+AUDIT0464,requests_or_urgent_needs,displaced_people_and_evacuations,3,No,Family stranded without food/water/electricity asks rescue.
+AUDIT0465,injured_or_dead_people,not_humanitarian,2,Yes,Claims underreported deaths in political/colonial framing.
+AUDIT0466,requests_or_urgent_needs,,3,No,Flood-affected family asks where to get help.
+AUDIT0467,infrastructure_and_utility_damage,other_relevant_information,2,No,Tsunami/building-debris event update.
+AUDIT0468,injured_or_dead_people,sympathy_and_support,3,Yes,Mother/baby killed and total death toll; prayer context.
+AUDIT0469,infrastructure_and_utility_damage,other_relevant_information,2,Yes,Truncated report of wildfire destroying homes.
+AUDIT0470,rescue_volunteering_or_donation_effort,,3,No,Asks where to volunteer after quake.
+AUDIT0471,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,3,No,Food provided to displaced families.
+AUDIT0472,sympathy_and_support,requests_or_urgent_needs,3,No,Prayer/plea for divine help.
+AUDIT0473,injured_or_dead_people,other_relevant_information,3,No,More than 50 killed in cyclone-triggered floods.
+AUDIT0474,displaced_people_and_evacuations,other_relevant_information,3,No,Tens of thousands expected to be displaced.
+AUDIT0475,requests_or_urgent_needs,injured_or_dead_people,3,Yes,Dwindling supplies/medicine and inability to evacuate amid deaths.
+AUDIT0476,other_relevant_information,infrastructure_and_utility_damage,2,No,Damage survey and recovery question.
+AUDIT0477,rescue_volunteering_or_donation_effort,not_humanitarian,2,Yes,Animal rescues are central despite judgmental commentary.
+AUDIT0478,other_relevant_information,requests_or_urgent_needs,2,No,Officials characterize Irma impact as humanitarian crisis.
+AUDIT0479,other_relevant_information,caution_and_advice,3,No,Explains expected local intensity if track holds.
+AUDIT0480,injured_or_dead_people,,3,No,Two deaths confirmed.
+AUDIT0481,not_humanitarian,displaced_people_and_evacuations,3,No,Sectarian prejudice dominates shelter discussion.
+AUDIT0482,injured_or_dead_people,rescue_volunteering_or_donation_effort,3,No,Five firefighters injured battling fire.
+AUDIT0483,other_relevant_information,,3,No,Status/list of active California fires.
+AUDIT0484,not_humanitarian,,3,No,Metaphorical/conspiracy use of hurricane name.
+AUDIT0485,displaced_people_and_evacuations,other_relevant_information,3,No,Refugees flee wildfire; displacement is central.
+AUDIT0486,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,3,No,Guardsmen providing aid to evacuees.
+AUDIT0487,caution_and_advice,other_relevant_information,2,No,Air-quality risk/status information.
+AUDIT0488,not_humanitarian,other_relevant_information,3,No,Opinion piece disputing climate attribution.
+AUDIT0489,not_humanitarian,sympathy_and_support,3,No,Political insult dominates reference to deaths/prayers.
+AUDIT0490,caution_and_advice,displaced_people_and_evacuations,3,No,Tsunami evacuation-zone guidance.
+AUDIT0491,not_humanitarian,infrastructure_and_utility_damage,2,Yes,"Loss of symbolic tree, not humanitarian impact."
+AUDIT0492,other_relevant_information,caution_and_advice,3,No,Weather-satellite forecasting contribution.
+AUDIT0493,displaced_people_and_evacuations,other_relevant_information,3,No,Evacuations around record-strength hurricane.
+AUDIT0494,requests_or_urgent_needs,not_humanitarian,3,Yes,"Fuel/supplies relief request denied, with political comparison."
+AUDIT0495,other_relevant_information,,3,No,Fire growth/status update.
+AUDIT0496,caution_and_advice,other_relevant_information,3,No,Threat forecast for rain/wind/coastal flooding.
+AUDIT0497,not_humanitarian,infrastructure_and_utility_damage,3,No,Political hypothetical about property damage/insurance.
+AUDIT0498,missing_or_found_people,rescue_volunteering_or_donation_effort,3,No,39 children missing; K9 search begins.
+AUDIT0499,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,3,No,Florida assistance for Maria refugees.
+AUDIT0500,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,3,No,Explicit statement that victims need help.
