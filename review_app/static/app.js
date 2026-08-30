@@ -65,16 +65,18 @@ function labelButtons(selected, secondary, prefix){
  }).join('')}</div>`;
 }
 function segButtons(name, value){
+ const v = value || (name==='ic' || name==='fc' ? '2' : '');
  return `<div class="seg" data-name="${name}">
-  <button data-v="1" class="${value==='1'?'selected':''}">1 — tied / poor</button>
-  <button data-v="2" class="${value==='2'?'selected':''}">2 — plausible alt</button>
-  <button data-v="3" class="${value==='3'?'selected':''}">3 — clearly best</button>
+  <button data-v="1" class="${v==='1'?'selected':''}">1 — tied / poor</button>
+  <button data-v="2" class="${v==='2'?'selected':''}">2 — plausible alt</button>
+  <button data-v="3" class="${v==='3'?'selected':''}">3 — clearly best</button>
  </div>`;
 }
 function toggleButtons(name, value){
+ const v = value || 'no';
  return `<div class="toggle" data-name="${name}">
-  <button data-v="yes" class="${value==='yes'?'selected':''}">yes — ambiguous</button>
-  <button data-v="no" class="${value==='no'?'selected':''}">no — clear</button>
+  <button data-v="yes" class="${v==='yes'?'selected':''}">yes — ambiguous</button>
+  <button data-v="no" class="${v==='no'?'selected':''}">no — clear</button>
  </div>`;
 }
 function renderCard(d){
@@ -174,20 +176,20 @@ function setStatus(id, txt, isErr){ const e=el(id); if(e){ e.textContent=txt; e.
 
 function scheduleInitAutosave(debounced=false){
  clearTimeout(initTimer);
- const delay = debounced ? 700 : 120;
+ const delay = debounced ? 150 : 15;
  initTimer=setTimeout(tryAutosaveInitial, delay);
 }
 function scheduleFinalAutosave(debounced=false){
  clearTimeout(faTimer);
- const delay = debounced ? 700 : 150;
+ const delay = debounced ? 150 : 15;
  faTimer=setTimeout(tryAutosaveFinal, delay);
 }
 async function tryAutosaveInitial(){
  if(!currentId) return;
  const reason=(el('ir')?.value||'').trim();
- const conf=getSegVal('ic'), amb=getToggleVal('ia');
- if(!selPrimary || !conf || !amb){
-   setStatus('initStatus','○ incomplete — pick primary, confidence and ambiguity','');
+ let conf=getSegVal('ic')||'2', amb=getToggleVal('ia')||'no';
+ if(!selPrimary){
+   setStatus('initStatus','○ pick a primary label','');
    return;
  }
  setStatus('initStatus','● saving...','');
@@ -220,9 +222,9 @@ async function reveal(silent=false){
 async function tryAutosaveFinal(){
  if(!currentId || !currentData?.evidence_visible) return;
  const notes=(el('fn')?.value||'').trim();
- const fc=getSegVal('fc'), fa=getToggleVal('fa');
- if(!selFinal || !fc || !fa){
-   setStatus('finalStatus2','○ pick final primary, confidence and ambiguity to autosave','');
+ let fc=getSegVal('fc')||'2', fa=getToggleVal('fa')||'no';
+ if(!selFinal){
+   setStatus('finalStatus2','○ pick final primary','');
    return;
  }
  setStatus('finalStatus2','● saving final...','');
