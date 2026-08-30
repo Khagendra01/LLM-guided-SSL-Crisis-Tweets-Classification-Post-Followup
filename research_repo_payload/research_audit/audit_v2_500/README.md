@@ -16,6 +16,14 @@ The annotation workflow is:
 
 The AI first pass is therefore not counted as a separate independent human annotator. See `../ANNOTATION_PROVENANCE_V2.md`.
 
+The complete frozen first pass is:
+
+- `researcher_ai_assisted_first_pass_FROZEN.csv`
+- expected SHA256: `38390d45f7e79a274245318a49c289988231b109f8139bb5d8bc933f70512f7a`
+- machine validation: `researcher_first_pass_validation.json`
+
+This file is the AI-assisted **first pass**, not a claim that the 500 labels have already been human-reviewed.
+
 ## Sample design
 
 - 500 unique tweets.
@@ -41,6 +49,10 @@ Important fields:
 - `review_action` — e.g. `accepted` or `changed`
 
 Do not describe the full 500 as human-reviewed until the ledger confirms that status row by row.
+
+## Pilot status
+
+The smaller Pilot V2 was used as an AI-assisted calibration/test and its agreement characteristics were measured. The repository does **not** claim that the pilot was personally reviewed or accepted by the researcher unless separate review documentation is added.
 
 ## Independent comparison-model handoff
 
@@ -81,7 +93,7 @@ After the model outputs are frozen, download the locked key and run, for example
 ```bash
 python research_repo_payload/research_audit/scripts/score_audit_v2.py \
   --key audit_v2_500_hidden_key_LOCKED.csv \
-  --annotator researcher_first_pass=researcher_ai_assisted_annotations.csv \
+  --annotator researcher_first_pass=researcher_ai_assisted_first_pass_FROZEN.csv \
   --annotator claude=claude_annotations.csv \
   --annotator grok=grok_annotations.csv \
   --outdir audit_v2_scoring
@@ -91,11 +103,11 @@ The scorer validates all 500 IDs and fields before producing agreement, macro-F1
 
 ## Paper-facing status
 
-The defensible wording is:
+Before row-level researcher review is complete, the defensible wording is:
 
-> Audit labels were produced using an AI-assisted annotation workflow conducted on behalf of the researcher under a predefined HumAID codebook. AI supplied the first-pass annotation, while final annotation responsibility, human review, and adjudication authority remained with the researcher.
+> Audit V2 used an AI-assisted first-pass annotation workflow conducted on behalf of the researcher under a predefined HumAID codebook. An initial blind pilot was used to test the first-pass procedure and measure its agreement characteristics. Final annotation responsibility, human review, and adjudication authority remained with the researcher.
 
-After every row has been reviewed, it is appropriate to add:
+After every row has actually been reviewed, it is appropriate to add:
 
 > All final Audit V2 labels were reviewed by the researcher.
 
