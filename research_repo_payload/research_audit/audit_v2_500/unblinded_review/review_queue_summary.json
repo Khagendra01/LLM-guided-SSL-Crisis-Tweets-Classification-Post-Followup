@@ -22,5 +22,11 @@
   },
   "live_progress_path": "research_repo_payload/research_audit/audit_v2_500/HUMAN_REVIEW_PROGRESS.json",
   "last_completed_batch": 1,
-  "human_review_status": "in_progress"
+  "human_review_status": "in_progress",
+  "bulk_ai_adjudication": {
+    "status": "complete",
+    "recommendations_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/audit_v2_bulk_ai_adjudication_recommendations.csv",
+    "human_reviewed_rows": 5,
+    "pending_researcher_confirmation": 495
+  }
 }

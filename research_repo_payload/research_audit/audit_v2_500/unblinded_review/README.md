@@ -10,6 +10,7 @@ This directory intentionally exposes the Audit V2 hidden key after the researche
 - `review_queue_summary.json` — consensus, priority, and live review counts.
 - `../HUMAN_REVIEW_PROGRESS.json` — current researcher-review progress.
 - `../human_review_batches/` — immutable records of explicitly approved review batches.
+- `../bulk_ai_adjudication/` — complete AI recommendations for all rows; pending human confirmation where indicated.
 
 ## Warning
 

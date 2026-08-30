@@ -16,6 +16,7 @@ This branch is intentionally **UNBLINDED** for researcher adjudication and revie
 - Human-review ledger: `researcher_human_review_ledger.csv`
 - Live human-review progress: `HUMAN_REVIEW_PROGRESS.json`
 - Approved batch records: `human_review_batches/`
+- Complete bulk AI adjudication recommendations: `bulk_ai_adjudication/`
 - Codebook: `../HUMAID_AUDIT_V2_CODEBOOK.md`
 - Annotation provenance: `../ANNOTATION_PROVENANCE_V2.md`
 - Generator: `../scripts/generate_audit_v2.py`
