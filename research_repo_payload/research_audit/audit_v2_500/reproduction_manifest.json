@@ -1,7 +1,7 @@
 {
   "algorithm_version": "audit-v2-stratified-balanced-v1",
   "seed": "audit-v2-500-2026-08-30-v1",
-  "source_repo_commit": "6aa13c158db3209fcb117c7eff0b94a419f58e4e",
+  "source_repo_commit": "0498f852fd8878292034134eb261c6375737239b",
   "events": [
     "california_wildfires_2018",
     "canada_wildfires_2016",
