@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "in_progress",
+  "researcher": "Khagendra01",
+  "reviewed_rows": 5,
+  "pending_rows": 495,
+  "accepted_rows": 4,
+  "changed_rows": 1,
+  "completed_batches": [
+    1
+  ],
+  "last_completed_batch": 1,
+  "last_batch_file": "research_repo_payload/research_audit/audit_v2_500/human_review_batches/batch_001_APPROVED.csv",
+  "researcher_confirmation": "approve batch 1",
+  "confirmation_date_utc": "2026-08-30",
+  "ledger_path": "research_repo_payload/research_audit/audit_v2_500/researcher_human_review_ledger.csv",
+  "note": "Only decisions explicitly confirmed by the researcher are counted as human-reviewed."
+}

@@ -14,6 +14,8 @@ This branch is intentionally **UNBLINDED** for researcher adjudication and revie
 - Main review file: `unblinded_review/researcher_review_queue_prioritized_UNBLINDED.csv`
 - Canonical adjudication queue: `unblinded_review/canonical_adjudication_queue_UNBLINDED.csv`
 - Human-review ledger: `researcher_human_review_ledger.csv`
+- Live human-review progress: `HUMAN_REVIEW_PROGRESS.json`
+- Approved batch records: `human_review_batches/`
 - Codebook: `../HUMAID_AUDIT_V2_CODEBOOK.md`
 - Annotation provenance: `../ANNOTATION_PROVENANCE_V2.md`
 - Generator: `../scripts/generate_audit_v2.py`
@@ -31,7 +33,7 @@ This branch is intentionally **UNBLINDED** for researcher adjudication and revie
 
 - The researcher first pass, Claude, Gemini, and Grok outputs were frozen before unblinding.
 - The hidden HumAID/GPT-4o key is now public on this branch.
-- All 500 human-review ledger rows remain `pending`.
+- Human review is in progress. Consult `HUMAN_REVIEW_PROGRESS.json` for current counts and the ledger for row-level decisions.
 - Model consensus is review evidence, not human ground truth.
 - Do not describe any row as human-reviewed until the researcher records an explicit acceptance or change.
 - Audit V2 is disagreement-enriched: each event has 25 HumAID/GPT-4o agreements and 25 disagreements. Reported agreement rates are audit statistics, not ordinary test accuracy.

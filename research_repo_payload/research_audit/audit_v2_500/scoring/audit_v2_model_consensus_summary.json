@@ -25,8 +25,9 @@
     "matches_neither": 29,
     "differs_from_humaid_total": 101
   },
-  "human_review_status": "pending",
   "unblinded_review_committed_to_public_repo": true,
   "unblinded_review_path": "research_repo_payload/research_audit/audit_v2_500/unblinded_review/",
-  "note": "Model consensus prioritizes researcher review but is not human ground truth. This branch is intentionally unblinded."
+  "note": "Model consensus prioritizes researcher review but is not human ground truth. This branch is intentionally unblinded.",
+  "human_review_status_at_scoring": "pending",
+  "live_human_review_progress": "research_repo_payload/research_audit/audit_v2_500/HUMAN_REVIEW_PROGRESS.json"
 }

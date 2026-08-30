@@ -1,6 +1,5 @@
 {
   "rows": 500,
-  "all_human_review_status": "pending",
   "consensus_counts": {
     "2_1_1": 46,
     "4_of_4": 268,
@@ -14,5 +13,14 @@
     "P2_3of4_models_disagree_with_HumAID": 78,
     "P1_unanimous_models_disagree_with_HumAID": 101
   },
-  "warning": "This directory is unblinded: it contains original HumAID labels, GPT-4o labels/confidence, tweet IDs, and model judgments."
+  "warning": "This directory is unblinded: it contains original HumAID labels, GPT-4o labels/confidence, tweet IDs, and model judgments.",
+  "human_review_counts": {
+    "reviewed": 5,
+    "pending": 495,
+    "accepted": 4,
+    "changed": 1
+  },
+  "live_progress_path": "research_repo_payload/research_audit/audit_v2_500/HUMAN_REVIEW_PROGRESS.json",
+  "last_completed_batch": 1,
+  "human_review_status": "in_progress"
 }

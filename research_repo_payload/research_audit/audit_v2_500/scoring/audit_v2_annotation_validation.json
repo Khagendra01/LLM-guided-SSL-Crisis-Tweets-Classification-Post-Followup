@@ -29,5 +29,6 @@
       "note": "Replacement upload validated; no placeholder-tail pattern."
     }
   },
-  "human_review_status": "All 500 main-audit rows remain pending until researcher inspection."
+  "human_review_status_at_validation": "All 500 main-audit rows were pending when annotation/scorer validation was produced.",
+  "live_human_review_progress": "research_repo_payload/research_audit/audit_v2_500/HUMAN_REVIEW_PROGRESS.json"
 }

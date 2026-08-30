@@ -70,7 +70,9 @@ Therefore **101/268 unanimous rows** have a unanimous audit/model label differen
 
 ## Human-review status
 
-No main-audit row is automatically marked human-reviewed by this scoring step. All 500 researcher-review ledger rows remain pending.
+No main-audit row was automatically marked human-reviewed by this scoring step. At scoring time, all 500 researcher-review ledger rows were pending.
+
+Researcher review is tracked separately after scoring. Current status is recorded in `../HUMAN_REVIEW_PROGRESS.json` and row-level decisions are recorded in `../researcher_human_review_ledger.csv`.
 
 The prioritized queue and full hidden key are intentionally committed on the public, unblinded handoff branch:
 
