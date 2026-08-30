@@ -23,6 +23,8 @@
     "recommendations_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/audit_v2_bulk_ai_adjudication_recommendations.csv",
     "summary_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/summary.json",
     "researcher_direction": "complete all the batches",
-    "provenance_warning": "Completion is AI-assisted adjudication, not human review for the 495 pending rows."
+    "provenance_warning": "Completion is AI-assisted adjudication, not human review for the 495 pending rows.",
+    "validation_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/validation.json",
+    "repaired_two_one_one_rows": 46
   }
 }

@@ -27,6 +27,8 @@
     "status": "complete",
     "recommendations_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/audit_v2_bulk_ai_adjudication_recommendations.csv",
     "human_reviewed_rows": 5,
-    "pending_researcher_confirmation": 495
+    "pending_researcher_confirmation": 495,
+    "validation_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/validation.json",
+    "repaired_two_one_one_rows": 46
   }
 }
