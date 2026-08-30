@@ -6,7 +6,9 @@
     "sha256": "b607c8900fcad2020a858152d5808acb96e2e9d45042f1b0ceef966466d84249",
     "source": "GitHub Actions artifact audit-v2-hidden-key-locked, artifact id 9735287306",
     "opened_after_external_outputs_frozen": true,
-    "committed_to_public_repo": false
+    "committed_to_public_repo": true,
+    "public_path": "research_repo_payload/research_audit/audit_v2_500/unblinded_review/audit_v2_500_hidden_key_LOCKED.csv",
+    "warning": "The audit-v2-scoring-results branch is intentionally unblinded and must not be used for future blind annotation."
   },
   "researcher_first_pass": {
     "sha256": "38390d45f7e79a274245318a49c289988231b109f8139bb5d8bc933f70512f7a"
