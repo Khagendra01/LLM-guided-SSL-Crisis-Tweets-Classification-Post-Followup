@@ -1,0 +1,51 @@
+annotation_id,primary_label,secondary_label,confidence,ambiguous,reason
+PILOTV2_001,sympathy_and_support,,3,no,Prayers and good wishes for people affected by the earthquake.
+PILOTV2_002,other_relevant_information,rescue_volunteering_or_donation_effort,1,yes,"Aid-benefit information is implied, but the tweet is too generic to identify a more specific intent."
+PILOTV2_003,other_relevant_information,caution_and_advice,2,yes,Reports/queries about an ongoing tsunami threat without a clear instruction.
+PILOTV2_004,other_relevant_information,infrastructure_and_utility_damage,2,yes,Official update about touring wildfire damage; no specific damage item is described.
+PILOTV2_005,rescue_volunteering_or_donation_effort,,3,no,Organizes collection of water and non-perishable food for Puerto Rico.
+PILOTV2_006,infrastructure_and_utility_damage,other_relevant_information,2,yes,"Says Puerto Rico was destroyed by Maria, indicating broad physical damage."
+PILOTV2_007,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Calls on people to help rebuild Kerala and spread the appeal.
+PILOTV2_008,displaced_people_and_evacuations,,3,no,Provides shelter information during Hurricane Dorian.
+PILOTV2_009,caution_and_advice,,3,no,Explicitly advises people to verify charities and avoid donation scams.
+PILOTV2_010,other_relevant_information,,3,no,"On-topic observation about successive earthquake/flood hazards, with no specific action."
+PILOTV2_011,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,"Focuses on affected people having no homes, implying displacement after housing loss."
+PILOTV2_012,not_humanitarian,,3,no,Conspiracy-style claim about directed-energy weapons rather than humanitarian information.
+PILOTV2_013,not_humanitarian,,3,no,Uses flooding to discuss destroyed music collections/history rather than current humanitarian impact.
+PILOTV2_014,rescue_volunteering_or_donation_effort,,3,no,Seeks transport to deliver relief supplies to Cyclone Idai-affected areas.
+PILOTV2_015,rescue_volunteering_or_donation_effort,sympathy_and_support,1,yes,"Volunteer/disaster-relief hashtags suggest aid activity, but the text lacks a concrete action."
+PILOTV2_016,rescue_volunteering_or_donation_effort,,3,no,Describes Teamsters bringing volunteers for Puerto Rico relief.
+PILOTV2_017,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,Asks for groups people can contribute to for immediate relief; also references what to expect.
+PILOTV2_018,rescue_volunteering_or_donation_effort,,3,no,Reports deployment of a swift-water rescue team.
+PILOTV2_019,rescue_volunteering_or_donation_effort,,3,no,Describes hurricane relief preparations taking shape in a warehouse.
+PILOTV2_020,rescue_volunteering_or_donation_effort,caution_and_advice,3,no,"Direct call for relief work and donations, with an additional verification warning."
+PILOTV2_021,other_relevant_information,displaced_people_and_evacuations,2,yes,"Reports severe flooding and thousands stranded, but not an explicit evacuation or request."
+PILOTV2_022,caution_and_advice,infrastructure_and_utility_damage,2,yes,Warns of a possible interstate shutdown and gives a detour because of flooding.
+PILOTV2_023,other_relevant_information,,3,no,On-topic factual/political information about government flood-relief funding.
+PILOTV2_024,rescue_volunteering_or_donation_effort,,3,no,Directly asks for supply donations after Hurricane Irma.
+PILOTV2_025,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,"Calls for collective help after the floods, though the concrete action is broad."
+PILOTV2_026,other_relevant_information,,3,no,Reports Maria hitting Puerto Rico with record flooding.
+PILOTV2_027,rescue_volunteering_or_donation_effort,,3,no,Reports donations reaching intended recipients and ongoing aid work.
+PILOTV2_028,injured_or_dead_people,missing_or_found_people,3,no,Explicit death toll plus mention of an unaccounted-person list.
+PILOTV2_029,rescue_volunteering_or_donation_effort,,3,no,Reports a monetary flood-relief contribution.
+PILOTV2_030,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,2,yes,"Highlights evacuees and residents in emergency conditions, then notes interest in helping."
+PILOTV2_031,not_humanitarian,,3,no,Joke/metaphor about personal financial damage from the hurricane.
+PILOTV2_032,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Main intent is urging help for people who lost everything; also recounts severe property loss.
+PILOTV2_033,rescue_volunteering_or_donation_effort,,3,no,Points to relief and recovery flights.
+PILOTV2_034,rescue_volunteering_or_donation_effort,,2,no,Describes people reaching out to help others in need.
+PILOTV2_035,rescue_volunteering_or_donation_effort,,3,no,Promotes an event organized for Harvey relief.
+PILOTV2_036,infrastructure_and_utility_damage,other_relevant_information,2,yes,"Broad statement that the country is being destroyed, implying physical disaster impact."
+PILOTV2_037,rescue_volunteering_or_donation_effort,,3,no,Reports a search-and-rescue team assisting the wildfire response.
+PILOTV2_038,infrastructure_and_utility_damage,,3,no,Reports flood impacts on student housing properties.
+PILOTV2_039,infrastructure_and_utility_damage,,3,no,Explicitly reports a bridge destroyed by floodwaters.
+PILOTV2_040,injured_or_dead_people,sympathy_and_support,3,no,Explicitly says people died by being burned alive while condemning gloating.
+PILOTV2_041,rescue_volunteering_or_donation_effort,injured_or_dead_people,2,yes,"Includes deaths and displacement, but culminates in active assistance and a donation appeal."
+PILOTV2_042,rescue_volunteering_or_donation_effort,,3,no,Direct donation appeal to the Red Cross for Harvey victims.
+PILOTV2_043,infrastructure_and_utility_damage,caution_and_advice,2,yes,Potential contamination threatens the municipal water supply.
+PILOTV2_044,other_relevant_information,,3,no,Points to aerial imagery documenting Irma impact areas without a more specific claim.
+PILOTV2_045,infrastructure_and_utility_damage,injured_or_dead_people,2,yes,"Mixed impact summary dominated by power loss, rising water and environmental infrastructure damage."
+PILOTV2_046,caution_and_advice,displaced_people_and_evacuations,3,no,Explicit tsunami warning instructing people to evacuate to higher ground.
+PILOTV2_047,infrastructure_and_utility_damage,other_relevant_information,3,no,Reports a town and surrounding areas devastated by the Camp Fire.
+PILOTV2_048,rescue_volunteering_or_donation_effort,,3,no,Rescue unit is prepared to deploy aid after Florence.
+PILOTV2_049,caution_and_advice,sympathy_and_support,2,yes,Mentions an ongoing tsunami threat and directs readers to further advice.
+PILOTV2_050,displaced_people_and_evacuations,,3,no,Lists pet-friendly shelters for families evacuating during Irma.
