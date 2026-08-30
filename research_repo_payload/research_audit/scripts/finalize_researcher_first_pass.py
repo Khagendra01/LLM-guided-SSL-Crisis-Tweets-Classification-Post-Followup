@@ -65,18 +65,29 @@ def main() -> None:
     # treating harmless transport quoting differences as annotation changes.
     values = []
     for part_i, name in enumerate(PARTS):
-        with (STAGE / name).open(newline="", encoding="utf-8") as f:
-            parsed = list(csv.reader(f))
-        if not parsed:
+        lines = (STAGE / name).read_text(encoding="utf-8").splitlines()
+        if not lines:
             fail(f"empty recovery chunk: {name}")
         if part_i == 0:
-            if parsed[0] != EXPECTED_COLUMNS:
-                fail(f"schema mismatch in {name}: {parsed[0]}")
-            parsed = parsed[1:]
-        for line_i, row in enumerate(parsed, 1):
-            if len(row) != len(EXPECTED_COLUMNS):
-                fail(f"{name} row {line_i}: expected 6 columns, got {len(row)}")
-            values.append(row)
+            if lines[0].split(",") != EXPECTED_COLUMNS:
+                fail(f"schema mismatch in {name}: {lines[0]}")
+            lines = lines[1:]
+        for line_i, line in enumerate(lines, 1):
+            # Transport staging may have omitted CSV quoting around a rationale
+            # containing commas. The first five fields never contain commas, so
+            # split exactly five times and decode only the final rationale field.
+            pieces = line.split(",", 5)
+            if len(pieces) != 6:
+                fail(f"{name} row {line_i}: expected 6 structural fields, got {len(pieces)}")
+            aid, primary, secondary, confidence, ambiguous, reason_raw = pieces
+            if reason_raw.startswith('"') and reason_raw.endswith('"'):
+                decoded = next(csv.reader([reason_raw]))
+                if len(decoded) != 1:
+                    fail(f"{name} row {line_i}: malformed quoted rationale")
+                reason = decoded[0]
+            else:
+                reason = reason_raw
+            values.append([aid, primary, secondary, confidence, ambiguous, reason])
 
     out_buf = io.StringIO(newline="")
     writer = csv.writer(out_buf, lineterminator="\n")
