@@ -1,0 +1,64 @@
+name: Generate Audit V2 package
+
+on:
+  push:
+    branches:
+      - audit-v2-clean
+    paths:
+      - "research_repo_payload/research_audit/audit_v2_500/GENERATE_REQUEST"
+      - "research_repo_payload/research_audit/scripts/generate_audit_v2.py"
+      - ".github/workflows/generate-audit-v2.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v4
+        with:
+          ref: audit-v2-clean
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate blind sample and private key
+        env:
+          AUDIT_V2_PRIVATE_DIR: /tmp/audit_v2_private
+        run: |
+          python research_repo_payload/research_audit/scripts/generate_audit_v2.py
+
+      - name: Build annotator bundle
+        run: |
+          mkdir -p research_repo_payload/research_audit/audit_v2_500
+          zip -j research_repo_payload/research_audit/audit_v2_500/audit_v2_annotator_bundle.zip \
+            research_repo_payload/research_audit/audit_v2_500/audit_v2_500_blind.csv \
+            research_repo_payload/research_audit/audit_v2_500/annotator_A_output_template.csv \
+            research_repo_payload/research_audit/audit_v2_500/annotator_B_output_template.csv \
+            research_repo_payload/research_audit/HUMAID_AUDIT_V2_CODEBOOK.md \
+            research_repo_payload/research_audit/ANNOTATOR_INSTRUCTIONS_V2.md
+
+      - name: Upload locked hidden key
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-v2-hidden-key-locked
+          path: /tmp/audit_v2_private/
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Commit generated public artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research_repo_payload/research_audit/audit_v2_500
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "Generate reproducible Audit V2 500 package [skip ci]"
+            git push origin HEAD:audit-v2-clean
+          fi
