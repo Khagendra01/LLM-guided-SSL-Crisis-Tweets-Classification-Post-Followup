@@ -1,0 +1,222 @@
+name: Publish complete Audit V2 handoff
+
+on:
+  push:
+    branches:
+      - audit-v2-scoring-results
+    paths:
+      - "research_repo_payload/research_audit/audit_v2_500/PUBLISH_COMPLETE_HANDOFF_REQUEST"
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit-v2-scoring-results
+          fetch-depth: 0
+
+      - name: Download frozen hidden key artifact
+        run: |
+          rm -rf /tmp/audit_key
+          mkdir -p /tmp/audit_key
+          gh run download 33322504968 -n audit-v2-hidden-key-locked -D /tmp/audit_key
+          find /tmp/audit_key -maxdepth 3 -type f -print
+          test -f /tmp/audit_key/audit_v2_500_hidden_key_LOCKED.csv
+
+      - name: Run canonical scorer
+        run: |
+          rm -rf /tmp/audit_scoring
+          python research_repo_payload/research_audit/scripts/score_audit_v2.py \
+            --key /tmp/audit_key/audit_v2_500_hidden_key_LOCKED.csv \
+            --annotator researcher_first_pass=research_repo_payload/research_audit/audit_v2_500/researcher_ai_assisted_first_pass_FROZEN.csv \
+            --annotator claude=research_repo_payload/research_audit/audit_v2_500/external_model_annotations/claude_audit_v2_500_annotations.csv \
+            --annotator gemini=research_repo_payload/research_audit/audit_v2_500/external_model_annotations/gemini_audit_v2_500_annotations.csv \
+            --annotator grok=research_repo_payload/research_audit/audit_v2_500/external_model_annotations/grok_audit_v2_500_annotations.csv \
+            --outdir /tmp/audit_scoring
+
+      - name: Generate event metrics and prioritized review queue
+        run: |
+          python - <<'PY'
+          import csv, collections, json
+          from pathlib import Path
+
+          root=Path(".")
+          key_path=Path("/tmp/audit_key/audit_v2_500_hidden_key_LOCKED.csv")
+          ext=root/"research_repo_payload/research_audit/audit_v2_500/external_model_annotations"
+          first=root/"research_repo_payload/research_audit/audit_v2_500/researcher_ai_assisted_first_pass_FROZEN.csv"
+          out=root/"research_repo_payload/research_audit/audit_v2_500"
+          scoring=out/"scoring"
+          unblind=out/"unblinded_review"
+          scoring.mkdir(parents=True,exist_ok=True)
+          unblind.mkdir(parents=True,exist_ok=True)
+
+          def load(p):
+              with open(p,newline="",encoding="utf-8-sig") as f:
+                  return list(csv.DictReader(f))
+          def write(p,fields,rows):
+              with open(p,"w",newline="",encoding="utf-8") as f:
+                  w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore"); w.writeheader(); w.writerows(rows)
+
+          key=load(key_path)
+          anns={
+              "researcher_first_pass":load(first),
+              "claude":load(ext/"claude_audit_v2_500_annotations.csv"),
+              "gemini":load(ext/"gemini_audit_v2_500_annotations.csv"),
+              "grok":load(ext/"grok_audit_v2_500_annotations.csv"),
+          }
+          ids=[r["annotation_id"] for r in key]
+          assert ids==[f"AUDITV2_{i:04d}" for i in range(1,501)]
+          for name,rows in anns.items():
+              assert [r["annotation_id"] for r in rows]==ids, name
+
+          hum=[r["humaid_label"] for r in key]
+          gpt=[r["gpt4o_label"] for r in key]
+          labs={n:[r["primary_label"] for r in rows] for n,rows in anns.items()}
+          def acc(a,b): return sum(x==y for x,y in zip(a,b))/len(a)
+
+          event_rows=[]
+          for event in sorted({r["event"] for r in key}):
+              idx=[i for i,r in enumerate(key) if r["event"]==event]
+              for name,y in labs.items():
+                  yy=[y[i] for i in idx]; hh=[hum[i] for i in idx]; gg=[gpt[i] for i in idx]
+                  event_rows.append({
+                      "event":event,"annotator":name,"n":len(idx),
+                      "agreement_with_humaid":acc(yy,hh),
+                      "agreement_with_gpt4o":acc(yy,gg),
+                      "humaid_gpt4o_agreement":acc(hh,gg),
+                  })
+          write(scoring/"audit_v2_event_metrics.csv",
+                ["event","annotator","n","agreement_with_humaid","agreement_with_gpt4o","humaid_gpt4o_agreement"],event_rows)
+
+          review=[]
+          consensus_counts=collections.Counter()
+          priorities=collections.Counter()
+          for i,k in enumerate(key):
+              c=collections.Counter(labs[n][i] for n in labs)
+              top_label,top_n=c.most_common(1)[0]
+              vals=sorted(c.values(),reverse=True)
+              if vals[0]==4: kind="4_of_4"
+              elif vals[0]==3: kind="3_of_4"
+              elif vals[0]==2 and len(c)==2: kind="2_2_tie"
+              elif vals[0]==2: kind="2_1_1"
+              else: kind="all_different"
+              consensus_counts[kind]+=1
+              if top_n==4 and top_label!=hum[i]:
+                  priority="P1_unanimous_models_disagree_with_HumAID"
+              elif top_n==3 and top_label!=hum[i]:
+                  priority="P2_3of4_models_disagree_with_HumAID"
+              elif top_n<3:
+                  priority="P3_model_split"
+              else:
+                  priority="P4_strong_model_consensus_matches_HumAID"
+              priorities[priority]+=1
+              review.append({
+                  "review_priority":priority,
+                  "annotation_id":k["annotation_id"],
+                  "event":k["event"],
+                  "tweet_id":k["tweet_id"],
+                  "tweet_text":k["tweet_text"],
+                  "humaid_label":hum[i],
+                  "gpt4o_label":gpt[i],
+                  "gpt4o_confidence":k["gpt4o_confidence"],
+                  "humaid_gpt4o_agree":"yes" if hum[i]==gpt[i] else "no",
+                  "researcher_first_pass":labs["researcher_first_pass"][i],
+                  "claude":labs["claude"][i],
+                  "gemini":labs["gemini"][i],
+                  "grok":labs["grok"][i],
+                  "model_consensus_type":kind,
+                  "model_top_label":top_label if top_n>=3 else "",
+                  "model_top_count":top_n,
+                  "researcher_ambiguous":anns["researcher_first_pass"][i]["ambiguous"],
+                  "claude_ambiguous":anns["claude"][i]["ambiguous"],
+                  "gemini_ambiguous":anns["gemini"][i]["ambiguous"],
+                  "grok_ambiguous":anns["grok"][i]["ambiguous"],
+                  "human_review_status":"pending",
+                  "final_primary_label":"",
+                  "review_action":"",
+                  "review_notes":"",
+              })
+          rank={"P1_unanimous_models_disagree_with_HumAID":1,
+                "P2_3of4_models_disagree_with_HumAID":2,
+                "P3_model_split":3,
+                "P4_strong_model_consensus_matches_HumAID":4}
+          review.sort(key=lambda r:(rank[r["review_priority"]],r["annotation_id"]))
+          write(unblind/"researcher_review_queue_prioritized_UNBLINDED.csv",list(review[0].keys()),review)
+
+          (unblind/"review_queue_summary.json").write_text(json.dumps({
+              "rows":500,
+              "all_human_review_status":"pending",
+              "consensus_counts":dict(consensus_counts),
+              "priority_counts":dict(priorities),
+              "warning":"This directory is unblinded: it contains original HumAID labels, GPT-4o labels/confidence, tweet IDs, and model judgments."
+          },indent=2)+"\n",encoding="utf-8")
+          PY
+
+      - name: Publish complete unblinded handoff files
+        run: |
+          BASE=research_repo_payload/research_audit/audit_v2_500
+          mkdir -p "$BASE/unblinded_review"
+          cp /tmp/audit_key/audit_v2_500_hidden_key_LOCKED.csv "$BASE/unblinded_review/"
+          cp /tmp/audit_scoring/per_class_metrics.csv "$BASE/scoring/audit_v2_per_class_metrics.csv"
+          cp /tmp/audit_scoring/ambiguity_summary.csv "$BASE/scoring/audit_v2_ambiguity_summary.csv"
+          cp /tmp/audit_scoring/validation.json "$BASE/scoring/audit_v2_canonical_scorer_validation.json"
+          cp /tmp/audit_scoring/adjudication_queue.csv "$BASE/unblinded_review/canonical_adjudication_queue_UNBLINDED.csv"
+          cp /tmp/audit_scoring/headline_metrics.csv "$BASE/scoring/audit_v2_headline_metrics_CANONICAL.csv"
+          cp /tmp/audit_scoring/contested_siding.csv "$BASE/scoring/audit_v2_contested_siding_CANONICAL.csv"
+
+          {
+            echo "# Audit V2 complete agent handoff"
+            echo
+            echo "This branch is now intentionally **UNBLINDED** for adjudication/review."
+            echo
+            echo "## Start here"
+            echo "- Blind sample: `audit_v2_500_blind.csv`"
+            echo "- Researcher AI-assisted first pass: `researcher_ai_assisted_first_pass_FROZEN.csv`"
+            echo "- External model outputs: `external_model_annotations/`"
+            echo "- Aggregate scoring: `scoring/`"
+            echo "- Row-level hidden key and review queues: `unblinded_review/`"
+            echo "- Human review ledger: `researcher_human_review_ledger.csv`"
+            echo "- Codebook: `../HUMAID_AUDIT_V2_CODEBOOK.md`"
+            echo "- Annotation provenance: `../ANNOTATION_PROVENANCE_V2.md`"
+            echo "- Scorer: `../scripts/score_audit_v2.py`"
+            echo
+            echo "## Critical status"
+            echo "- All 500 external model annotations are frozen before unblinding."
+            echo "- All 500 human-review ledger rows remain `pending`."
+            echo "- Do not describe any row as human-reviewed until the researcher records acceptance/change."
+            echo "- Audit V2 is disagreement-enriched (25 HumAID/GPT agreements + 25 disagreements per event); agreement rates are audit statistics, not ordinary test accuracy."
+          } > "$BASE/AGENT_HANDOFF.md"
+
+          {
+            echo "# UNBLINDED REVIEW DATA"
+            echo
+            echo "This directory intentionally exposes the locked Audit V2 key after all external annotation passes were frozen."
+            echo
+            echo "Contains:"
+            echo "- `audit_v2_500_hidden_key_LOCKED.csv` — full source key with HumAID/GPT-4o labels."
+            echo "- `researcher_review_queue_prioritized_UNBLINDED.csv` — all 500 rows prioritized for researcher review."
+            echo "- `canonical_adjudication_queue_UNBLINDED.csv` — scorer-generated disagreement/adjudication rows."
+            echo "- `review_queue_summary.json` — consensus and priority counts."
+            echo
+            echo "Do not use these files for any future blind annotation pass."
+          } > "$BASE/unblinded_review/README.md"
+
+          find "$BASE" -type f -print0 | sort -z | xargs -0 sha256sum > "$BASE/COMPLETE_HANDOFF_MANIFEST.sha256"
+
+      - name: Commit complete handoff
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research_repo_payload/research_audit/audit_v2_500
+          git rm research_repo_payload/research_audit/audit_v2_500/PUBLISH_COMPLETE_HANDOFF_REQUEST
+          git commit -m "Publish complete unblinded Audit V2 agent handoff [skip ci]"
+          git fetch origin audit-v2-scoring-results
+          git rebase origin/audit-v2-scoring-results
+          git push origin HEAD:audit-v2-scoring-results
