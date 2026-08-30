@@ -3,49 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Audit V2 Human Review</title>
+<title>Audit V2 — Human Review</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-<header>
-<div class="progress-wrap">
-<div class="progress-bar"><div id="progFill"></div></div>
-<div id="progText"></div>
-</div>
-<div class="counts"><span id="counts"></span> <span id="counts2"></span></div>
-<nav>
-<button id="exportBtn">Export</button>
-<button id="validateBtn">Validate</button>
-</nav>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">A2</div>
+    <div>
+      <div class="brand-title">Audit V2 Review</div>
+      <div class="brand-sub" id="progText">0/500</div>
+    </div>
+  </div>
+  <div class="progress-col">
+    <div class="progress-bar"><div id="progFill"></div></div>
+    <div class="progress-meta"><span id="counts"></span><span id="counts2"></span></div>
+  </div>
+  <div class="top-actions">
+    <button class="btn ghost" id="guideToggle">Guide</button>
+    <button class="btn ghost" id="validateBtn">Validate</button>
+    <button class="btn primary" id="exportBtn">Export</button>
+  </div>
 </header>
-<div class="layout">
-<aside id="sidebar">
-<h3>Label Guide</h3>
-<div id="labelGuide"></div>
-<h3>Tie-breaking</h3>
-<ol id="tieList"></ol>
-</aside>
-<main>
-<div class="filters">
-<select id="fPriority"><option value="">All priorities</option><option>P1_unanimous_models_disagree_with_HumAID</option><option>P2_3of4_models_disagree_with_HumAID</option><option>P3_model_split</option><option>P4_strong_model_consensus_matches_HumAID</option></select>
-<select id="fEvent"><option value="">All events</option></select>
-<select id="fStatus"><option value="">All status</option><option value="pending">Pending</option><option value="reviewed">Reviewed</option><option value="bookmarked">Bookmarked</option></select>
-<select id="fConsensus"><option value="">All consensus</option><option>4_of_4</option><option>3_of_4</option><option>2_1_1</option><option>2_2_tie</option><option>all_different</option></select>
-<input id="jumpId" placeholder="AUDITV2_0001" size="14"><button id="jumpBtn">Jump</button>
+
+<div class="toolbar">
+  <div class="filters">
+    <select id="fPriority" class="pill"><option value="">All priorities</option><option value="P1_unanimous_models_disagree_with_HumAID">P1 Unanimous</option><option value="P2_3of4_models_disagree_with_HumAID">P2 3/4</option><option value="P3_model_split">P3 Split</option><option value="P4_strong_model_consensus_matches_HumAID">P4 Match</option></select>
+    <select id="fEvent" class="pill"><option value="">All events</option></select>
+    <select id="fStatus" class="pill"><option value="">All status</option><option value="pending">Pending</option><option value="reviewed">Reviewed</option><option value="bookmarked">★ Bookmarks</option></select>
+    <select id="fConsensus" class="pill"><option value="">All consensus</option><option value="4_of_4">4/4</option><option value="3_of_4">3/4</option><option value="2_1_1">2-1-1</option><option value="2_2_tie">2-2 tie</option><option value="all_different">All diff</option></select>
+    <div class="search">
+      <input id="jumpId" placeholder="AUDITV2_0001" spellcheck="false">
+      <button id="jumpBtn" class="btn small">Go</button>
+    </div>
+  </div>
+  <div class="nav-row">
+    <button id="prevBtn" class="btn ghost">← Prev</button>
+    <div id="posLabel" class="pos"></div>
+    <button id="nextBtn" class="btn ghost">Next →</button>
+    <button id="bookmarkBtn" class="btn ghost">☆ Bookmark</button>
+    <button id="skipBtn" class="btn ghost">Skip</button>
+  </div>
 </div>
-<div id="queueList" class="queue"></div>
-<div id="card" class="card"></div>
-<div id="evidencePanel" class="evidence hidden"></div>
-<div id="controls">
-<button id="prevBtn">Prev (←)</button>
-<button id="nextBtn">Next (→)</button>
-<button id="bookmarkBtn">Bookmark (b)</button>
-<button id="skipBtn">Skip (s)</button>
+
+<div class="app">
+  <aside class="queue-pane">
+    <div class="pane-head">Queue <span id="queueCount"></span></div>
+    <div id="queueList" class="queue"></div>
+  </aside>
+
+  <main class="card-pane">
+    <div id="card"></div>
+  </main>
+
+  <aside class="guide-pane" id="guidePane">
+    <div class="pane-head">Label Guide <button class="btn small ghost" id="guideClose">✕</button></div>
+    <div id="labelGuide" class="guide"></div>
+    <div class="guide-section">
+      <h4>Tie-breaking</h4>
+      <ol id="tieList"></ol>
+    </div>
+    <div class="kbd-help">
+      <h4>Shortcuts</h4>
+      <div><kbd>←</kbd><kbd>→</kbd> prev/next &nbsp; <kbd>b</kbd> bookmark &nbsp; <kbd>s</kbd> skip &nbsp; <kbd>Ctrl+S</kbd> save &nbsp; <kbd>Ctrl+Enter</kbd> finalize</div>
+    </div>
+  </aside>
 </div>
-<div id="reviewScreen" class="hidden"></div>
-</main>
-</div>
-<div id="msg"></div>
+
+<div id="msg" class="toast"></div>
 <script src="/static/app.js"></script>
 </body>
 </html>

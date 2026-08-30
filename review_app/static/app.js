@@ -1,20 +1,19 @@
-let currentId=null, currentData=null, legal=[], guide=[];
+let currentId=null, currentData=null, legal=[], guide=[], selPrimary='', selSecondary='', selFinal='', selFinalSec='';
 const el=id=>document.getElementById(id);
-function msg(t, isErr){ const m=el('msg'); m.textContent=t; m.style.display='block'; m.style.background=isErr?'#a33':'#333'; setTimeout(()=>m.style.display='none',2500); }
-
-async function fetchJSON(u, opts){ const r=await fetch(u, opts); const j=await r.json(); if(!r.ok) throw new Error(j.error||'error'); return j; }
+function msg(t, isErr){ const m=el('msg'); m.textContent=t; m.style.display='block'; m.style.background=isErr?'#991b1b':'#111827'; setTimeout(()=>m.style.display='none',2600); }
+async function fetchJSON(u, opts){ const r=await fetch(u, opts); const j=await r.json().catch(()=>({})); if(!r.ok) throw new Error(j.error||'error'); return j; }
+function esc(s){ const d=document.createElement('div'); d.textContent=s==null?'':String(s); return d.innerHTML; }
 
 async function init(){
  const lab=await fetchJSON('/api/labels'); legal=lab.legal; guide=lab.labels;
- el('labelGuide').innerHTML=guide.map(g=>`<div class="def"><b>${g.id}</b>: ${esc(g.def)}<br><em>${g.ex.map(esc).join(' | ')}</em></div>`).join('');
+ el('labelGuide').innerHTML=guide.map(g=>`<div class="gitem"><b>${esc(g.id)}</b><div>${esc(g.def)}</div><div style="font-style:italic;color:#9ca3af">${g.ex.map(esc).join(' • ')}</div></div>`).join('');
  el('tieList').innerHTML=lab.ties.map(t=>`<li>${esc(t)}</li>`).join('');
  const prog=await fetchJSON('/api/progress');
  el('fEvent').innerHTML='<option value="">All events</option>'+prog.events.map(e=>`<option>${esc(e)}</option>`).join('');
  updateProgress(prog);
  loadQueue();
- // key
- const state=await fetchJSON('/api/queue');
- if(state.length){ loadItem(state[0].annotation_id); }
+ const q=await fetchJSON('/api/queue');
+ if(q.length) loadItem(q[0].annotation_id);
  document.addEventListener('keydown', onKey);
  el('prevBtn').onclick=()=>nav(-1);
  el('nextBtn').onclick=()=>nav(1);
@@ -23,131 +22,161 @@ async function init(){
  el('jumpBtn').onclick=()=>{ const v=el('jumpId').value.trim().toUpperCase(); if(v) loadItem(v); };
  el('exportBtn').onclick=doExport;
  el('validateBtn').onclick=doValidate;
- el('fPriority').onchange=loadQueue;
- el('fEvent').onchange=loadQueue;
- el('fStatus').onchange=loadQueue;
- el('fConsensus').onchange=loadQueue;
+ ['fPriority','fEvent','fStatus','fConsensus'].forEach(id=>el(id).onchange=loadQueue);
+ el('guideToggle').onclick=()=>el('guidePane').classList.toggle('open');
+ el('guideClose').onclick=()=>el('guidePane').classList.remove('open');
 }
-function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
-
 async function updateProgress(p){
- if(!p){ p=await fetchJSON('/api/progress'); }
+ if(!p) p=await fetchJSON('/api/progress');
  el('progFill').style.width=((p.reviewed/p.total*100).toFixed(1))+'%';
- el('progText').textContent=`${p.reviewed}/${p.total} reviewed (${(p.reviewed/p.total*100).toFixed(1)}%)`;
- el('counts').textContent=`Reviewed:${p.reviewed} Pending:${p.pending}`;
- el('counts2').textContent=` Accepted:${p.accepted} Changed:${p.changed} Bookmarked:${p.bookmarked}`;
+ el('progText').textContent=`${p.reviewed}/${p.total} reviewed • ${(p.reviewed/p.total*100).toFixed(1)}%`;
+ el('counts').textContent=`Reviewed ${p.reviewed} · Pending ${p.pending}`;
+ el('counts2').textContent=` · Accepted ${p.accepted} · Changed ${p.changed} · ★ ${p.bookmarked}`;
 }
-
 async function loadQueue(){
- const qs=new URLSearchParams({
-  priority:el('fPriority').value,
-  event:el('fEvent').value,
-  status:el('fStatus').value,
-  consensus:el('fConsensus').value,
-  q:''
- });
+ const qs=new URLSearchParams({priority:el('fPriority').value,event:el('fEvent').value,status:el('fStatus').value,consensus:el('fConsensus').value,q:''});
  const list=await fetchJSON('/api/queue?'+qs.toString());
- el('queueList').innerHTML=list.map(r=>`<div data-id="${r.annotation_id}" class="${r.annotation_id===currentId?'active':''}">${esc(r.annotation_id)} ${esc(r.review_priority)} ${esc(r.event)} ${r.human_review_status} ${r.bookmarked?'★':''}</div>`).join('');
- el('queueList').querySelectorAll('div').forEach(d=>d.onclick=()=>loadItem(d.dataset.id));
+ el('queueCount').textContent=`(${list.length})`;
+ el('queueList').innerHTML=list.map(r=>`
+  <div class="queue-item ${r.annotation_id===currentId?'active':''}" data-id="${r.annotation_id}">
+    <div class="q-top"><span>${esc(r.annotation_id)}</span><span>${r.bookmarked?'★':''} <span class="badge ${r.human_review_status}">${r.human_review_status}</span></span></div>
+    <div class="q-bottom"><span class="badge">${esc(r.review_priority.replace('P1_','P1 ').replace('P2_','P2 ').replace('P3_','P3 ').replace('P4_','P4 ').slice(0,22))}</span><span>${esc(r.event)}</span><span>${esc(r.model_consensus_type)}</span></div>
+  </div>`).join('');
+ el('queueList').querySelectorAll('.queue-item').forEach(d=>d.onclick=()=>loadItem(d.dataset.id));
 }
-
 async function loadItem(id){
  currentId=id;
  const d=await fetchJSON('/api/item/'+id);
  currentData=d;
+ selPrimary=d.initial_primary_label||''; selSecondary=d.initial_secondary_label||''; selFinal=d.final_primary_label||d.initial_primary_label||''; selFinalSec=d.final_secondary_label||'';
  renderCard(d);
  loadQueue();
  updateProgress();
+ const pos=el('posLabel'); if(pos) pos.textContent=`${d.index+1} / ${d.total}`;
+ const bm=el('bookmarkBtn'); if(bm) bm.textContent=(d.bookmarked?'★ Bookmarked':'☆ Bookmark');
 }
-
+function labelButtons(selected, secondary, prefix){
+ return `<div class="label-grid">${guide.map(g=>{
+  const isSel = selected===g.id;
+  const isSec = secondary===g.id;
+  const cls = isSel?'label-btn selected': isSec?'label-btn selected secondary': 'label-btn';
+  return `<button class="${cls}" data-val="${g.id}" data-kind="${prefix}"><div class="name">${esc(g.id)}</div><div class="desc">${esc(g.def)}</div><div class="ex">${esc(g.ex[0])}</div></button>`;
+ }).join('')}</div>`;
+}
+function segButtons(name, value){
+ return `<div class="seg" data-name="${name}">
+  <button data-v="1" class="${value==='1'?'selected':''}">1 — tied / poor</button>
+  <button data-v="2" class="${value==='2'?'selected':''}">2 — plausible alt</button>
+  <button data-v="3" class="${value==='3'?'selected':''}">3 — clearly best</button>
+ </div>`;
+}
+function toggleButtons(name, value){
+ return `<div class="toggle" data-name="${name}">
+  <button data-v="yes" class="${value==='yes'?'selected':''}">yes — ambiguous</button>
+  <button data-v="no" class="${value==='no'?'selected':''}">no — clear</button>
+ </div>`;
+}
 function renderCard(d){
- const opts=legal.map(l=>`<option value="${l}" ${d.initial_primary_label===l?'selected':''}>${l}</option>`).join('');
- const opts2='<option value="">(none)</option>'+legal.map(l=>`<option value="${l}" ${d.initial_secondary_label===l?'selected':''}>${l}</option>`).join('');
- const finalOpts=legal.map(l=>`<option value="${l}" ${d.final_primary_label===l?'selected':''}>${l}</option>`).join('');
- const finalOpts2='<option value="">(none)</option>'+legal.map(l=>`<option value="${l}" ${d.final_secondary_label===l?'selected':''}>${l}</option>`).join('');
- let html=`<div><small>${esc(d.annotation_id)} | ${esc(d.review_priority)} | ${esc(d.event)} | ${d.human_review_status} ${d.bookmarked?'★':''} | ${d.index+1}/${d.total}</small></div>
+ let html=`<div class="meta-line">
+  <span class="chip">${esc(d.annotation_id)}</span>
+  <span class="chip">${esc(d.review_priority)}</span>
+  <span class="chip">${esc(d.event)}</span>
+  <span class="chip">${d.human_review_status}</span>
+  ${d.bookmarked?'<span class="chip">★ bookmarked</span>':''}
+ </div>
  <div class="tweet">${esc(d.tweet_text)}</div>`;
  if(d.is_reviewed){
-   html+=`<p><em>Already reviewed — edit mode available</em> <button id="editBtn">Edit</button></p>`;
+   html+=`<div style="margin-top:10px;padding:10px;background:#dcfce7;border:1px solid #86efac;border-radius:10px;font-size:13px">Already reviewed — <button id="editBtn" class="btn small">Edit & re-finalize</button></div>`;
  }
- html+=`<div class="label-row"><label>Primary (required)</label><select id="ip">${opts}</select></div>
- <div class="label-row"><label>Secondary (optional)</label><select id="is">${opts2}</select></div>
- <div class="label-row"><label>Confidence: 3=clearly best, 2=plausible alternative, 1=nearly tied</label><select id="ic"><option value="">--</option><option value="3" ${d.initial_confidence=='3'?'selected':''}>3</option><option value="2" ${d.initial_confidence=='2'?'selected':''}>2</option><option value="1" ${d.initial_confidence=='1'?'selected':''}>1</option></select></div>
- <div class="label-row"><label>Ambiguity</label><select id="ia"><option value="">--</option><option value="yes" ${d.initial_ambiguous=='yes'?'selected':''}>yes</option><option value="no" ${d.initial_ambiguous=='no'?'selected':''}>no</option></select></div>
- <div class="label-row"><label>Reason / notes (required, ≥5 chars)</label><textarea id="ir" rows="3">${esc(d.initial_reason||'')}</textarea></div>
- <button id="saveInitial">Save initial (Ctrl+S)</button>`;
+ html+=`<div class="section"><h3>Stage 1 — Your independent decision</h3>
+  <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Click a label to select. Choose secondary only if genuinely plausible (cannot equal primary).</div>
+  <label style="font-weight:700;font-size:12px">Primary label</label>
+  ${labelButtons(selPrimary,'', 'primary')}
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Secondary (optional) — click to toggle</label>
+  ${labelButtons(selSecondary,'', 'secondary')}</div>
+  <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Confidence</label>${segButtons('ic', d.initial_confidence)}</div>
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Ambiguity</label>${toggleButtons('ia', d.initial_ambiguous)}</div>
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Reason / notes (≥5 chars)</label><textarea id="ir" rows="3" placeholder="Why this label is best...">${esc(d.initial_reason||'')}</textarea></div>
+  <div class="action-row"><button id="saveInitial" class="btn primary">Save initial → reveal evidence</button><span style="font-size:12px;color:#6b7280;align-self:center">Ctrl+S</span></div>
+ </div>`;
 
  if(d.evidence_visible){
-   html+=`<div class="evidence"><h4>Evidence (revealed ${esc(d.evidence_revealed_at_utc||'')})</h4>
-   <table>
-   <tr><td>HumAID</td><td>${esc(d.humaid_label||'')}</td></tr>
-   <tr><td>GPT-4o</td><td>${esc(d.gpt4o_label||'')} conf ${esc(d.gpt4o_confidence||'')}</td></tr>
-   <tr><td>Researcher first pass</td><td>${esc(d.researcher_first_pass||'')} sec:${esc(d.researcher_first_pass_secondary||'')} conf:${esc(d.researcher_first_pass_confidence||'')} amb:${esc(d.researcher_first_pass_ambiguous||'')}</td></tr>
-   <tr><td>Claude</td><td>${esc(d.claude||'')} amb:${esc(d.claude_ambiguous||'')} sec:${esc(d.claude_secondary||'')}</td></tr>
-   <tr><td>Gemini</td><td>${esc(d.gemini||'')} amb:${esc(d.gemini_ambiguous||'')}</td></tr>
-   <tr><td>Grok</td><td>${esc(d.grok||'')} amb:${esc(d.grok_ambiguous||'')}</td></tr>
-   <tr><td>Consensus</td><td>${esc(d.model_consensus_type||'')} top:${esc(d.model_top_label||'')} count:${esc(d.model_top_count||'')}</td></tr>
-   <tr><td>Bulk AI recommendation</td><td>${esc(d.bulk_ai_recommended_label||'')} basis:${esc(d.bulk_recommendation_basis||'')}</td></tr>
+   html+=`<div class="evidence"><h3 style="margin:0 0 8px">Stage 2 — Evidence & final adjudication</h3>
+   <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Revealed ${esc(d.evidence_revealed_at_utc||'')}. Keep your initial or adopt another — then Finalize.</div>
+   <table class="ev-table">
+    <tr><td>HumAID</td><td>${esc(d.humaid_label)}</td></tr>
+    <tr><td>GPT-4o</td><td>${esc(d.gpt4o_label)} <span style="color:#6b7280">conf ${esc(d.gpt4o_confidence)}</span></td></tr>
+    <tr><td>Researcher 1st pass</td><td>${esc(d.researcher_first_pass)} ${d.researcher_first_pass_secondary?'→ '+esc(d.researcher_first_pass_secondary):''} <span style="color:#6b7280">c${esc(d.researcher_first_pass_confidence)} ${esc(d.researcher_first_pass_ambiguous)}</span></td></tr>
+    <tr><td>Claude</td><td>${esc(d.claude)} <span style="color:#6b7280">amb ${esc(d.claude_ambiguous)}</span></td></tr>
+    <tr><td>Gemini</td><td>${esc(d.gemini)} <span style="color:#6b7280">amb ${esc(d.gemini_ambiguous)}</span></td></tr>
+    <tr><td>Grok</td><td>${esc(d.grok)} <span style="color:#6b7280">amb ${esc(d.grok_ambiguous)}</span></td></tr>
+    <tr><td>Consensus</td><td>${esc(d.model_consensus_type)} · top ${esc(d.model_top_label)} (${esc(d.model_top_count)})</td></tr>
+    <tr><td>Bulk AI rec.</td><td>${esc(d.bulk_ai_recommended_label)} <span style="color:#6b7280">${esc(d.bulk_recommendation_basis)}</span></td></tr>
    </table>
-   <div class="label-row"><label>Final primary</label><select id="fp">${finalOpts}</select></div>
-   <div class="label-row"><label>Final secondary</label><select id="fs">${finalOpts2}</select></div>
-   <div class="label-row"><label>Final confidence</label><select id="fc"><option value="">--</option><option value="3" ${d.final_confidence=='3'?'selected':''}>3</option><option value="2" ${d.final_confidence=='2'?'selected':''}>2</option><option value="1" ${d.final_confidence=='1'?'selected':''}>1</option></select></div>
-   <div class="label-row"><label>Final ambiguity</label><select id="fa"><option value="">--</option><option value="yes" ${d.final_ambiguous=='yes'?'selected':''}>yes</option><option value="no" ${d.final_ambiguous=='no'?'selected':''}>no</option></select></div>
-   <div class="label-row"><label>Final notes</label><textarea id="fn" rows="3">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
-   <button id="finalBtn">Finalize (Ctrl+Enter)</button>
+   <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Final primary</label>${labelButtons(selFinal,'', 'final')}</div>
+   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final secondary</label>${labelButtons(selFinalSec,'', 'finalSec')}</div>
+   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final confidence</label>${segButtons('fc', d.final_confidence||d.initial_confidence)}</div>
+   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final ambiguity</label>${toggleButtons('fa', d.final_ambiguous||d.initial_ambiguous)}</div>
+   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final notes</label><textarea id="fn" rows="3">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
+   <div class="action-row"><button id="finalBtn" class="btn primary">✓ Finalize (marks reviewed)</button><span style="font-size:12px;color:#6b7280">Ctrl+Enter</span></div>
    </div>`;
  } else if(d.has_initial){
-   html+=`<button id="revealBtn">Reveal evidence</button>`;
+   html+=`<div style="margin-top:12px"><button id="revealBtn" class="btn primary">Reveal evidence</button></div>`;
  }
  el('card').innerHTML=html;
- // handlers
+ attachCardHandlers(d);
+}
+function attachCardHandlers(d){
+ document.querySelectorAll('.label-btn').forEach(b=>{
+   b.onclick=()=>{
+     const v=b.dataset.val, kind=b.dataset.kind;
+     if(kind==='primary') selPrimary=v;
+     if(kind==='secondary') selSecondary = (selSecondary===v?'':v);
+     if(kind==='final') selFinal=v;
+     if(kind==='finalSec') selFinalSec = (selFinalSec===v?'':v);
+     if(selSecondary===selPrimary) selSecondary='';
+     if(selFinalSec===selFinal) selFinalSec='';
+     renderCard(currentData);
+   };
+ });
+ document.querySelectorAll('.seg').forEach(g=>{
+   g.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+     g.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));
+     b.classList.add('selected'); g.dataset.value=b.dataset.v;
+   });
+ });
+ document.querySelectorAll('.toggle').forEach(g=>{
+   g.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+     g.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));
+     b.classList.add('selected'); g.dataset.value=b.dataset.v;
+   });
+ });
  const si=el('saveInitial'); if(si) si.onclick=saveInitial;
  const rb=el('revealBtn'); if(rb) rb.onclick=reveal;
  const fb=el('finalBtn'); if(fb) fb.onclick=finalize;
  const eb=el('editBtn'); if(eb) eb.onclick=editMode;
- // prevent Enter in textarea submitting
  ['ir','fn'].forEach(id=>{ const e=el(id); if(e) e.addEventListener('keydown', ev=>{ if(ev.key==='Enter' && !ev.ctrlKey) ev.stopPropagation(); }); });
 }
+function getSegVal(name){ const g=document.querySelector(`.seg[data-name="${name}"]`); if(!g) return ''; const s=g.querySelector('.selected'); if(s) return s.dataset.v; return g.dataset.value||''; }
+function getToggleVal(name){ const g=document.querySelector(`.toggle[data-name="${name}"]`); if(!g) return ''; const s=g.querySelector('.selected'); if(s) return s.dataset.v; return g.dataset.value||''; }
 
 async function saveInitial(){
- const payload={
-  initial_primary_label: el('ip').value,
-  initial_secondary_label: el('is').value,
-  initial_confidence: el('ic').value,
-  initial_ambiguous: el('ia').value,
-  initial_reason: el('ir').value
- };
- try{ await fetchJSON('/api/item/'+currentId+'/initial', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)}); msg('Initial saved'); loadItem(currentId); } catch(e){ msg(e.message,true); }
+ const payload={initial_primary_label:selPrimary,initial_secondary_label:selSecondary,initial_confidence:getSegVal('ic'),initial_ambiguous:getToggleVal('ia'),initial_reason:el('ir').value};
+ try{ await fetchJSON('/api/item/'+currentId+'/initial',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); msg('Initial saved'); loadItem(currentId); } catch(e){ msg(e.message,true); }
 }
-async function reveal(){
- try{ await fetchJSON('/api/item/'+currentId+'/reveal', {method:'POST', headers:{'Content-Type':'application/json'}, body:'{}'}); msg('Evidence revealed'); loadItem(currentId); } catch(e){ msg(e.message,true); }
-}
+async function reveal(){ try{ await fetchJSON('/api/item/'+currentId+'/reveal',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); msg('Evidence revealed'); loadItem(currentId); } catch(e){ msg(e.message,true); } }
 async function finalize(){
- if(!confirm('Finalize this row? This marks it human-reviewed.')) return;
- const payload={
-  final_primary_label: el('fp').value,
-  final_secondary_label: el('fs').value,
-  final_confidence: el('fc').value,
-  final_ambiguous: el('fa').value,
-  review_notes: el('fn').value
- };
- try{ await fetchJSON('/api/item/'+currentId+'/finalize', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)}); msg('Finalized'); loadItem(currentId); } catch(e){ msg(e.message,true); }
+ if(!confirm('Finalize? Marks human-reviewed.')) return;
+ const payload={final_primary_label:selFinal,final_secondary_label:selFinalSec,final_confidence:getSegVal('fc'),final_ambiguous:getToggleVal('fa'),review_notes:el('fn').value};
+ try{ await fetchJSON('/api/item/'+currentId+'/finalize',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); msg('Finalized ✓'); loadItem(currentId); } catch(e){ msg(e.message,true); }
 }
-async function editMode(){
- await fetchJSON('/api/item/'+currentId+'/edit', {method:'POST', headers:{'Content-Type':'application/json'}, body:'{}'}); msg('Edit mode enabled'); loadItem(currentId);
-}
-async function toggleBookmark(){
- await fetchJSON('/api/bookmark/'+currentId, {method:'POST', headers:{'Content-Type':'application/json'}, body:'{}'}); loadItem(currentId); updateProgress();
-}
-function nav(dir){
- if(!currentData) return;
- const nid=dir<0?currentData.prev_id:currentData.next_id;
- if(nid) loadItem(nid);
-}
+async function editMode(){ await fetchJSON('/api/item/'+currentId+'/edit',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); msg('Edit mode'); loadItem(currentId); }
+async function toggleBookmark(){ await fetchJSON('/api/bookmark/'+currentId,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); loadItem(currentId); updateProgress(); }
+function nav(dir){ if(!currentData) return; const nid=dir<0?currentData.prev_id:currentData.next_id; if(nid) loadItem(nid); }
 function onKey(e){
- if(e.target.tagName==='TEXTAREA' || e.target.tagName==='INPUT' || e.target.tagName==='SELECT') {
+ if(e.target.tagName==='TEXTAREA' || e.target.tagName==='INPUT'){
    if(e.ctrlKey && e.key==='s'){ e.preventDefault(); saveInitial(); }
-   if(e.ctrlKey && e.key==='Enter'){ e.preventDefault(); if(el('finalBtn')) finalize(); }
+   if(e.ctrlKey && e.key==='Enter'){ e.preventDefault(); const f=el('finalBtn'); if(f) finalize(); }
    return;
  }
  if(e.key==='ArrowLeft') nav(-1);
@@ -155,10 +184,6 @@ function onKey(e){
  if(e.key==='b') toggleBookmark();
  if(e.key==='s') nav(1);
 }
-async function doExport(){
- try{ const r=await fetchJSON('/api/export', {method:'POST'}); msg('Exported to '+r.dir); } catch(e){ msg(e.message,true); }
-}
-async function doValidate(){
- const r=await fetchJSON('/api/validation'); if(r.issues.length) msg('Issues: '+JSON.stringify(r.issues).slice(0,300),true); else msg('All valid: '+r.total);
-}
+async function doExport(){ try{ const r=await fetchJSON('/api/export',{method:'POST'}); msg('Exported to '+r.dir); } catch(e){ msg(e.message,true); } }
+async function doValidate(){ const r=await fetchJSON('/api/validation'); if(r.issues.length) msg('Issues: '+JSON.stringify(r.issues).slice(0,300),true); else msg('All valid: '+r.total); }
 init();
