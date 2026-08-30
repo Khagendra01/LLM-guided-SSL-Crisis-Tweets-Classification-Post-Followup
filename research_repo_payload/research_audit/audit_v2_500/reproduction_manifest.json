@@ -1,0 +1,76 @@
+{
+  "algorithm_version": "audit-v2-stratified-balanced-v1",
+  "seed": "audit-v2-500-2026-08-30-v1",
+  "source_repo_commit": "d9d1b918f0a59e468e09d657091bfb5f75bfbd5d",
+  "events": [
+    "california_wildfires_2018",
+    "canada_wildfires_2016",
+    "cyclone_idai_2019",
+    "hurricane_dorian_2019",
+    "hurricane_florence_2018",
+    "hurricane_harvey_2017",
+    "hurricane_irma_2017",
+    "hurricane_maria_2017",
+    "kaikoura_earthquake_2016",
+    "kerala_floods_2018"
+  ],
+  "sample_size": 500,
+  "per_event": 50,
+  "per_event_agree": 25,
+  "per_event_disagree": 25,
+  "excluded_old_pilot_tweet_ids": 50,
+  "excluded_pilot_v2_tweet_ids": 50,
+  "selected_unique_tweet_ids": 500,
+  "annotation_owner": "Khagendra01",
+  "annotation_method": "AI-assisted first pass under researcher direction",
+  "human_reviewer": "Khagendra01",
+  "final_decision_authority": "Khagendra01",
+  "human_review_status": "tracked row-by-row; pending until researcher acceptance/change is recorded",
+  "human_review_ledger": "research_repo_payload/research_audit/audit_v2_500/researcher_human_review_ledger.csv",
+  "provenance_document": "research_repo_payload/research_audit/ANNOTATION_PROVENANCE_V2.md",
+  "source_files": {
+    "california_wildfires_2018": {
+      "path": "data/pseudo-labelled/gpt-4o/california_wildfires_2018/california_wildfires_2018_train_pred.csv",
+      "sha256": "a5bcd787ca34ff186ce87560cbdb2beee98f4251df3199e2456d45e9e2908a3d"
+    },
+    "canada_wildfires_2016": {
+      "path": "data/pseudo-labelled/gpt-4o/canada_wildfires_2016/canada_wildfires_2016_train_pred.csv",
+      "sha256": "fe2aa332343e339baa7f9c0d914a389e15b2cc239f95fe70a8aae501962742fb"
+    },
+    "cyclone_idai_2019": {
+      "path": "data/pseudo-labelled/gpt-4o/cyclone_idai_2019/cyclone_idai_2019_train_pred.csv",
+      "sha256": "77f09798193164ae53cefa475ff142f8815ff73ccb73043e4db4029dbf918a97"
+    },
+    "hurricane_dorian_2019": {
+      "path": "data/pseudo-labelled/gpt-4o/hurricane_dorian_2019/hurricane_dorian_2019_train_pred.csv",
+      "sha256": "b414663d1ec1214850b1f1b45408dbfd209aa2d8519b0479235726da4bdea427"
+    },
+    "hurricane_florence_2018": {
+      "path": "data/pseudo-labelled/gpt-4o/hurricane_florence_2018/hurricane_florence_2018_train_pred.csv",
+      "sha256": "d73ef4e85a2ece1ef995e2680678c8571ffa3fe3760b8eaa554cbce4cb3aebca"
+    },
+    "hurricane_harvey_2017": {
+      "path": "data/pseudo-labelled/gpt-4o/hurricane_harvey_2017/hurricane_harvey_2017_train_pred.csv",
+      "sha256": "f36bcb5c44dbf81ae046c6caff0b2183d21221f65bf7dccfa23dbdca62b331d4"
+    },
+    "hurricane_irma_2017": {
+      "path": "data/pseudo-labelled/gpt-4o/hurricane_irma_2017/hurricane_irma_2017_train_pred.csv",
+      "sha256": "ea67c9b752576fd8645ea6d15e6ec3334c2f08e9dbdcf2584e213bf8547c644c"
+    },
+    "hurricane_maria_2017": {
+      "path": "data/pseudo-labelled/gpt-4o/hurricane_maria_2017/hurricane_maria_2017_train_pred.csv",
+      "sha256": "68cbe166fea54637e51c24dcff86d2a7da3ed0931c03b30d6d70a16feef95956"
+    },
+    "kaikoura_earthquake_2016": {
+      "path": "data/pseudo-labelled/gpt-4o/kaikoura_earthquake_2016/kaikoura_earthquake_2016_train_pred.csv",
+      "sha256": "00fe0aeca6abf3be27fcacca3223a85aa1fb0a7364e3627ebdf87d6a9601cd0e"
+    },
+    "kerala_floods_2018": {
+      "path": "data/pseudo-labelled/gpt-4o/kerala_floods_2018/kerala_floods_2018_train_pred.csv",
+      "sha256": "eb797eb9926af11b87be4efb9271b61591e5baf9c3407640042f2fa78c8f2c99"
+    }
+  },
+  "public_blind_sha256": "27c4023a8bd9ddce1606a76b0cea394c60ea64d19ec26128e7159d2c206ec1bf",
+  "hidden_key_sha256": "b607c8900fcad2020a858152d5808acb96e2e9d45042f1b0ceef966466d84249",
+  "note": "Hidden key is intentionally not committed; workflow uploads it as a private artifact. Researcher human-review status is tracked separately and is never inferred from AI generation."
+}
