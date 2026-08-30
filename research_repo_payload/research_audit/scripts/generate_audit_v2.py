@@ -288,10 +288,17 @@ def main():
         "excluded_old_pilot_tweet_ids": len(old_pilot),
         "excluded_pilot_v2_tweet_ids": len(PILOT_V2_TWEET_IDS),
         "selected_unique_tweet_ids": 500,
+        "annotation_owner": "Khagendra01",
+        "annotation_method": "AI-assisted first pass under researcher direction",
+        "human_reviewer": "Khagendra01",
+        "final_decision_authority": "Khagendra01",
+        "human_review_status": "tracked row-by-row; pending until researcher acceptance/change is recorded",
+        "human_review_ledger": "research_repo_payload/research_audit/audit_v2_500/researcher_human_review_ledger.csv",
+        "provenance_document": "research_repo_payload/research_audit/ANNOTATION_PROVENANCE_V2.md",
         "source_files": source_hashes,
         "public_blind_sha256": sha256_file(blind_path),
         "hidden_key_sha256": sha256_file(key_path),
-        "note": "Hidden key is intentionally not committed; workflow uploads it as a private artifact.",
+        "note": "Hidden key is intentionally not committed; workflow uploads it as a private artifact. Researcher human-review status is tracked separately and is never inferred from AI generation.",
     }
     (OUT / "reproduction_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     (OUT / "HIDDEN_KEY_SHA256.txt").write_text(manifest["hidden_key_sha256"] + "\n", encoding="utf-8")
