@@ -26,5 +26,7 @@
     "differs_from_humaid_total": 101
   },
   "human_review_status": "pending",
-  "note": "Row-level hidden-key review queue is intentionally not committed to the public repository."
+  "unblinded_review_committed_to_public_repo": true,
+  "unblinded_review_path": "research_repo_payload/research_audit/audit_v2_500/unblinded_review/",
+  "note": "Model consensus prioritizes researcher review but is not human ground truth. This branch is intentionally unblinded."
 }
