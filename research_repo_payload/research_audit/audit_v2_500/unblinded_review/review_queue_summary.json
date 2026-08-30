@@ -1,0 +1,18 @@
+{
+  "rows": 500,
+  "all_human_review_status": "pending",
+  "consensus_counts": {
+    "2_1_1": 46,
+    "4_of_4": 268,
+    "3_of_4": 142,
+    "2_2_tie": 42,
+    "all_different": 2
+  },
+  "priority_counts": {
+    "P3_model_split": 90,
+    "P4_strong_model_consensus_matches_HumAID": 231,
+    "P2_3of4_models_disagree_with_HumAID": 78,
+    "P1_unanimous_models_disagree_with_HumAID": 101
+  },
+  "warning": "This directory is unblinded: it contains original HumAID labels, GPT-4o labels/confidence, tweet IDs, and model judgments."
+}
