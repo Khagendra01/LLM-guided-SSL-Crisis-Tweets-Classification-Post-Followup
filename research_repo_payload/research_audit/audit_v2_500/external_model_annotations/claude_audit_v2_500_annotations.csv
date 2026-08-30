@@ -1,0 +1,501 @@
+annotation_id,primary_label,secondary_label,confidence,ambiguous,reason
+AUDITV2_0001,displaced_people_and_evacuations,other_relevant_information,2,yes,"Describes Muslims sheltering Hindu families during floods, framed as interfaith-harmony commentary."
+AUDITV2_0002,injured_or_dead_people,other_relevant_information,2,yes,Criticizes leadership over cyclone death toll comparison with Mozambique.
+AUDITV2_0003,infrastructure_and_utility_damage,,3,no,"Describes loss of power, phones, internet in Dominica after the hurricane."
+AUDITV2_0004,rescue_volunteering_or_donation_effort,,3,no,Reports military planes/ships sent to earthquake-affected areas.
+AUDITV2_0005,rescue_volunteering_or_donation_effort,,3,no,Calls for sending supplies before couriers stop delivering to storm area.
+AUDITV2_0006,sympathy_and_support,,3,no,Expresses thoughts for those affected without a concrete aid action.
+AUDITV2_0007,injured_or_dead_people,other_relevant_information,2,yes,References PR death toll amid a racially charged political comparison.
+AUDITV2_0008,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,States a need for help containing the wildfire.
+AUDITV2_0009,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Praises hurricane hunter crews collecting forecast data for emergency managers.
+AUDITV2_0010,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Personal victim reports losing everything and asks for help/donations.
+AUDITV2_0011,other_relevant_information,caution_and_advice,2,yes,Personal update on ongoing aftershocks without an explicit warning.
+AUDITV2_0012,displaced_people_and_evacuations,caution_and_advice,2,yes,Describes evacuating home at night after no advance flood warning.
+AUDITV2_0013,injured_or_dead_people,infrastructure_and_utility_damage,1,yes,"Mixed impact summary (flooding, death toll, homes) amid a political complaint."
+AUDITV2_0014,rescue_volunteering_or_donation_effort,,3,no,Saving paper towels specifically for hurricane aid donation.
+AUDITV2_0015,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,"Expresses hope that aid is reaching people in need, no concrete action by author."
+AUDITV2_0016,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Commentary on proper handling of cyclone donations vs political misuse.
+AUDITV2_0017,displaced_people_and_evacuations,caution_and_advice,2,yes,Announces county opening shelters ahead of the storm.
+AUDITV2_0018,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Opinion on redirecting government spending toward wildfire water bombers.
+AUDITV2_0019,rescue_volunteering_or_donation_effort,not_humanitarian,2,yes,"Asks how to help animals affected, though geography mentioned is confusing."
+AUDITV2_0020,displaced_people_and_evacuations,requests_or_urgent_needs,2,yes,Notes compounding food insecurity and displacement from Irma in Haiti.
+AUDITV2_0021,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Requests help for animals after the earthquake.
+AUDITV2_0022,injured_or_dead_people,other_relevant_information,2,yes,Cites historical hurricane death toll as a comparison point.
+AUDITV2_0023,rescue_volunteering_or_donation_effort,,3,no,Construction association donating funds to wildfire relief.
+AUDITV2_0024,displaced_people_and_evacuations,requests_or_urgent_needs,1,yes,"Mixed summary citing displacement, deaths and desperate need of assistance."
+AUDITV2_0025,other_relevant_information,injured_or_dead_people,1,yes,Political complaint about repeated government failure tied to past hunger deaths.
+AUDITV2_0026,requests_or_urgent_needs,injured_or_dead_people,2,yes,"States 600,000 people in need of aid alongside the death toll and media bias claim."
+AUDITV2_0027,not_humanitarian,other_relevant_information,2,yes,News roundup bundling unrelated business items with the floods hashtag.
+AUDITV2_0028,infrastructure_and_utility_damage,,3,no,Residents see first images of homes after the wildfire.
+AUDITV2_0029,not_humanitarian,other_relevant_information,2,yes,"Opinion about media personifying storms, not about humanitarian impact."
+AUDITV2_0030,requests_or_urgent_needs,,3,no,"Explicit list of needed fuel, vegetables and doctors for Kerala."
+AUDITV2_0031,other_relevant_information,,2,no,Commentary that scientists haven't adequately explained the fault activity.
+AUDITV2_0032,missing_or_found_people,injured_or_dead_people,2,yes,Reports 631 missing alongside a rising death toll of 63.
+AUDITV2_0033,caution_and_advice,other_relevant_information,2,yes,Announces a re-entry guidance booklet for returning residents.
+AUDITV2_0034,infrastructure_and_utility_damage,,3,no,Describes a car among ruins of destroyed property after the wildfire.
+AUDITV2_0035,caution_and_advice,other_relevant_information,2,yes,Reports the hurricane's projected path/cone affecting 7 states.
+AUDITV2_0036,missing_or_found_people,other_relevant_information,2,yes,Notes rain complicating efforts to locate hundreds of missing wildfire victims.
+AUDITV2_0037,other_relevant_information,,3,no,"Statistical fact about total rainfall volume, no specific impact class."
+AUDITV2_0038,other_relevant_information,caution_and_advice,2,yes,Reports official visit and forest-management policy promise amid wildfire damage.
+AUDITV2_0039,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Complains that the world failed to give aid to New Zealand after the quake.
+AUDITV2_0040,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,"States a quarter million evacuated and a town destroyed, amid funding criticism."
+AUDITV2_0041,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Describes prisoner firefighters on the front lines of the wildfire response.
+AUDITV2_0042,caution_and_advice,injured_or_dead_people,1,yes,Reports a Red Alert and dam openings alongside the rising death toll.
+AUDITV2_0043,caution_and_advice,,3,no,Gives explicit safety instructions for pets and evacuation preparation.
+AUDITV2_0044,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,Direct plea for help as wildfire threatens the community.
+AUDITV2_0045,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Reports military-led bridge restoration and medical camps as relief efforts.
+AUDITV2_0046,not_humanitarian,other_relevant_information,2,yes,News bulletin bundling unrelated stories with the hurricane hashtag.
+AUDITV2_0047,requests_or_urgent_needs,,3,no,"States explicit need for food, shelter and necessities over firefighting."
+AUDITV2_0048,rescue_volunteering_or_donation_effort,injured_or_dead_people,2,yes,Criticizes absence of soldiers while victims search for the dead themselves.
+AUDITV2_0049,not_humanitarian,rescue_volunteering_or_donation_effort,2,yes,Law-firm advertisement using the storm as a marketing hook.
+AUDITV2_0050,missing_or_found_people,requests_or_urgent_needs,2,yes,Describes helping separated families reunite and hundreds still missing.
+AUDITV2_0051,displaced_people_and_evacuations,sympathy_and_support,2,yes,"People still in tents amid more rain, plus a request to spread word and pray."
+AUDITV2_0052,other_relevant_information,infrastructure_and_utility_damage,2,yes,Personal update expressing gratitude for minor damage and retained power.
+AUDITV2_0053,displaced_people_and_evacuations,,3,no,Reports the earthquake prompted a temporary coastal evacuation.
+AUDITV2_0054,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Crew builds temporary dams to protect a highway from floodwater.
+AUDITV2_0055,missing_or_found_people,injured_or_dead_people,1,yes,"Reports two named boys missing amid broader deaths, homes swept away, and calls to mobilize."
+AUDITV2_0056,rescue_volunteering_or_donation_effort,,3,no,Direct call to donate to Red Cross wildfire relief.
+AUDITV2_0057,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Airmen assess damage and evacuate civilians at an air base.
+AUDITV2_0058,requests_or_urgent_needs,not_humanitarian,2,yes,"Asks for coffee to be sent to storm-affected area, somewhat lighthearted."
+AUDITV2_0059,displaced_people_and_evacuations,injured_or_dead_people,1,yes,Mentions people fleeing homes and dying amid political criticism.
+AUDITV2_0060,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Offers a team's help line for earthquake-affected people.
+AUDITV2_0061,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Calls on others to pray and consider helping with Harvey relief.
+AUDITV2_0062,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Details a political dispute over central government rejecting Kerala's aid requests.
+AUDITV2_0063,not_humanitarian,,3,no,"Off-topic personal comment about wanting rain, unrelated to the hurricane."
+AUDITV2_0064,rescue_volunteering_or_donation_effort,not_humanitarian,1,yes,"Vague plea to retweet and spread the word, low specificity."
+AUDITV2_0065,rescue_volunteering_or_donation_effort,,3,no,School district providing free meals to students after the flooding.
+AUDITV2_0066,other_relevant_information,not_humanitarian,2,yes,Criticizes threatened aid cuts to California/Puerto Rico amid unrelated political tangents.
+AUDITV2_0067,infrastructure_and_utility_damage,,3,no,"Reports mostly moderate damage, including a broken glass."
+AUDITV2_0068,infrastructure_and_utility_damage,other_relevant_information,2,yes,Reports widespread agriculture losses and billions in damage after Irma.
+AUDITV2_0069,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Offers prayers and a vague readiness to support those in the storm's path.
+AUDITV2_0070,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Requests public participation in a felt-earthquake citizen science report.
+AUDITV2_0071,displaced_people_and_evacuations,other_relevant_information,2,yes,Reports waivers created for players displaced by the hurricane.
+AUDITV2_0072,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Hopes people stay safe and vaguely offers to look into ways to help.
+AUDITV2_0073,caution_and_advice,displaced_people_and_evacuations,2,yes,Reports an evacuation order issued ahead of the hurricane.
+AUDITV2_0074,caution_and_advice,,3,no,Reports a new storm threat prompting weather watches in Irma-hit areas.
+AUDITV2_0075,sympathy_and_support,,2,yes,Personal reflection referencing thoughts and prayers working out.
+AUDITV2_0076,other_relevant_information,infrastructure_and_utility_damage,2,yes,Personal status update noting no flooding or power loss at that location.
+AUDITV2_0077,sympathy_and_support,infrastructure_and_utility_damage,1,yes,Prayer for people facing both a bridge collapse and the Kerala floods.
+AUDITV2_0078,missing_or_found_people,injured_or_dead_people,2,yes,Reports over 500 still missing alongside the rising wildfire death toll.
+AUDITV2_0079,caution_and_advice,,3,no,Explicit instruction for residents to move to safety due to dam release.
+AUDITV2_0080,rescue_volunteering_or_donation_effort,,2,yes,Personal appeal asking a public figure to donate more to flood relief.
+AUDITV2_0081,other_relevant_information,not_humanitarian,2,yes,"Reports an unrelated minor earthquake, off-topic to the labeled hurricane."
+AUDITV2_0082,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Personally asks where to evacuate to and requests help for two nights.
+AUDITV2_0083,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Appeals directly to the president to send help to Puerto Rico.
+AUDITV2_0084,caution_and_advice,other_relevant_information,2,yes,Storm status update noting it is still moving toward the coast.
+AUDITV2_0085,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Praises a store's stocked shelves and response ahead of the storm.
+AUDITV2_0086,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Complains a company isn't responding to help wildfire victims.
+AUDITV2_0087,caution_and_advice,,3,no,Reminds family to stay safe given the strong earthquake.
+AUDITV2_0088,other_relevant_information,caution_and_advice,1,yes,Describes rising floodwater and a risky river activity during the storm.
+AUDITV2_0089,requests_or_urgent_needs,not_humanitarian,2,yes,Sarcastic-sounding but expresses a genuine need for outside assistance.
+AUDITV2_0090,infrastructure_and_utility_damage,other_relevant_information,2,yes,Schools remain closed due to hurricane damage.
+AUDITV2_0091,injured_or_dead_people,other_relevant_information,2,yes,Claims the true death toll is being underreported by the government.
+AUDITV2_0092,injured_or_dead_people,sympathy_and_support,2,yes,States 11 people died with accompanying prayers for their families.
+AUDITV2_0093,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Political criticism of officials' handling of hurricane aid.
+AUDITV2_0094,requests_or_urgent_needs,,3,no,Personal urgent request for help obtaining a generator before the storm.
+AUDITV2_0095,rescue_volunteering_or_donation_effort,,3,no,Direct call/question on how to help wildfire-affected people.
+AUDITV2_0096,other_relevant_information,caution_and_advice,2,yes,Reports the storm's ongoing path lashing another country.
+AUDITV2_0097,rescue_volunteering_or_donation_effort,,3,no,NGO coordinating disaster relief efforts with civil defense.
+AUDITV2_0098,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Praises compassion shown toward wildfire victims and evacuees.
+AUDITV2_0099,injured_or_dead_people,sympathy_and_support,2,yes,States the death toll at 39 alongside prayers for victims and heroes.
+AUDITV2_0100,infrastructure_and_utility_damage,caution_and_advice,2,yes,Notes major damage already done to the Bahamas and discusses the storm's forecast track.
+AUDITV2_0101,other_relevant_information,,3,no,Reports a minor earthquake with no damage.
+AUDITV2_0102,displaced_people_and_evacuations,other_relevant_information,2,yes,Political figure visits victims at a flood relief camp.
+AUDITV2_0103,missing_or_found_people,injured_or_dead_people,2,yes,Reports 203 missing and a death toll of 88 from the wildfire.
+AUDITV2_0104,caution_and_advice,infrastructure_and_utility_damage,2,yes,Recommends infrastructure design changes to prevent future flood damage.
+AUDITV2_0105,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Appeals for assistance to the obliterated Bahamian government.
+AUDITV2_0106,requests_or_urgent_needs,other_relevant_information,2,yes,Stranded tourists turning to social media for help after the earthquake.
+AUDITV2_0107,caution_and_advice,,3,no,Warns that floodwater can be dangerous and urges caution.
+AUDITV2_0108,rescue_volunteering_or_donation_effort,injured_or_dead_people,1,yes,Criticizes regional body's silence/inaction on cyclone response amid deaths.
+AUDITV2_0109,caution_and_advice,infrastructure_and_utility_damage,2,yes,"Reports a river approaching major flooding, an active threat status."
+AUDITV2_0110,rescue_volunteering_or_donation_effort,,3,no,Retweet campaign tied to a corporate donation for fire recovery.
+AUDITV2_0111,requests_or_urgent_needs,,3,no,"Lists specific needed items: clothes, food, toiletries, baby items."
+AUDITV2_0112,not_humanitarian,,3,no,Sports joke comparing a football play to hurricane damage.
+AUDITV2_0113,caution_and_advice,rescue_volunteering_or_donation_effort,2,yes,Shares recovery tips and resource links after the hurricane.
+AUDITV2_0114,caution_and_advice,other_relevant_information,2,yes,Criticizes authorities for not warning people to move to safety in time.
+AUDITV2_0115,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,2,yes,References ongoing support for employees and people evacuated by the wildfire.
+AUDITV2_0116,rescue_volunteering_or_donation_effort,missing_or_found_people,2,yes,Aid workers widen search operation for cyclone survivors.
+AUDITV2_0117,other_relevant_information,infrastructure_and_utility_damage,2,yes,Critiques nursing homes' lack of emergency power plan compliance.
+AUDITV2_0118,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Thanks an official for leading the hurricane relief effort.
+AUDITV2_0119,rescue_volunteering_or_donation_effort,,3,no,Reports concrete emergency funding approved for wildfire evacuees.
+AUDITV2_0120,sympathy_and_support,,3,no,Foreign leader sends a condolence message to affected nations.
+AUDITV2_0121,sympathy_and_support,not_humanitarian,1,yes,Ends with a safety prayer for hurricane-path residents amid unrelated postcard content.
+AUDITV2_0122,infrastructure_and_utility_damage,sympathy_and_support,2,yes,"Recounts a woman's home destroyed in a past wildfire, with a resilience message."
+AUDITV2_0123,other_relevant_information,,3,no,Points to a general information resource about ongoing wildfires.
+AUDITV2_0124,sympathy_and_support,not_humanitarian,2,yes,Expresses thoughts for hurricane victims alongside an unrelated song reference.
+AUDITV2_0125,rescue_volunteering_or_donation_effort,,3,no,Fire department calling up swift water rescue teams for deployment.
+AUDITV2_0126,other_relevant_information,,3,no,Statistical comparison illustrating the fire's size.
+AUDITV2_0127,caution_and_advice,,3,no,Active severe thunderstorm warning issued for the area.
+AUDITV2_0128,displaced_people_and_evacuations,sympathy_and_support,2,yes,Notes evacuees beginning to return home as rebuilding starts.
+AUDITV2_0129,other_relevant_information,infrastructure_and_utility_damage,2,yes,Personal comparative relief that damage was less severe than prior storms.
+AUDITV2_0130,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,2,yes,US Navy evacuates residents from a storm-devastated island.
+AUDITV2_0131,injured_or_dead_people,other_relevant_information,2,yes,Compares death tolls across different hurricanes.
+AUDITV2_0132,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Official conducts an aerial survey of flood-hit areas.
+AUDITV2_0133,missing_or_found_people,requests_or_urgent_needs,2,yes,Reports thousands missing and millions destitute without food or services.
+AUDITV2_0134,caution_and_advice,displaced_people_and_evacuations,2,yes,Reports an evacuation order and state of emergency due to wildfires.
+AUDITV2_0135,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Reaches out offering evacuation assistance to tagged users.
+AUDITV2_0136,rescue_volunteering_or_donation_effort,not_humanitarian,1,yes,Job posting recruiting consultants for hurricane response work.
+AUDITV2_0137,other_relevant_information,caution_and_advice,2,yes,General commentary linking storm intensity to climate change.
+AUDITV2_0138,rescue_volunteering_or_donation_effort,not_humanitarian,2,yes,Humorous but genuine call to help save animals after the quake.
+AUDITV2_0139,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Describes destroyed homes and links to a way to help those in need.
+AUDITV2_0140,injured_or_dead_people,caution_and_advice,1,yes,Reports 210 dead alongside a rain alert and restoration focus.
+AUDITV2_0141,injured_or_dead_people,sympathy_and_support,2,yes,"Reports a mother and baby killed among 11 total deaths, with prayer."
+AUDITV2_0142,rescue_volunteering_or_donation_effort,,3,no,Grocers providing support to those affected by the wildfire.
+AUDITV2_0143,sympathy_and_support,,3,no,"Thoughts and prayers extended to those affected, including a specific tribe."
+AUDITV2_0144,other_relevant_information,caution_and_advice,2,yes,Technical forecast note about the storm's track relative to a buoy.
+AUDITV2_0145,caution_and_advice,other_relevant_information,2,yes,Reports five simultaneous tornado warnings amid the hurricane.
+AUDITV2_0146,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Criticizes a leader's hypocrisy in requesting aid while traveling luxuriously.
+AUDITV2_0147,infrastructure_and_utility_damage,injured_or_dead_people,2,yes,Describes catastrophic destruction inside a house with an infant present.
+AUDITV2_0148,infrastructure_and_utility_damage,rescue_volunteering_or_donation_effort,2,yes,Notes mail service disruption and USPS's early-delivery response effort.
+AUDITV2_0149,infrastructure_and_utility_damage,displaced_people_and_evacuations,1,yes,Video title referencing both evacuation and devastation from the storm.
+AUDITV2_0150,caution_and_advice,,3,no,Active extreme wind warning issued for the hurricane's eyewall.
+AUDITV2_0151,caution_and_advice,other_relevant_information,2,yes,Describes preparedness lessons applied ahead of the cyclone.
+AUDITV2_0152,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Announces an emergency coordination meeting for flood response.
+AUDITV2_0153,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Aid group conducts outreach to assess needs where infrastructure was destroyed.
+AUDITV2_0154,rescue_volunteering_or_donation_effort,,3,no,Individual spearheading a hurricane relief effort.
+AUDITV2_0155,other_relevant_information,requests_or_urgent_needs,2,yes,Comments that more than thoughts and prayers are needed to help.
+AUDITV2_0156,displaced_people_and_evacuations,,3,no,Mosques will shelter hurricane victims through the holiday.
+AUDITV2_0157,missing_or_found_people,other_relevant_information,2,yes,Notes people cannot be located dead or alive amid political criticism.
+AUDITV2_0158,caution_and_advice,,3,no,Advises heeding evacuation orders given high mudslide/flooding risk.
+AUDITV2_0159,other_relevant_information,injured_or_dead_people,1,yes,Political comparison of disaster death tolls and government funding amounts.
+AUDITV2_0160,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Describes satellite imagery technology used to help fight the wildfires.
+AUDITV2_0161,sympathy_and_support,,2,yes,Personal check-in expressing concern for someone after the wildfires.
+AUDITV2_0162,other_relevant_information,,3,no,"Shares imagery of flooding seen from space, informational."
+AUDITV2_0163,other_relevant_information,not_humanitarian,2,yes,Social commentary about prison labor used in firefighting.
+AUDITV2_0164,infrastructure_and_utility_damage,other_relevant_information,2,yes,"Historical comparison of hog industry damage, forecasting worse from current storm."
+AUDITV2_0165,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Describes an ongoing health/water crisis and links to a support option.
+AUDITV2_0166,infrastructure_and_utility_damage,,3,no,Describes flood damage scenes in a specific county.
+AUDITV2_0167,sympathy_and_support,not_humanitarian,2,yes,Entertainment dedication as a show of support to hurricane victims.
+AUDITV2_0168,other_relevant_information,requests_or_urgent_needs,2,yes,Describes a difficult compensation choice facing wildfire victims.
+AUDITV2_0169,injured_or_dead_people,,3,no,Reports two more possible (unconfirmed) deaths in floodwaters.
+AUDITV2_0170,infrastructure_and_utility_damage,other_relevant_information,2,yes,Reports nursing homes still lacking sufficient backup power capacity.
+AUDITV2_0171,sympathy_and_support,,3,no,Expresses sadness and prayers for wildfire victims.
+AUDITV2_0172,displaced_people_and_evacuations,infrastructure_and_utility_damage,1,yes,Cites an estimated 1 million displaced alongside widespread utility outages.
+AUDITV2_0173,injured_or_dead_people,other_relevant_information,2,yes,References a prior storm's death toll while comparing rainfall paths.
+AUDITV2_0174,caution_and_advice,displaced_people_and_evacuations,2,yes,Describes active tsunami evacuation sirens and wave height predictions.
+AUDITV2_0175,infrastructure_and_utility_damage,injured_or_dead_people,1,yes,"Describes homes wiped out and many dead, tied to climate commentary."
+AUDITV2_0176,missing_or_found_people,displaced_people_and_evacuations,2,yes,Reports thousands of children separated from parents and people in camps.
+AUDITV2_0177,not_humanitarian,,3,no,"Beer pun using the phrase 'coastal evacuation', not about the actual disaster."
+AUDITV2_0178,caution_and_advice,,3,no,Mayor declares a state of emergency ahead of the hurricane.
+AUDITV2_0179,infrastructure_and_utility_damage,displaced_people_and_evacuations,1,yes,Describes being cut off by floods after earthquake and tsunami evacuations.
+AUDITV2_0180,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Mapping tool created specifically to aid responders reaching vulnerable people.
+AUDITV2_0181,infrastructure_and_utility_damage,injured_or_dead_people,1,yes,Building collapse at a school with some rescued but fears of further loss.
+AUDITV2_0182,caution_and_advice,other_relevant_information,2,yes,Preparedness tip suggesting an activity for kids ahead of storms.
+AUDITV2_0183,requests_or_urgent_needs,injured_or_dead_people,1,yes,"Describes hungry, scared children praying for help amid deaths."
+AUDITV2_0184,sympathy_and_support,,2,yes,"Shocked, sympathetic reaction to the earthquake happening again."
+AUDITV2_0185,infrastructure_and_utility_damage,,3,no,Before-and-after photos showing the hurricane's destruction.
+AUDITV2_0186,caution_and_advice,,3,no,Lists active evacuation orders and warnings for the wildfire.
+AUDITV2_0187,rescue_volunteering_or_donation_effort,,3,no,Video of a group rescuing a dog from floodwaters.
+AUDITV2_0188,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Cites a different disaster's death toll and displacement figures for comparison.
+AUDITV2_0189,other_relevant_information,infrastructure_and_utility_damage,2,yes,Official visit touring wildfire-destroyed areas.
+AUDITV2_0190,infrastructure_and_utility_damage,caution_and_advice,2,yes,Notes a specific home dangerously close to flooding.
+AUDITV2_0191,injured_or_dead_people,other_relevant_information,2,yes,Criticizes a leader's travel timing given the cyclone's death toll.
+AUDITV2_0192,infrastructure_and_utility_damage,sympathy_and_support,2,yes,Describes mind-boggling damage and resilience of affected people.
+AUDITV2_0193,infrastructure_and_utility_damage,,3,no,Company reports no significant damage from the hurricane.
+AUDITV2_0194,other_relevant_information,caution_and_advice,2,yes,"Official earthquake information bulletin, general disaster info."
+AUDITV2_0195,other_relevant_information,,3,no,"Reports businesses grappling with growing wildfire risk, informational."
+AUDITV2_0196,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,"Asks people to keep affected residents in thoughts, hinting at a call to help."
+AUDITV2_0197,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Wind hampering firefighting efforts on a large wildfire.
+AUDITV2_0198,caution_and_advice,displaced_people_and_evacuations,2,yes,Advises building a pet kit in case of wildfire evacuation.
+AUDITV2_0199,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Sarcastic commentary on the effectiveness of aid delivery to victims.
+AUDITV2_0200,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Criticizes misallocation of ambulances away from cyclone-affected citizens.
+AUDITV2_0201,caution_and_advice,,3,no,Health warning about wildfire smoke with explicit safety instructions.
+AUDITV2_0202,injured_or_dead_people,rescue_volunteering_or_donation_effort,2,yes,Footage of rescuers alongside a report of hundreds dead and trapped.
+AUDITV2_0203,caution_and_advice,other_relevant_information,2,yes,Reports residents preparing ahead of the storm's arrival.
+AUDITV2_0204,displaced_people_and_evacuations,,3,no,Reports thousands of families evacuated due to floods and power cuts.
+AUDITV2_0205,infrastructure_and_utility_damage,not_humanitarian,2,yes,Personal mention that a gym was destroyed in the hurricane.
+AUDITV2_0206,caution_and_advice,other_relevant_information,2,yes,Reports the storm's downgraded status still carrying a deadly path.
+AUDITV2_0207,infrastructure_and_utility_damage,,3,no,Reports a home and studio lost to the wildfire.
+AUDITV2_0208,rescue_volunteering_or_donation_effort,,3,no,Army deploys mobile units to assist communication during the hurricane.
+AUDITV2_0209,infrastructure_and_utility_damage,,3,no,"Describes visible damage to trees, power lines, and an overpass."
+AUDITV2_0210,requests_or_urgent_needs,,3,no,Direct appeal for help suffering from the flood.
+AUDITV2_0211,caution_and_advice,other_relevant_information,2,yes,Complains about lack of evacuation notice prior to the hurricane's arrival.
+AUDITV2_0212,other_relevant_information,infrastructure_and_utility_damage,2,yes,Reports an official visit to view wildfire damage.
+AUDITV2_0213,displaced_people_and_evacuations,,3,no,Personal account of complying with a mandatory evacuation.
+AUDITV2_0214,infrastructure_and_utility_damage,caution_and_advice,2,yes,Forecasts storm surge damage risk to hundreds of thousands of homes.
+AUDITV2_0215,other_relevant_information,caution_and_advice,2,yes,Reports looting of evacuated houses after the earthquake.
+AUDITV2_0216,injured_or_dead_people,other_relevant_information,1,yes,Angry claim of thousands dying attributed to government incompetence.
+AUDITV2_0217,injured_or_dead_people,sympathy_and_support,2,yes,Reports 12 dead and asks for prayers for storm victims.
+AUDITV2_0218,caution_and_advice,other_relevant_information,2,yes,Describes following an official non-mandatory evacuation zone guidance.
+AUDITV2_0219,caution_and_advice,,3,no,Active warning describing the storm's dangerous wind and flooding threat.
+AUDITV2_0220,injured_or_dead_people,missing_or_found_people,2,yes,Reports 82 dead and nearly 700 unaccounted for from the wildfire.
+AUDITV2_0221,injured_or_dead_people,other_relevant_information,2,yes,Sarcastic minimization referencing the flood death count.
+AUDITV2_0222,displaced_people_and_evacuations,,3,no,Reports evacuees in reception centers with government seeking housing.
+AUDITV2_0223,missing_or_found_people,injured_or_dead_people,2,yes,"Reports over 1,000 missing and at least 71 killed in the wildfire."
+AUDITV2_0224,other_relevant_information,not_humanitarian,1,yes,Vague sarcastic political remark about destroyed personal property.
+AUDITV2_0225,caution_and_advice,displaced_people_and_evacuations,2,yes,Reports coastal evacuations starting at a specific time.
+AUDITV2_0226,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Criticizes a plan to divert hurricane relief funds elsewhere.
+AUDITV2_0227,infrastructure_and_utility_damage,other_relevant_information,2,yes,Personal report of a creek overflowing its banks with minimal damage.
+AUDITV2_0228,rescue_volunteering_or_donation_effort,,3,no,Navy helicopter picking up stranded persons in flood-hit areas.
+AUDITV2_0229,rescue_volunteering_or_donation_effort,,3,no,Celebrity chef helping feed first responders fighting the wildfires.
+AUDITV2_0230,not_humanitarian,infrastructure_and_utility_damage,2,yes,Politically charged rant blaming immigrants for wildfire risk factors.
+AUDITV2_0231,caution_and_advice,infrastructure_and_utility_damage,2,yes,Active threat update on flash flood risk to a major city.
+AUDITV2_0232,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,States people are in desperate need of help and calls to join together.
+AUDITV2_0233,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,1,yes,Vague urgent call stating people need help.
+AUDITV2_0234,rescue_volunteering_or_donation_effort,,3,no,Troops and police giving out free food to hurricane survivors.
+AUDITV2_0235,injured_or_dead_people,sympathy_and_support,2,yes,Reports two deaths from the earthquake with a memorial tag.
+AUDITV2_0236,other_relevant_information,not_humanitarian,1,yes,"Inflammatory, unverified claim of racially motivated violence during the storm."
+AUDITV2_0237,rescue_volunteering_or_donation_effort,injured_or_dead_people,2,yes,Urges calling senators to approve an aid package immediately.
+AUDITV2_0238,rescue_volunteering_or_donation_effort,injured_or_dead_people,2,yes,Praises educators' rescue efforts that reduced the death toll.
+AUDITV2_0239,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Direct appeal asking a fire department for wildfire help.
+AUDITV2_0240,other_relevant_information,infrastructure_and_utility_damage,2,yes,Human interest piece on a village amid flood wreckage.
+AUDITV2_0241,displaced_people_and_evacuations,injured_or_dead_people,1,yes,Reports flooding took lives and displaced thousands en route to Beira.
+AUDITV2_0242,rescue_volunteering_or_donation_effort,,3,no,Animal welfare group posting wildfire rescue updates.
+AUDITV2_0243,caution_and_advice,infrastructure_and_utility_damage,2,yes,Advises continued water conservation while tankers refill reservoirs.
+AUDITV2_0244,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Praises school workers who kept hurricane shelters running.
+AUDITV2_0245,not_humanitarian,,3,no,"Joking remark about golfing supplies, unrelated to humanitarian impact."
+AUDITV2_0246,injured_or_dead_people,other_relevant_information,2,yes,References the death toll and growing crisis in Puerto Rico.
+AUDITV2_0247,rescue_volunteering_or_donation_effort,,3,no,Personal account of giving money to a homeless man during the storm.
+AUDITV2_0248,missing_or_found_people,rescue_volunteering_or_donation_effort,2,yes,Describes training volunteers to help separated families find relatives.
+AUDITV2_0249,caution_and_advice,,3,no,Safety advice on handling firearms/ammunition after flood exposure.
+AUDITV2_0250,other_relevant_information,displaced_people_and_evacuations,2,yes,Personal reflection referencing a past hurricane evacuation experience.
+AUDITV2_0251,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Official meets business leaders to discuss hurricane relief.
+AUDITV2_0252,injured_or_dead_people,infrastructure_and_utility_damage,1,yes,"Reports deaths and injuries alongside hospital damage, patients in need."
+AUDITV2_0253,caution_and_advice,infrastructure_and_utility_damage,2,yes,Court orders a specific dam water level to be maintained.
+AUDITV2_0254,rescue_volunteering_or_donation_effort,,3,no,Officials to provide a live update on hurricane relief efforts.
+AUDITV2_0255,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,Describes a specific household with flood damage needing help moving.
+AUDITV2_0256,other_relevant_information,caution_and_advice,2,yes,Informational update on whether cooler weather will help the wildfire.
+AUDITV2_0257,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Clarifies the real reason behind a country's aid decision.
+AUDITV2_0258,caution_and_advice,,3,no,Safety advisory to keep airspace clear for active rescue efforts.
+AUDITV2_0259,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,States the devastated people of Puerto Rico need help.
+AUDITV2_0260,infrastructure_and_utility_damage,,3,no,Media tour showing wildfire damage.
+AUDITV2_0261,other_relevant_information,caution_and_advice,2,yes,Notes wildfire smoke reaching an area with no air quality warning yet.
+AUDITV2_0262,rescue_volunteering_or_donation_effort,,3,no,Requests relief assistance to help wildfire evacuees.
+AUDITV2_0263,missing_or_found_people,requests_or_urgent_needs,2,yes,Personal grief over missing children with aid agencies warning of worsening crisis.
+AUDITV2_0264,displaced_people_and_evacuations,caution_and_advice,2,yes,Shares a list of pet-friendly shelters for evacuees.
+AUDITV2_0265,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Brief statement that help is needed in Puerto Rico.
+AUDITV2_0266,sympathy_and_support,other_relevant_information,2,yes,Hopeful resilience message without a concrete aid action.
+AUDITV2_0267,other_relevant_information,,3,no,Analysis piece on why dams can't control severe floods.
+AUDITV2_0268,rescue_volunteering_or_donation_effort,,3,no,Describes water drops fighting the forest fire.
+AUDITV2_0269,caution_and_advice,other_relevant_information,2,yes,Advocates for a better tsunami warning siren system.
+AUDITV2_0270,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Warns more deaths are feared as rivers keep rising.
+AUDITV2_0271,requests_or_urgent_needs,caution_and_advice,2,yes,Urgent plea to help people living along the coast during the quake.
+AUDITV2_0272,rescue_volunteering_or_donation_effort,,3,no,School staff evacuate students to safety and reunite them with families.
+AUDITV2_0273,rescue_volunteering_or_donation_effort,,3,no,Describes a hotel's rescue operation for stranded guests.
+AUDITV2_0274,injured_or_dead_people,,3,no,Reports the wildfire death toll rising with more victims expected.
+AUDITV2_0275,rescue_volunteering_or_donation_effort,,3,no,Company continues donating CSR funds to flood relief.
+AUDITV2_0276,injured_or_dead_people,displaced_people_and_evacuations,1,yes,Cites death and displacement figures from an unreported disaster elsewhere.
+AUDITV2_0277,caution_and_advice,,3,no,Reports the storm's intensity forecast and a statewide emergency declaration.
+AUDITV2_0278,caution_and_advice,displaced_people_and_evacuations,2,yes,Compiles evacuation orders by state ahead of the hurricane.
+AUDITV2_0279,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Explains technical firefighting methods used against wildfires.
+AUDITV2_0280,requests_or_urgent_needs,displaced_people_and_evacuations,1,yes,Advocates that hotels/FEMA accommodate pets for evacuating residents.
+AUDITV2_0281,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Personal appeal for donations to help relatives who lost everything.
+AUDITV2_0282,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Alleges theft of cyclone relief donations.
+AUDITV2_0283,injured_or_dead_people,,3,no,Official statement that there are no reported deaths from the storm.
+AUDITV2_0284,other_relevant_information,requests_or_urgent_needs,2,yes,Notes other cities were also devastated and asks for constructive help.
+AUDITV2_0285,caution_and_advice,other_relevant_information,2,yes,Technical forecast update on the storm's track and expected conditions.
+AUDITV2_0286,rescue_volunteering_or_donation_effort,,3,no,Organization sending a cargo plane to aid relief efforts.
+AUDITV2_0287,other_relevant_information,,3,no,Statistical comparison of rainfall volumes between two hurricanes.
+AUDITV2_0288,caution_and_advice,,3,no,Explicit safety advisory for fishermen given rough sea conditions.
+AUDITV2_0289,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Platform connecting those needing help with those offering assistance.
+AUDITV2_0290,requests_or_urgent_needs,sympathy_and_support,2,yes,Reports victims trapped in homes and states help is needed.
+AUDITV2_0291,requests_or_urgent_needs,not_humanitarian,1,yes,"Frustrated, meme-styled complaint about delayed food stamp benefits."
+AUDITV2_0292,sympathy_and_support,caution_and_advice,2,yes,Well-wish hoping damage is minimal and people stay safe.
+AUDITV2_0293,caution_and_advice,other_relevant_information,2,yes,Points people to a store still stocking needed hurricane supplies.
+AUDITV2_0294,infrastructure_and_utility_damage,other_relevant_information,2,yes,Personal historical recollection of damage witnessed during a past hurricane.
+AUDITV2_0295,caution_and_advice,sympathy_and_support,2,yes,Warns of disease outbreak risk following the cyclone.
+AUDITV2_0296,requests_or_urgent_needs,,3,no,"Child's explicit request for books, food, and more tents."
+AUDITV2_0297,displaced_people_and_evacuations,,3,no,Evacuees with special needs find shelter in a specific location.
+AUDITV2_0298,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Reports an active evacuation as water rapidly rises.
+AUDITV2_0299,infrastructure_and_utility_damage,other_relevant_information,2,yes,Hashtags cite no power and no water amid climate change framing.
+AUDITV2_0300,other_relevant_information,requests_or_urgent_needs,2,yes,Commentary on supply and demand economics amid the disaster.
+AUDITV2_0301,caution_and_advice,,3,no,Explicit instruction to evacuate low-lying coastal ground.
+AUDITV2_0302,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Claims the city was totally destroyed and asks for help (message cut off).
+AUDITV2_0303,infrastructure_and_utility_damage,,3,no,Governor states the flooding may be the city's worst ever.
+AUDITV2_0304,injured_or_dead_people,displaced_people_and_evacuations,1,yes,Cites dozens dead and thousands homeless amid political criticism.
+AUDITV2_0305,other_relevant_information,not_humanitarian,1,yes,Vague political jab referencing the earthquake timing.
+AUDITV2_0306,displaced_people_and_evacuations,,3,no,Personal account of evacuating after a tsunami siren sounded.
+AUDITV2_0307,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Hosts offering free lodging to those affected by the wildfire.
+AUDITV2_0308,rescue_volunteering_or_donation_effort,,3,no,Direct call to donate to an earthquake relief appeal.
+AUDITV2_0309,requests_or_urgent_needs,injured_or_dead_people,2,yes,Recommends emergency healthcare access be provided to the injured.
+AUDITV2_0310,rescue_volunteering_or_donation_effort,,3,no,Direct call to donate to a hurricane relief cause.
+AUDITV2_0311,caution_and_advice,,3,no,Electrical safety alert issued for flood conditions.
+AUDITV2_0312,injured_or_dead_people,rescue_volunteering_or_donation_effort,1,yes,"Reports 5 dead and over 1,000 rescued, with crews unable to reach some areas."
+AUDITV2_0313,missing_or_found_people,displaced_people_and_evacuations,1,yes,Reports children separated from families and made homeless by the cyclone.
+AUDITV2_0314,infrastructure_and_utility_damage,,3,no,Video showing damage to a room caused by the earthquake.
+AUDITV2_0315,other_relevant_information,not_humanitarian,2,yes,Political criticism labeling a leader's disaster-area visit a publicity stunt.
+AUDITV2_0316,not_humanitarian,other_relevant_information,2,yes,Political attack framing a politician's visit as a campaign photo-op.
+AUDITV2_0317,other_relevant_information,not_humanitarian,2,yes,Meta commentary on partisan politics surrounding disaster coverage.
+AUDITV2_0318,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,States wildfires are worsening a housing crisis and asks officials to address needs.
+AUDITV2_0319,infrastructure_and_utility_damage,,3,no,Reports ongoing devastation including fears over a damaged dam.
+AUDITV2_0320,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Comments on another country's decision to cancel aid to the US.
+AUDITV2_0321,rescue_volunteering_or_donation_effort,,3,no,National Guard members assisting with hurricane recovery efforts.
+AUDITV2_0322,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Points to official channel for updates on hurricane relief efforts.
+AUDITV2_0323,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,States hurricane victims in the Caribbean need help.
+AUDITV2_0324,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Ministry founder appeals for help after hurricane flooding.
+AUDITV2_0325,caution_and_advice,infrastructure_and_utility_damage,2,yes,Emergency manager reports an active storm surge flooding a specific road.
+AUDITV2_0326,caution_and_advice,displaced_people_and_evacuations,2,yes,Advises residents to find alternate accommodation with reliable water supply.
+AUDITV2_0327,injured_or_dead_people,caution_and_advice,2,yes,Reports five deaths at a nursing home amid ongoing hurricane aftereffects.
+AUDITV2_0328,caution_and_advice,other_relevant_information,2,yes,Shares forecast maps and radar with warning/watch hashtags.
+AUDITV2_0329,displaced_people_and_evacuations,other_relevant_information,2,yes,Asks how many people have been displaced.
+AUDITV2_0330,not_humanitarian,caution_and_advice,1,yes,Mostly discusses an unrelated shooting incident alongside a hurricane mention.
+AUDITV2_0331,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Requests people spread the message and help in any way they can.
+AUDITV2_0332,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Calls for signing a petition regarding a law blocking aid delivery.
+AUDITV2_0333,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Reports deaths and major damage from the severe earthquake.
+AUDITV2_0334,other_relevant_information,not_humanitarian,2,yes,Complains about unequal media coverage of a comparable flood event.
+AUDITV2_0335,injured_or_dead_people,displaced_people_and_evacuations,1,yes,Reports evacuees returning to wreckage as death toll passes 60.
+AUDITV2_0336,displaced_people_and_evacuations,requests_or_urgent_needs,1,yes,Reports prisoners not being evacuated and collecting drinking water.
+AUDITV2_0337,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,1,yes,Offers a resource covering both giving and receiving help.
+AUDITV2_0338,missing_or_found_people,requests_or_urgent_needs,2,yes,Seeking help locating a specific named missing person.
+AUDITV2_0339,other_relevant_information,infrastructure_and_utility_damage,2,yes,Complains media is ignoring the extent of the hurricane's devastation.
+AUDITV2_0340,caution_and_advice,,3,no,How-to guidance on pumping out a flooded basement.
+AUDITV2_0341,other_relevant_information,rescue_volunteering_or_donation_effort,1,yes,Inquiry about the status of the local Red Cross chapter.
+AUDITV2_0342,other_relevant_information,infrastructure_and_utility_damage,1,yes,News roundup bundling drought and water policy with wildfire spread.
+AUDITV2_0343,missing_or_found_people,injured_or_dead_people,2,yes,Reports dozens missing and two confirmed dead in a district.
+AUDITV2_0344,infrastructure_and_utility_damage,caution_and_advice,2,yes,Describes footage of deadly storm surge shredding structures.
+AUDITV2_0345,requests_or_urgent_needs,sympathy_and_support,1,yes,Personal request to check on and assist someone's family.
+AUDITV2_0346,infrastructure_and_utility_damage,,3,no,Satellite images showing scorched earth after the wildfire.
+AUDITV2_0347,rescue_volunteering_or_donation_effort,other_relevant_information,1,yes,References a donation-related issue amid otherwise generous giving.
+AUDITV2_0348,injured_or_dead_people,infrastructure_and_utility_damage,1,yes,Reports 122 dead from the cyclone alongside property/crop damage.
+AUDITV2_0349,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Wishes safety for family and references others helping flood victims.
+AUDITV2_0350,injured_or_dead_people,other_relevant_information,2,yes,Compares the revised hurricane death toll to a historical tragedy.
+AUDITV2_0351,infrastructure_and_utility_damage,other_relevant_information,2,yes,States the storm's flooding is shattering records (message cut off).
+AUDITV2_0352,infrastructure_and_utility_damage,requests_or_urgent_needs,2,yes,Personal account of flood damage to a home and resulting financial crisis.
+AUDITV2_0353,not_humanitarian,other_relevant_information,2,yes,Sarcastic political jab wishing storm damage on a public figure's property.
+AUDITV2_0354,injured_or_dead_people,infrastructure_and_utility_damage,1,yes,"Mixed summary citing loss of life, homes, and jobs from the fires."
+AUDITV2_0355,infrastructure_and_utility_damage,,3,no,Reports a specific count of buildings lost to the wildfire.
+AUDITV2_0356,other_relevant_information,not_humanitarian,1,yes,"Unverified, inflammatory claim about violence targeting flood victims."
+AUDITV2_0357,caution_and_advice,,3,no,Explicit driving and shelter safety instructions during the cyclone.
+AUDITV2_0358,sympathy_and_support,,3,no,Asks people to keep hurricane victims in thoughts and prayers.
+AUDITV2_0359,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Proposes a rapid humanitarian response capability for major storms.
+AUDITV2_0360,infrastructure_and_utility_damage,injured_or_dead_people,1,yes,Lists utility outages alongside two deaths from the earthquake.
+AUDITV2_0361,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Criticizes an official's decision to decline foreign aid.
+AUDITV2_0362,injured_or_dead_people,displaced_people_and_evacuations,1,yes,Reports dozens killed and tens of thousands stranded by the floods.
+AUDITV2_0363,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Foundation commits to supporting displaced flood victims with relief.
+AUDITV2_0364,rescue_volunteering_or_donation_effort,,3,no,Musicians performing at a benefit concert for wildfire aid.
+AUDITV2_0365,not_humanitarian,,3,no,"Joke about a man shooting into a hurricane, not humanitarian content."
+AUDITV2_0366,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Personal note about a new disaster-response role and a request to pray.
+AUDITV2_0367,other_relevant_information,infrastructure_and_utility_damage,2,yes,Requests crowd-sourced damage reports once it is safe to go outside.
+AUDITV2_0368,caution_and_advice,infrastructure_and_utility_damage,2,yes,Reports the storm regaining strength after damaging Puerto Rico.
+AUDITV2_0369,other_relevant_information,sympathy_and_support,2,yes,Official statement describing the storm's severity with a prayer hashtag.
+AUDITV2_0370,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Describes technology assisting firefighters with evacuation efforts.
+AUDITV2_0371,caution_and_advice,other_relevant_information,2,yes,Advisory urging businesses to avoid price gouging during the emergency.
+AUDITV2_0372,not_humanitarian,,3,no,"Unrelated political rant about the military, not about the hurricane."
+AUDITV2_0373,caution_and_advice,infrastructure_and_utility_damage,2,yes,Warns the slow-moving storm means continued life-threatening flooding.
+AUDITV2_0374,requests_or_urgent_needs,other_relevant_information,1,yes,Vague complaint that pleas for help are being ignored.
+AUDITV2_0375,caution_and_advice,injured_or_dead_people,1,yes,Criticizes insufficient warnings as the cyclone death toll rises.
+AUDITV2_0376,infrastructure_and_utility_damage,other_relevant_information,2,yes,Question about insurance coverage for wildfire damage.
+AUDITV2_0377,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,Arranges rides for displaced families to shelters ahead of the storm.
+AUDITV2_0378,other_relevant_information,,2,no,Factual note on the number of aftershocks since the earthquake.
+AUDITV2_0379,injured_or_dead_people,rescue_volunteering_or_donation_effort,1,yes,Reports a rescue from rubble but that one family member did not survive.
+AUDITV2_0380,displaced_people_and_evacuations,infrastructure_and_utility_damage,1,yes,Truncated message referencing evacuees and devastation.
+AUDITV2_0381,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Reports forced evacuation followed by damage assessment.
+AUDITV2_0382,sympathy_and_support,,2,yes,Personal check-in on someone's wellbeing after the earthquake.
+AUDITV2_0383,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Criticizes inadequate federal aid funding after a prior disaster.
+AUDITV2_0384,other_relevant_information,infrastructure_and_utility_damage,2,yes,Advocacy argument that a company should pay for storm damage costs.
+AUDITV2_0385,sympathy_and_support,displaced_people_and_evacuations,2,yes,Sympathetic remark about repeated hardship facing evacuees.
+AUDITV2_0386,injured_or_dead_people,,3,no,Reports at least one death in the worst-affected earthquake area.
+AUDITV2_0387,rescue_volunteering_or_donation_effort,,3,no,Describes a concrete insurance payout to help restore infrastructure.
+AUDITV2_0388,infrastructure_and_utility_damage,injured_or_dead_people,1,yes,Lists a town cut off with utilities out alongside two confirmed deaths.
+AUDITV2_0389,injured_or_dead_people,displaced_people_and_evacuations,1,yes,Memorial message citing lost lives and displaced people from the flood.
+AUDITV2_0390,other_relevant_information,infrastructure_and_utility_damage,1,yes,Suggests infrastructure rebuilding ideas to help prevent future fires.
+AUDITV2_0391,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Appeals to officials to get help to Puerto Rico to avoid a crisis.
+AUDITV2_0392,rescue_volunteering_or_donation_effort,not_humanitarian,1,yes,Offers a business service to earthquake-affected businesses.
+AUDITV2_0393,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,2,yes,Hotels preparing to accommodate hurricane evacuees.
+AUDITV2_0394,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Calls for rescuing animals stuck in the floods.
+AUDITV2_0395,caution_and_advice,other_relevant_information,2,yes,Warns that rain extinguishing fires brings a new mudslide risk.
+AUDITV2_0396,missing_or_found_people,injured_or_dead_people,2,yes,Officials release a list of 297 unaccounted for as the death toll grows.
+AUDITV2_0397,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Personal inquiry seeking housing for a displaced family.
+AUDITV2_0398,sympathy_and_support,,3,no,Political figure offers solidarity to flood-affected families.
+AUDITV2_0399,caution_and_advice,,3,no,Weather-aware advisory about possible localized flooding.
+AUDITV2_0400,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Praises the Red Cross's work helping earthquake evacuees.
+AUDITV2_0401,requests_or_urgent_needs,caution_and_advice,2,yes,Urges intervention over a shelter illegally refusing service animals.
+AUDITV2_0402,requests_or_urgent_needs,,3,no,Directs people to a specific area where residents need help.
+AUDITV2_0403,other_relevant_information,,2,no,Debates the ecological cause of the most destructive wildfires.
+AUDITV2_0404,injured_or_dead_people,other_relevant_information,2,yes,References a rising death toll from an unrelated earthquake.
+AUDITV2_0405,displaced_people_and_evacuations,caution_and_advice,2,yes,Shares a map resource to help find pet-friendly shelters.
+AUDITV2_0406,requests_or_urgent_needs,sympathy_and_support,2,yes,Sympathetic reaction noting lack of food or water for someone.
+AUDITV2_0407,not_humanitarian,other_relevant_information,2,yes,Unrelated story about a subway station reopening near a historic site.
+AUDITV2_0408,infrastructure_and_utility_damage,rescue_volunteering_or_donation_effort,2,yes,Reports first responders losing their own homes while still fighting the fire.
+AUDITV2_0409,caution_and_advice,,3,no,Official warning about mudflow risk from incoming rain on burned land.
+AUDITV2_0410,injured_or_dead_people,,3,no,Reports at least two people killed by the earthquake.
+AUDITV2_0411,requests_or_urgent_needs,other_relevant_information,2,yes,States millions need aid after a powerful earthquake.
+AUDITV2_0412,rescue_volunteering_or_donation_effort,,3,no,Organizations working together on wildfire response and ways to help.
+AUDITV2_0413,rescue_volunteering_or_donation_effort,,3,no,Animal rescue teams on the ground to assist displaced pets.
+AUDITV2_0414,other_relevant_information,not_humanitarian,1,yes,Conspiracy-tinged claim about a fabricated storm-damage scenario.
+AUDITV2_0415,other_relevant_information,not_humanitarian,1,yes,Odd observation about people guarding water supplies at a store.
+AUDITV2_0416,requests_or_urgent_needs,,3,no,Explicit urgent request for food and clothes with contact info.
+AUDITV2_0417,caution_and_advice,,3,no,Forecast warning of strong winds and heavy rain for earthquake-hit areas.
+AUDITV2_0418,other_relevant_information,not_humanitarian,1,yes,"Grievance against a company shared as a video, seeking amplification."
+AUDITV2_0419,infrastructure_and_utility_damage,other_relevant_information,2,yes,Reports celebrity homes destroyed by the wildfires.
+AUDITV2_0420,injured_or_dead_people,missing_or_found_people,2,yes,Reports a mass grave burial and dozens missing from the cyclone.
+AUDITV2_0421,other_relevant_information,not_humanitarian,2,yes,Political rant about carbon tax and forest mismanagement.
+AUDITV2_0422,injured_or_dead_people,,3,no,Reports nursing home deaths under investigation.
+AUDITV2_0423,displaced_people_and_evacuations,not_humanitarian,1,yes,Lighthearted post noting the owner's submerged home forced a move elsewhere.
+AUDITV2_0424,other_relevant_information,injured_or_dead_people,1,yes,Complains of unequal media coverage compared to a prior flood's death toll.
+AUDITV2_0425,rescue_volunteering_or_donation_effort,not_humanitarian,2,yes,Vague call to volunteer and give back to the community.
+AUDITV2_0426,rescue_volunteering_or_donation_effort,,3,no,Company teams heading out to help hurricane victims.
+AUDITV2_0427,injured_or_dead_people,caution_and_advice,2,yes,Reports deaths and confirmed cases from a disease outbreak after flooding.
+AUDITV2_0428,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Promotes a faith-based rapid response relief ministry.
+AUDITV2_0429,caution_and_advice,infrastructure_and_utility_damage,2,yes,Notes past storm damage and current resident preparation.
+AUDITV2_0430,caution_and_advice,rescue_volunteering_or_donation_effort,2,yes,Warns to donate wisely and beware of scammers posing as helpers.
+AUDITV2_0431,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,Describes an active relief effort and wishes safety to responders.
+AUDITV2_0432,other_relevant_information,,2,no,Argues officials should bear the cost of flood relief due to policy failures.
+AUDITV2_0433,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Public figure shares how people can help hurricane-affected areas.
+AUDITV2_0434,infrastructure_and_utility_damage,,3,no,Reports ferry service suspended due to earthquake damage.
+AUDITV2_0435,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Informs people impacted by the fire how to register for FEMA assistance.
+AUDITV2_0436,caution_and_advice,other_relevant_information,2,yes,Defends that the government issued warnings ahead of the cyclone.
+AUDITV2_0437,injured_or_dead_people,other_relevant_information,1,yes,Political blame statement referencing deaths after the storm.
+AUDITV2_0438,other_relevant_information,not_humanitarian,1,yes,Conspiracy theory claiming the hurricane was an engineered weapon.
+AUDITV2_0439,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Personal report of an island devastated with 47 dead and counting.
+AUDITV2_0440,other_relevant_information,not_humanitarian,2,yes,Light personal anecdote about not feeling the earthquake.
+AUDITV2_0441,caution_and_advice,displaced_people_and_evacuations,2,yes,Shares maps of designated tsunami evacuation zones.
+AUDITV2_0442,displaced_people_and_evacuations,,3,no,Reports hurricane evacuees sheltering in another city.
+AUDITV2_0443,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Corporate statement citing lives lost and large-scale property damage.
+AUDITV2_0444,missing_or_found_people,infrastructure_and_utility_damage,1,yes,Reports people marooned with unknown fate and houses destroyed.
+AUDITV2_0445,injured_or_dead_people,other_relevant_information,2,yes,Questions media coverage of the reported death toll.
+AUDITV2_0446,infrastructure_and_utility_damage,not_humanitarian,2,yes,"Personal, humorous complaint about a broken water heater and AC."
+AUDITV2_0447,other_relevant_information,caution_and_advice,2,yes,Reports cholera cases nearly doubling after the cyclone.
+AUDITV2_0448,rescue_volunteering_or_donation_effort,,3,no,Urgent request for direct support to vulnerable communities before landfall.
+AUDITV2_0449,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Checks on a vulnerable population and offers help/resources.
+AUDITV2_0450,infrastructure_and_utility_damage,,3,no,Reports water damage inside a specific building.
+AUDITV2_0451,infrastructure_and_utility_damage,other_relevant_information,2,yes,Describes huge cyclone damage tied to a climate change comment.
+AUDITV2_0452,displaced_people_and_evacuations,requests_or_urgent_needs,2,yes,Suggests a platform host temporary housing for hurricane evacuees.
+AUDITV2_0453,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Points to a resource for staying updated on recovery efforts.
+AUDITV2_0454,rescue_volunteering_or_donation_effort,not_humanitarian,1,yes,Unrelated livestream event mentions a donation link tied to the hurricane.
+AUDITV2_0455,infrastructure_and_utility_damage,,3,no,Drone footage shows an entire town underwater after the storm.
+AUDITV2_0456,caution_and_advice,infrastructure_and_utility_damage,1,yes,Comments on evacuation planning versus the resulting devastation.
+AUDITV2_0457,rescue_volunteering_or_donation_effort,other_relevant_information,1,yes,Personal account of receiving (and recovering) earthquake aid.
+AUDITV2_0458,infrastructure_and_utility_damage,injured_or_dead_people,1,yes,Reports hundreds of structures consumed and five deaths from the wildfire.
+AUDITV2_0459,displaced_people_and_evacuations,,3,no,Evacuees bused elsewhere after shelters closed.
+AUDITV2_0460,rescue_volunteering_or_donation_effort,,3,no,FEMA reports supply logistics of food and water for a million people.
+AUDITV2_0461,not_humanitarian,other_relevant_information,2,yes,"Political rant calling for impeachment, not disaster information itself."
+AUDITV2_0462,other_relevant_information,,2,no,Statistical clarification/fact-check about the scope of flood impact.
+AUDITV2_0463,sympathy_and_support,,3,no,Expresses thoughts for those suffering from the disaster.
+AUDITV2_0464,rescue_volunteering_or_donation_effort,,3,no,Describes coordinating medical help for premature infants and mothers.
+AUDITV2_0465,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Describes UNHCR emergency teams helping a vulnerable population.
+AUDITV2_0466,requests_or_urgent_needs,,3,no,Urgent evacuation SOS post seeking information to help rescuers.
+AUDITV2_0467,caution_and_advice,not_humanitarian,1,yes,Corrects a false hurricane path claim amid unrelated shooting content.
+AUDITV2_0468,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,1,yes,Vague retweet hoping someone local can provide help.
+AUDITV2_0469,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Health officials providing mental health assistance after the wildfire.
+AUDITV2_0470,caution_and_advice,displaced_people_and_evacuations,2,yes,Reports mandatory evacuations ordered after the hurricane.
+AUDITV2_0471,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,"Family moves away from their damaged, cut-off home."
+AUDITV2_0472,other_relevant_information,caution_and_advice,2,yes,Shares an informational hotline and alert app for residents.
+AUDITV2_0473,missing_or_found_people,injured_or_dead_people,1,yes,Describes recovery of missing relatives' remains from under debris.
+AUDITV2_0474,other_relevant_information,,3,no,Factual count of aftershocks since the main earthquake.
+AUDITV2_0475,rescue_volunteering_or_donation_effort,,3,no,Community effort credited with saving all residents.
+AUDITV2_0476,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Describes a rescue command post limited by destroyed bridges.
+AUDITV2_0477,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Claims credit for a rescue/relief effort for Americans abroad.
+AUDITV2_0478,not_humanitarian,other_relevant_information,2,yes,"Hyperbolic political complaint, not a literal casualty report."
+AUDITV2_0479,missing_or_found_people,,3,no,Story about a town searching for loved ones in the rubble.
+AUDITV2_0480,injured_or_dead_people,infrastructure_and_utility_damage,1,yes,Reports two deaths plus people stranded without power and blocked roads.
+AUDITV2_0481,requests_or_urgent_needs,,3,no,Asks what's being done to help millions of Americans in danger.
+AUDITV2_0482,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Appeals for public figures to help raise awareness and assistance.
+AUDITV2_0483,caution_and_advice,,3,no,Announces an expanded open-fire ban as a preventive measure.
+AUDITV2_0484,rescue_volunteering_or_donation_effort,,3,no,Announces a fundraiser contributing to flood-affected Kerala.
+AUDITV2_0485,other_relevant_information,,3,no,Scientific explanation of sea level rise's effect on storm surge.
+AUDITV2_0486,infrastructure_and_utility_damage,,3,no,Drone footage shows a highway damaged by flooding.
+AUDITV2_0487,missing_or_found_people,rescue_volunteering_or_donation_effort,2,yes,Describes helping families search for missing loved ones after the cyclone.
+AUDITV2_0488,other_relevant_information,,3,no,Technical revision of the earthquake's magnitude and location.
+AUDITV2_0489,other_relevant_information,infrastructure_and_utility_damage,1,yes,Speculative commentary about a company's infrastructure risk from the storm.
+AUDITV2_0490,injured_or_dead_people,infrastructure_and_utility_damage,1,yes,Cites deaths/injuries from an unrelated event plus forecasted storm damage.
+AUDITV2_0491,injured_or_dead_people,other_relevant_information,2,yes,Reports the death toll crossing 200 during an official aerial survey.
+AUDITV2_0492,displaced_people_and_evacuations,other_relevant_information,2,yes,Asks about ongoing displacement years after a different earthquake.
+AUDITV2_0493,other_relevant_information,displaced_people_and_evacuations,2,yes,Political criticism using a shelter-sleeping comparison.
+AUDITV2_0494,other_relevant_information,not_humanitarian,1,yes,Conspiracy-themed framing of the wildfires as deliberate destruction.
+AUDITV2_0495,requests_or_urgent_needs,injured_or_dead_people,2,yes,States Mozambique needs help given the high cyclone death count.
+AUDITV2_0496,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Claims the real death toll was hidden due to lack of electricity.
+AUDITV2_0497,requests_or_urgent_needs,caution_and_advice,2,yes,Describes friends escaping into attics amid dangerous flooding.
+AUDITV2_0498,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Criticizes lack of active firefighting help despite prayers and donations.
+AUDITV2_0499,rescue_volunteering_or_donation_effort,,3,no,Air Force delivering food and water to affected islands.
+AUDITV2_0500,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,"Praises firefighters working under difficult dry, windy conditions."
