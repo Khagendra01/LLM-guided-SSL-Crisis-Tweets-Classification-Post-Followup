@@ -1,7 +1,7 @@
 {
   "algorithm_version": "audit-v2-stratified-balanced-v1",
   "seed": "audit-v2-500-2026-08-30-v1",
-  "source_repo_commit": "0498f852fd8878292034134eb261c6375737239b",
+  "source_repo_commit": "d9d1b918f0a59e468e09d657091bfb5f75bfbd5d",
   "events": [
     "california_wildfires_2018",
     "canada_wildfires_2016",
@@ -21,6 +21,13 @@
   "excluded_old_pilot_tweet_ids": 50,
   "excluded_pilot_v2_tweet_ids": 50,
   "selected_unique_tweet_ids": 500,
+  "annotation_owner": "Khagendra01",
+  "annotation_method": "AI-assisted first pass under researcher direction",
+  "human_reviewer": "Khagendra01",
+  "final_decision_authority": "Khagendra01",
+  "human_review_status": "tracked row-by-row; pending until researcher acceptance/change is recorded",
+  "human_review_ledger": "research_repo_payload/research_audit/audit_v2_500/researcher_human_review_ledger.csv",
+  "provenance_document": "research_repo_payload/research_audit/ANNOTATION_PROVENANCE_V2.md",
   "source_files": {
     "california_wildfires_2018": {
       "path": "data/pseudo-labelled/gpt-4o/california_wildfires_2018/california_wildfires_2018_train_pred.csv",
@@ -65,5 +72,5 @@
   },
   "public_blind_sha256": "27c4023a8bd9ddce1606a76b0cea394c60ea64d19ec26128e7159d2c206ec1bf",
   "hidden_key_sha256": "b607c8900fcad2020a858152d5808acb96e2e9d45042f1b0ceef966466d84249",
-  "note": "Hidden key is intentionally not committed; workflow uploads it as a private artifact."
+  "note": "Hidden key is intentionally not committed; workflow uploads it as a private artifact. Researcher human-review status is tracked separately and is never inferred from AI generation."
 }
