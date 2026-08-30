@@ -92,7 +92,7 @@ function renderCard(d){
    html+=`<div style="margin-top:10px;padding:10px;background:#dcfce7;border:1px solid #86efac;border-radius:10px;font-size:13px">Already reviewed — <button id="editBtn" class="btn small">Edit</button> <span id="finalStatus" style="margin-left:8px;color:#065f46"></span></div>`;
  }
  const autosaveHint = d.human_review_status==='reviewed' ? '' : '<span id="autoStatus" style="font-size:12px;color:#0e7c62;margin-left:8px">● autosave on</span>';
- html+=`<div class="section"><h3>Stage 1 — Your decision ${autosaveHint}</h3>
+  html+=`<div class="section"><h3>Stage 1 — Your decision ${autosaveHint}</h3>
   <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Click labels — everything autosaves. No button needed.</div>
   <label style="font-weight:700;font-size:12px">Primary label *</label>
   ${labelButtons(selPrimary,'', 'primary')}
@@ -102,6 +102,7 @@ function renderCard(d){
   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Ambiguity *</label>${toggleButtons('ia', d.initial_ambiguous)}</div>
   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Reason / notes (optional)</label><textarea id="ir" rows="3" placeholder="Optional notes...">${esc(d.initial_reason||'')}</textarea></div>
   <div id="initStatus" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
+  <div style="display:flex;gap:8px;margin-top:12px"><button id="cardPrev1" class="btn ghost">← Prev</button><button id="cardNext1" class="btn primary">Next →</button><span style="font-size:12px;color:#6b7280;align-self:center">autosaved instantly</span></div>
  </div>`;
 
  if(d.evidence_visible){
@@ -123,12 +124,14 @@ function renderCard(d){
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final ambiguity</label>${toggleButtons('fa', d.final_ambiguous||d.initial_ambiguous)}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final notes (optional)</label><textarea id="fn" rows="3" placeholder="Optional...">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
    <div id="finalStatus2" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
+   <div style="display:flex;gap:8px;margin-top:12px"><button id="cardPrev2" class="btn ghost">← Prev</button><button id="cardNext2" class="btn primary">Next →</button></div>
    </div>`;
  } else if(d.has_initial){
    html+=`<div id="revealStatus" style="margin-top:12px;font-size:12px;color:#0e7c62">✓ Initial autosaved — revealing evidence...</div>`;
  }
- el('card').innerHTML=html;
+  el('card').innerHTML=html;
  attachCardHandlers(d);
+ document.querySelector('.card-pane')?.scrollTo({top:0, behavior:'instant'});
  if(d.has_initial && !d.evidence_visible){
    setTimeout(()=>reveal(true), 300);
  }
@@ -161,6 +164,10 @@ function attachCardHandlers(d){
  });
  const ir=el('ir'); if(ir) ir.addEventListener('input', ()=>scheduleInitAutosave(true));
  const fn=el('fn'); if(fn) fn.addEventListener('input', ()=>scheduleFinalAutosave(true));
+ const cb1=el('cardNext1'); if(cb1) cb1.onclick=()=>nav(1);
+ const cbp1=el('cardPrev1'); if(cbp1) cbp1.onclick=()=>nav(-1);
+ const cb2=el('cardNext2'); if(cb2) cb2.onclick=()=>nav(1);
+ const cbp2=el('cardPrev2'); if(cbp2) cbp2.onclick=()=>nav(-1);
  const eb=el('editBtn'); if(eb) eb.onclick=editMode;
  ['ir','fn'].forEach(id=>{ const e=el(id); if(e) e.addEventListener('keydown', ev=>{ if(ev.key==='Enter' && !ev.ctrlKey) ev.stopPropagation(); }); });
 }
