@@ -1,0 +1,22 @@
+name: Export researcher first pass temp
+
+on:
+  push:
+    branches:
+      - audit-v2-clean
+    paths:
+      - "research_repo_payload/research_audit/audit_v2_500/EXPORT_RESEARCHER_FIRST_PASS_REQUEST"
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit-v2-clean
+      - uses: actions/upload-artifact@v4
+        with:
+          name: researcher-first-pass-frozen-export
+          path: research_repo_payload/research_audit/audit_v2_500/researcher_ai_assisted_first_pass_FROZEN.csv
+          if-no-files-found: error
+          retention-days: 1
