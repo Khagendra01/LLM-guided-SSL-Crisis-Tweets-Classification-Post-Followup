@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Audit V2 Human Review</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+<div class="progress-wrap">
+<div class="progress-bar"><div id="progFill"></div></div>
+<div id="progText"></div>
+</div>
+<div class="counts"><span id="counts"></span> <span id="counts2"></span></div>
+<nav>
+<button id="exportBtn">Export</button>
+<button id="validateBtn">Validate</button>
+</nav>
+</header>
+<div class="layout">
+<aside id="sidebar">
+<h3>Label Guide</h3>
+<div id="labelGuide"></div>
+<h3>Tie-breaking</h3>
+<ol id="tieList"></ol>
+</aside>
+<main>
+<div class="filters">
+<select id="fPriority"><option value="">All priorities</option><option>P1_unanimous_models_disagree_with_HumAID</option><option>P2_3of4_models_disagree_with_HumAID</option><option>P3_model_split</option><option>P4_strong_model_consensus_matches_HumAID</option></select>
+<select id="fEvent"><option value="">All events</option></select>
+<select id="fStatus"><option value="">All status</option><option value="pending">Pending</option><option value="reviewed">Reviewed</option><option value="bookmarked">Bookmarked</option></select>
+<select id="fConsensus"><option value="">All consensus</option><option>4_of_4</option><option>3_of_4</option><option>2_1_1</option><option>2_2_tie</option><option>all_different</option></select>
+<input id="jumpId" placeholder="AUDITV2_0001" size="14"><button id="jumpBtn">Jump</button>
+</div>
+<div id="queueList" class="queue"></div>
+<div id="card" class="card"></div>
+<div id="evidencePanel" class="evidence hidden"></div>
+<div id="controls">
+<button id="prevBtn">Prev (←)</button>
+<button id="nextBtn">Next (→)</button>
+<button id="bookmarkBtn">Bookmark (b)</button>
+<button id="skipBtn">Skip (s)</button>
+</div>
+<div id="reviewScreen" class="hidden"></div>
+</main>
+</div>
+<div id="msg"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
