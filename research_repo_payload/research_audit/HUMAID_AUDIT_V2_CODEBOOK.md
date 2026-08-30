@@ -2,6 +2,10 @@
 
 Choose exactly one **primary label** based on the tweet's primary communicative intent. An optional **secondary label** may record a genuinely plausible alternative. Do not use the hidden HumAID or GPT-4o labels while annotating.
 
+For the researcher-owned audit, this codebook is applied in an **AI-assisted first pass conducted on behalf of the researcher**. The researcher retains final label responsibility and human adjudication authority. A first-pass label becomes a human-reviewed final label only after researcher review is recorded in the row-level review ledger.
+
+Independent comparison models use the same codebook but their outputs remain separate model annotations.
+
 ## Labels
 
 - `caution_and_advice` — warnings, threat-status alerts, instructions, safety guidance, tips, or behavioral advice. An active official threat/warning can qualify even without an imperative.
