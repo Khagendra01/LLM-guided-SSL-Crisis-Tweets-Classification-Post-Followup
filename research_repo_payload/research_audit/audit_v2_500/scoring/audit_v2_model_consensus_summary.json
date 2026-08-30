@@ -1,0 +1,33 @@
+{
+  "sample_n": 500,
+  "sample_design": "50 per event; within each event 25 HumAID/GPT-4o agreements and 25 disagreements",
+  "model_sets": [
+    "Researcher first pass",
+    "Claude",
+    "Gemini",
+    "Grok"
+  ],
+  "model_consensus_counts": {
+    "4_of_4": 268,
+    "3_of_4": 142,
+    "2_2_tie": 42,
+    "2_1_1": 46,
+    "all_different": 2
+  },
+  "strong_consensus_3_or_4_n": 410,
+  "strong_consensus_matches_humaid_n": 231,
+  "strong_consensus_matches_gpt4o_n": 293,
+  "unanimous_breakdown": {
+    "unanimous_n": 268,
+    "matches_both_humaid_and_gpt4o": 140,
+    "matches_gpt4o_only": 72,
+    "matches_humaid_only": 27,
+    "matches_neither": 29,
+    "differs_from_humaid_total": 101
+  },
+  "unblinded_review_committed_to_public_repo": true,
+  "unblinded_review_path": "research_repo_payload/research_audit/audit_v2_500/unblinded_review/",
+  "note": "Model consensus prioritizes researcher review but is not human ground truth. This branch is intentionally unblinded.",
+  "human_review_status_at_scoring": "pending",
+  "live_human_review_progress": "research_repo_payload/research_audit/audit_v2_500/HUMAN_REVIEW_PROGRESS.json"
+}

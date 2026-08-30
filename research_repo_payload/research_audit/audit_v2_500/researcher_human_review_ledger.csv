@@ -15,9 +15,9 @@ AUDITV2_0013,Khagendra01,AI-assisted first pass under researcher direction,Khage
 AUDITV2_0014,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0015,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0016,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
-AUDITV2_0017,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
+AUDITV2_0017,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,reviewed,displaced_people_and_evacuations,accepted,[batch_001] Opening shelters directly concerns accommodation of affected people.
 AUDITV2_0018,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
-AUDITV2_0019,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
+AUDITV2_0019,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,reviewed,rescue_volunteering_or_donation_effort,accepted,[batch_001] The speaker wants to provide help rather than requesting survival assistance as an affected person.
 AUDITV2_0020,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0021,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0022,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
@@ -25,11 +25,11 @@ AUDITV2_0023,Khagendra01,AI-assisted first pass under researcher direction,Khage
 AUDITV2_0024,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0025,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0026,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
-AUDITV2_0027,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
-AUDITV2_0028,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
+AUDITV2_0027,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,reviewed,not_humanitarian,accepted,[batch_001] The primary intent is an unrelated business-news roundup; the flood hashtags are incidental.
+AUDITV2_0028,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,reviewed,other_relevant_information,changed,[batch_001] The visible text reports viewing homes after the wildfire but does not explicitly state that the homes were damaged.
 AUDITV2_0029,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0030,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
-AUDITV2_0031,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
+AUDITV2_0031,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,reviewed,other_relevant_information,accepted,"[batch_001] The tweet discusses the real earthquake and fault activity, so it is on-topic disaster information."
 AUDITV2_0032,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0033,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,
 AUDITV2_0034,Khagendra01,AI-assisted first pass under researcher direction,Khagendra01,pending,,,

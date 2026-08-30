@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "errors": [],
+  "rows": 500,
+  "unique_annotation_ids": 500,
+  "legal_label_rows": 500,
+  "repaired_two_one_one_rows": 46,
+  "blank_recommendations": 0,
+  "requires_researcher_confirmation": {
+    "yes": 495,
+    "no": 5
+  }
+}
