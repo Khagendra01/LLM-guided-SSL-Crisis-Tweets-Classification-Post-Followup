@@ -1,15 +1,17 @@
-# Pilot V2 results — researcher calibration of AI-assisted workflow
+# Pilot V2 results — AI-assisted calibration/test
 
 The 50-item Pilot V2 was sampled fresh from the current repository snapshot and excluded all 50 tweets from the earlier pilot. It contains 5 tweets per event and was deliberately stratified to 25 HumAID↔GPT-4o agreement rows and 25 disagreement rows. Therefore these are **audit agreement statistics**, not ordinary test-set accuracy estimates.
 
-The AI-assisted pilot annotations were produced on behalf of the researcher and frozen in commit `7764df79dd75bd8733a472733c0a34cd6ac6fcb1` before the hidden labels were inspected. The pilot served as a calibration/test of the annotation assistant's application of the researcher's codebook before the larger Audit V2 first pass.
+The AI-assisted pilot annotations were produced on behalf of the researcher and frozen in commit `7764df79dd75bd8733a472733c0a34cd6ac6fcb1` before the hidden labels were inspected. The pilot was used to test/calibrate the annotation assistant's application of the codebook before the larger Audit V2 first pass.
+
+**Review-status note:** this file does not claim that the researcher personally reviewed or accepted the pilot annotations. Any such human-review claim should be made only if separately documented.
 
 ## Primary-label results
 
 | Comparison | Exact agreement | Macro-F1 | Cohen's kappa |
 |---|---:|---:|---:|
-| Researcher AI-assisted first pass ↔ HumAID | 25/50 = **50.0%** | 0.344 | 0.386 |
-| Researcher AI-assisted first pass ↔ GPT-4o | 40/50 = **80.0%** | 0.607 | 0.748 |
+| AI-assisted first pass ↔ HumAID | 25/50 = **50.0%** | 0.344 | 0.386 |
+| AI-assisted first pass ↔ GPT-4o | 40/50 = **80.0%** | 0.607 | 0.748 |
 | HumAID ↔ GPT-4o | 25/50 = **50.0%** | 0.371 | 0.406 |
 
 On the 25 deliberately contested HumAID↔GPT-4o rows, the AI-assisted first pass chose:
@@ -47,6 +49,6 @@ The refined V2 codebook captures these rules.
 
 ## Methodological status
 
-This pilot validates the **use of an AI annotation assistant within the researcher's workflow**; it does not convert AI output into an independent human annotation.
+This pilot tests an **AI annotation assistant within the researcher's workflow**; it does not convert AI output into an independent human annotation and it does not itself establish human review.
 
-The researcher owns the audit labels and retains final review/adjudication authority. For Audit V2, row-level human review is tracked explicitly. Claude, Grok, Gemini, GPT-4o, and similar systems remain separate model-comparison annotations unless the researcher explicitly adopts a label during review.
+The researcher owns the audit workflow and retains final review/adjudication authority. For Audit V2, row-level human review is tracked explicitly. Claude, Grok, Gemini, GPT-4o, and similar systems remain separate model-comparison annotations unless the researcher explicitly adopts a label during review.

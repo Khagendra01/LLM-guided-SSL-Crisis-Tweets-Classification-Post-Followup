@@ -15,11 +15,13 @@ For the researcher's Audit V2 label set:
 
 The AI-assisted first pass must not be described as an independent human annotation. It is part of the researcher's annotation workflow. A row becomes **human-reviewed** only after the researcher has inspected it and recorded an acceptance or change in the review ledger.
 
-## Calibration
+## Pilot calibration/test
 
-Before the 500-item Audit V2, the AI-assisted annotation procedure was calibrated on a smaller pilot. The researcher reviewed the behavior of the procedure and accepted it for use as the first-pass annotation assistant under the refined HumAID codebook.
+Before the 500-item Audit V2, the AI-assisted annotation procedure was tested on a smaller blind pilot and its agreement characteristics against HumAID and GPT-4o were measured.
 
-This calibration supports the workflow but does **not** automatically mark all later 500 rows as human-reviewed. Row-level review status is recorded separately.
+The pilot provided a calibration/test of how the annotation assistant applied the codebook. **No claim is made here that the pilot itself was personally reviewed or accepted by the researcher unless such review is separately documented.**
+
+Likewise, pilot testing does not automatically mark any of the later 500 rows as human-reviewed. Main-audit review status is recorded separately, row by row.
 
 ## Independent comparison models
 
@@ -29,11 +31,11 @@ They should therefore be stored separately from the researcher-owned final audit
 
 ## Paper-facing wording
 
-Recommended methods wording:
+Recommended methods wording before row-level human review is complete:
 
-> Audit labels were produced using an AI-assisted annotation workflow conducted on behalf of the researcher under a predefined HumAID codebook. The procedure was calibrated on a researcher-reviewed pilot. AI supplied a first-pass label, optional secondary label, confidence, ambiguity flag, and short rationale. Final annotation responsibility, human review, and adjudication authority remained with the researcher. Row-level review status was recorded explicitly, and only labels accepted or revised by the researcher were treated as human-reviewed final audit labels.
+> Audit V2 used an AI-assisted first-pass annotation workflow conducted on behalf of the researcher under a predefined HumAID codebook. An initial blind pilot was used to test the first-pass procedure and measure its agreement characteristics. AI supplied a first-pass label, optional secondary label, confidence, ambiguity flag, and short rationale. Final annotation responsibility, human review, and adjudication authority remained with the researcher. Human-review status was recorded explicitly at the row level; labels were treated as human-reviewed only after researcher acceptance or revision was recorded.
 
-After all 500 rows have been reviewed, the following statement is appropriate:
+After all 500 rows have actually been reviewed, the following additional statement is appropriate:
 
 > All final Audit V2 labels were reviewed by the researcher. AI was used only as an annotation assistant for the initial labeling pass; final label acceptance and adjudication remained with the researcher.
 
