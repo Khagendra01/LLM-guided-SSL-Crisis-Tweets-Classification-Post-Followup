@@ -28,6 +28,7 @@ Audit V2 is deliberately **disagreement-enriched**: each of the 10 events contri
 | Grok ↔ GPT-4o | 63.6% | 0.634 | 0.593 |
 
 Pairwise agreement between the researcher first pass and independent models is substantially higher:
+
 - Researcher ↔ Claude: **75.0%**
 - Researcher ↔ Gemini: **68.2%**
 - Researcher ↔ Grok: **70.8%**
@@ -44,7 +45,7 @@ The sample contains exactly 250 HumAID↔GPT-4o disagreements.
 - Gemini: GPT-4o 123 (49.2%), HumAID 70 (28.0%), neither 57 (22.8%)
 - Grok: GPT-4o 127 (50.8%), HumAID 74 (29.6%), neither 49 (19.6%)
 
-All four passes therefore independently favor the GPT-4o side more often than the original HumAID side on deliberately contested rows. This is an audit finding; it does not by itself prove GPT-4o is correct.
+All four passes independently favor the GPT-4o side more often than the original HumAID side on deliberately contested rows. This is an audit finding; it does not by itself prove GPT-4o is correct.
 
 ## Four-way audit consensus
 
@@ -59,6 +60,7 @@ Across researcher first pass + Claude + Gemini + Grok:
 Thus **410/500** rows have a 3-of-4 or 4-of-4 audit/model consensus.
 
 Among the 268 unanimous rows:
+
 - 140 match both HumAID and GPT-4o
 - 72 match GPT-4o while differing from HumAID
 - 27 match HumAID while differing from GPT-4o
@@ -68,14 +70,21 @@ Therefore **101/268 unanimous rows** have a unanimous audit/model label differen
 
 ## Human-review status
 
-No main-audit row is automatically marked human-reviewed by this scoring step. The existing 500-row researcher review ledger remains pending.
+No main-audit row is automatically marked human-reviewed by this scoring step. All 500 researcher-review ledger rows remain pending.
 
-A private prioritized review queue was generated separately and is intentionally **not committed** because it contains row-level hidden HumAID/GPT-4o labels.
+The prioritized queue and full hidden key are intentionally committed on the public, unblinded handoff branch:
+
+- `../unblinded_review/researcher_review_queue_prioritized_UNBLINDED.csv`
+- `../unblinded_review/audit_v2_500_hidden_key_LOCKED.csv`
+- `../unblinded_review/canonical_adjudication_queue_UNBLINDED.csv`
+
+Do not use this branch for a future blind annotation experiment.
 
 Recommended review order:
+
 1. unanimous 4-of-4 audit/model consensus that disagrees with HumAID;
 2. 3-of-4 consensus that disagrees with HumAID;
 3. split/tied audit cases;
 4. strong consensus matching HumAID.
 
-After researcher review/adjudication, the accepted/changed labels can become the corrected Audit V2 label set used for downstream GPU experiments.
+After researcher review and adjudication, labels explicitly accepted or changed by the researcher can become the corrected Audit V2 label set used for downstream GPU experiments.
