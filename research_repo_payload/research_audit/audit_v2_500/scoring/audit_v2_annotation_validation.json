@@ -1,0 +1,31 @@
+{
+  "status": "all_four_annotation_sets_valid_and_aligned",
+  "rows": 500,
+  "annotation_ids": "AUDITV2_0001-AUDITV2_0500",
+  "hidden_key": {
+    "sha256": "b607c8900fcad2020a858152d5808acb96e2e9d45042f1b0ceef966466d84249",
+    "source": "GitHub Actions artifact audit-v2-hidden-key-locked, artifact id 9735287306",
+    "opened_after_external_outputs_frozen": true,
+    "committed_to_public_repo": false
+  },
+  "researcher_first_pass": {
+    "sha256": "38390d45f7e79a274245318a49c289988231b109f8139bb5d8bc933f70512f7a"
+  },
+  "external_model_files": {
+    "claude": {
+      "sha256": "bf443d7b218c75962e07c54e968d2a89177f9898595265acd7d1f4f028219e11",
+      "rows": 500
+    },
+    "gemini": {
+      "sha256": "cb321f110a151f13fa2476838e05763f6a4f5b5bf7e88b6dc6500ab489d36036",
+      "rows": 500,
+      "note": "Two empty export columns removed during canonical normalization; annotation fields unchanged."
+    },
+    "grok": {
+      "sha256": "c331910fa3b868c051cfb7f240f9a3a136418a3312038029841ea499dbe8ea0a",
+      "rows": 500,
+      "note": "Replacement upload validated; no placeholder-tail pattern."
+    }
+  },
+  "human_review_status": "All 500 main-audit rows remain pending until researcher inspection."
+}
