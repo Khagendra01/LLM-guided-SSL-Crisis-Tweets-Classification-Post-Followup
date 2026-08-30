@@ -60,17 +60,35 @@ def main() -> None:
     if missing:
         fail(f"missing recovery chunks: {missing}")
 
-    # Part 1 contains the header; parts 2-5 are headerless. They were staged
-    # from the original csv.writer output, so concatenating bytes is deliberate.
-    data = b"".join((STAGE / name).read_bytes() for name in PARTS)
+    # Parse staged transport chunks semantically, then reserialize using the
+    # exact csv.writer settings used by the original frozen file. This avoids
+    # treating harmless transport quoting differences as annotation changes.
+    values = []
+    for part_i, name in enumerate(PARTS):
+        with (STAGE / name).open(newline="", encoding="utf-8") as f:
+            parsed = list(csv.reader(f))
+        if not parsed:
+            fail(f"empty recovery chunk: {name}")
+        if part_i == 0:
+            if parsed[0] != EXPECTED_COLUMNS:
+                fail(f"schema mismatch in {name}: {parsed[0]}")
+            parsed = parsed[1:]
+        for line_i, row in enumerate(parsed, 1):
+            if len(row) != len(EXPECTED_COLUMNS):
+                fail(f"{name} row {line_i}: expected 6 columns, got {len(row)}")
+            values.append(row)
+
+    out_buf = io.StringIO(newline="")
+    writer = csv.writer(out_buf, lineterminator="\n")
+    writer.writerow(EXPECTED_COLUMNS)
+    writer.writerows(values)
+    data = out_buf.getvalue().encode("utf-8")
     sha = hashlib.sha256(data).hexdigest()
     if sha != EXPECTED_SHA256:
-        fail(f"SHA256 mismatch: got {sha}, expected {EXPECTED_SHA256}")
+        fail(f"semantic reconstruction SHA256 mismatch: got {sha}, expected {EXPECTED_SHA256}")
 
     text = data.decode("utf-8")
     reader = csv.DictReader(io.StringIO(text))
-    if reader.fieldnames != EXPECTED_COLUMNS:
-        fail(f"schema mismatch: {reader.fieldnames}")
     rows = list(reader)
 
     if len(rows) != 500:
