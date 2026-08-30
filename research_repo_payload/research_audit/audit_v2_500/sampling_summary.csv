@@ -1,0 +1,11 @@
+event,n,agree,disagree,low_confidence,medium_confidence,high_confidence
+california_wildfires_2018,50,25,25,0,25,25
+canada_wildfires_2016,50,25,25,0,26,24
+cyclone_idai_2019,50,25,25,0,24,26
+hurricane_dorian_2019,50,25,25,0,25,25
+hurricane_florence_2018,50,25,25,0,25,25
+hurricane_harvey_2017,50,25,25,0,25,25
+hurricane_irma_2017,50,25,25,0,25,25
+hurricane_maria_2017,50,25,25,0,25,25
+kaikoura_earthquake_2016,50,25,25,0,25,25
+kerala_floods_2018,50,25,25,0,24,26
