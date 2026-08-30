@@ -60,5 +60,7 @@ jobs:
             echo "No generated changes to commit"
           else
             git commit -m "Generate reproducible Audit V2 500 package [skip ci]"
+            git fetch origin audit-v2-clean
+            git rebase origin/audit-v2-clean
             git push origin HEAD:audit-v2-clean
           fi
