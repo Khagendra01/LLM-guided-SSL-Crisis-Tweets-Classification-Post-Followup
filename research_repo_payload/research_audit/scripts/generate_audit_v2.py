@@ -14,7 +14,7 @@ import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[4]
+ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "research_repo_payload" / "research_audit" / "audit_v2_500"
 PRIVATE = Path(os.environ.get("AUDIT_V2_PRIVATE_DIR", "/tmp/audit_v2_private"))
 SEED = "audit-v2-500-2026-08-30-v1"
