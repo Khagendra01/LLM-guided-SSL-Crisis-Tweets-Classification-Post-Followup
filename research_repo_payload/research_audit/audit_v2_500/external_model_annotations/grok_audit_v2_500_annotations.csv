@@ -1,0 +1,501 @@
+annotation_id,primary_label,secondary_label,confidence,ambiguous,reason
+AUDITV2_0001,other_relevant_information,sympathy_and_support,2,yes,Describes interfaith sheltering and welcome during Kerala floods as positive example.
+AUDITV2_0002,injured_or_dead_people,,3,no,Focuses on death toll from predictable cyclone and leadership failure.
+AUDITV2_0003,infrastructure_and_utility_damage,,3,no,Reports damage including no power phones or internet in Dominica.
+AUDITV2_0004,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Military planes and ships sent to quake-affected areas as response.
+AUDITV2_0005,rescue_volunteering_or_donation_effort,,3,no,Call to send much-needed supplies before carriers stop delivering.
+AUDITV2_0006,sympathy_and_support,,3,no,Thoughts with those who were affected by the quake.
+AUDITV2_0007,injured_or_dead_people,other_relevant_information,2,yes,Mentions nearly 3000 deaths in Puerto Rico with political commentary.
+AUDITV2_0008,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,States need help to contain and stop the fire from spreading.
+AUDITV2_0009,other_relevant_information,sympathy_and_support,2,yes,Praises hurricane hunter crews for data supporting life-saving decisions.
+AUDITV2_0010,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Lost everything and needs help please spread and donate.
+AUDITV2_0011,other_relevant_information,caution_and_advice,2,yes,Reports aftershocks coming thick and fast.
+AUDITV2_0012,displaced_people_and_evacuations,caution_and_advice,2,yes,Describes lack of warning and eventual evacuation of homes.
+AUDITV2_0013,injured_or_dead_people,other_relevant_information,2,yes,Mentions rising death toll and homes decimated with critique of racial hostilities.
+AUDITV2_0014,rescue_volunteering_or_donation_effort,,3,no,Saving paper towels for hurricane Florence aid.
+AUDITV2_0015,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Hopes people in need are getting the aid being delivered.
+AUDITV2_0016,other_relevant_information,,3,no,Criticizes politicizing donations for Cyclone Idai victims.
+AUDITV2_0017,displaced_people_and_evacuations,caution_and_advice,2,yes,St. Lucie County to open shelters Sunday.
+AUDITV2_0018,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Suggests spending on water bombers instead of F-35s for wildfire response.
+AUDITV2_0019,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Asks how to help pups affected by Hurricane Florence.
+AUDITV2_0020,other_relevant_information,displaced_people_and_evacuations,2,yes,Notes Irma compounding food insecurity and displacement in Haiti.
+AUDITV2_0021,rescue_volunteering_or_donation_effort,,3,no,Plea to help furry friends after quake.
+AUDITV2_0022,injured_or_dead_people,other_relevant_information,2,yes,Historical death toll from 1935 Labor Day Hurricane including vets.
+AUDITV2_0023,rescue_volunteering_or_donation_effort,,3,no,Construction association donating $100k to Fort McMurray wildfire relief.
+AUDITV2_0024,sympathy_and_support,requests_or_urgent_needs,2,yes,Notes devastation displacement deaths and need for assistance and support.
+AUDITV2_0025,other_relevant_information,injured_or_dead_people,2,yes,Critiques regime and notes people died of hunger in past similar situations.
+AUDITV2_0026,injured_or_dead_people,other_relevant_information,2,yes,Reports hundreds killed and 600000 in need of aid with media critique.
+AUDITV2_0027,not_humanitarian,,3,no,Business news wrap with only tangential mention of Kerala floods.
+AUDITV2_0028,infrastructure_and_utility_damage,other_relevant_information,2,yes,Residents see first images of homes following wildfire.
+AUDITV2_0029,other_relevant_information,,3,no,Critique of weather channel anthropomorphizing the hurricane.
+AUDITV2_0030,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Requests fuel vegetables and larger team of doctors for Kerala.
+AUDITV2_0031,other_relevant_information,,3,no,Critique that scientists have not provided adequate explanations of the fault.
+AUDITV2_0032,injured_or_dead_people,missing_or_found_people,2,yes,Sad update 631 missing death toll hits 63.
+AUDITV2_0033,other_relevant_information,,3,no,Comprehensive re-entry booklet for residents.
+AUDITV2_0034,infrastructure_and_utility_damage,,3,no,Pink car remains among ruins of destroyed homes.
+AUDITV2_0035,caution_and_advice,other_relevant_information,2,yes,Hurricane Dorian 7 states within the cone.
+AUDITV2_0036,other_relevant_information,infrastructure_and_utility_damage,2,yes,Rain relief from wildfires but will cause new problems complicating locating missing.
+AUDITV2_0037,other_relevant_information,,3,no,Quantifies 8.5 trillion gallons of water that fell on North Carolina.
+AUDITV2_0038,other_relevant_information,,3,no,Trump promises safe forests as he surveys wildfire damage.
+AUDITV2_0039,sympathy_and_support,requests_or_urgent_needs,2,yes,Questions lack of aid to New Zealand after earthquake.
+AUDITV2_0040,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Town destroyed and quarter million evacuated with critique of funding threat.
+AUDITV2_0041,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Reports on prisoner firefighters risking lives for $1 an hour.
+AUDITV2_0042,injured_or_dead_people,caution_and_advice,2,yes,Red alert death reached 42 heavy rains continue pray for Kerala.
+AUDITV2_0043,caution_and_advice,sympathy_and_support,2,yes,Advice to stay strong help each other remember pets get to safety.
+AUDITV2_0044,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,Wildfire threatening communities please help.
+AUDITV2_0045,infrastructure_and_utility_damage,rescue_volunteering_or_donation_effort,2,yes,Road connectivity restored temporary bridges medical camps by army.
+AUDITV2_0046,not_humanitarian,,2,yes,Morning news list including Florence among unrelated items.
+AUDITV2_0047,requests_or_urgent_needs,,3,no,Need help now with food shelter and necessities not the fires.
+AUDITV2_0048,injured_or_dead_people,requests_or_urgent_needs,2,yes,Victims searching for their own dead government not taking seriously.
+AUDITV2_0049,not_humanitarian,,3,no,Law firm advertisement for post-Irma help.
+AUDITV2_0050,missing_or_found_people,rescue_volunteering_or_donation_effort,2,yes,Hundreds missing families separated we are helping them find each other.
+AUDITV2_0051,sympathy_and_support,displaced_people_and_evacuations,2,yes,People still in tents pray for health and safety of affected.
+AUDITV2_0052,infrastructure_and_utility_damage,sympathy_and_support,2,yes,Returned home some damage but home dry with power grateful.
+AUDITV2_0053,displaced_people_and_evacuations,other_relevant_information,2,yes,Powerful quake prompts temporary evacuation in coast.
+AUDITV2_0054,infrastructure_and_utility_damage,,3,no,Crew put up temporary dams to block water from I-10.
+AUDITV2_0055,missing_or_found_people,injured_or_dead_people,2,yes,Lives lost two junior golfers missing homes swept people marooned pray.
+AUDITV2_0056,rescue_volunteering_or_donation_effort,,3,no,Help urgently needed donate to Red Cross Alberta Wildfire relief.
+AUDITV2_0057,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Airmen assess damage and evacuate civilians.
+AUDITV2_0058,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Hot coffee needed please help to send some coffee.
+AUDITV2_0059,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Thousands flee others die drown from lack of resources.
+AUDITV2_0060,rescue_volunteering_or_donation_effort,,3,no,Rundown of what team can do to help call anytime.
+AUDITV2_0061,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Pray and consider how you can help.
+AUDITV2_0062,other_relevant_information,,3,no,Kerala requests for funds national disaster declaration and UAE aid all refused.
+AUDITV2_0063,not_humanitarian,,3,no,Wish for rain due to local forest fires unrelated to Irma.
+AUDITV2_0064,rescue_volunteering_or_donation_effort,,3,no,Please help us get the word out RT would help.
+AUDITV2_0065,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,School district will give students 3 free meals a day for year after Harvey.
+AUDITV2_0066,other_relevant_information,,3,no,Critique of Trump threats to cut aid and other policy issues.
+AUDITV2_0067,infrastructure_and_utility_damage,,3,no,Most reporting relatively moderate damage one broke a glass.
+AUDITV2_0068,infrastructure_and_utility_damage,,3,no,Florida agriculture losses widespread billions in damage.
+AUDITV2_0069,sympathy_and_support,,3,no,Stand in prayer for those in path of Dorian ready to support.
+AUDITV2_0070,other_relevant_information,,3,no,Call to fill out felt detailed report for the quake.
+AUDITV2_0071,other_relevant_information,displaced_people_and_evacuations,2,yes,UIL creating waivers for players displaced by Harvey.
+AUDITV2_0072,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Hope everyone staying safe looking into ways we can help.
+AUDITV2_0073,displaced_people_and_evacuations,caution_and_advice,2,yes,Space Coast beachside evacuation ordered ahead of Dorian.
+AUDITV2_0074,caution_and_advice,,3,no,New threat churning prompting weather watches in areas hit by Irma.
+AUDITV2_0075,sympathy_and_support,other_relevant_information,2,yes,Thoughts and prayers worked saw positive about Florence.
+AUDITV2_0076,other_relevant_information,infrastructure_and_utility_damage,2,yes,Update rain some wind still have power no flooding.
+AUDITV2_0077,injured_or_dead_people,other_relevant_information,2,yes,Hearts broken about bridge collapse after Kerala flood mention.
+AUDITV2_0078,injured_or_dead_people,missing_or_found_people,2,yes,Death toll rises more than 500 still missing rains douse wildfire.
+AUDITV2_0079,caution_and_advice,displaced_people_and_evacuations,2,yes,Dam releasing more water peoples in Chengannur kindly move to safe place.
+AUDITV2_0080,rescue_volunteering_or_donation_effort,,2,yes,Request to celebrity for larger donation to Kerala flood relief.
+AUDITV2_0081,not_humanitarian,,3,no,Report of magnitude 3.4 quake in California unrelated to Irma.
+AUDITV2_0082,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Hurricane gunning where we live need help for 2 nights evacuate family.
+AUDITV2_0083,requests_or_urgent_needs,sympathy_and_support,2,yes,Please send help to fellow US citizens suffering in Puerto Rico.
+AUDITV2_0084,caution_and_advice,,3,no,Hurricane Maria still churning towards East Coast.
+AUDITV2_0085,other_relevant_information,,3,no,Praises Publix for stocking shelves full including water.
+AUDITV2_0086,requests_or_urgent_needs,,3,no,Airline not answering emails for YMM wildfire victims.
+AUDITV2_0087,sympathy_and_support,caution_and_advice,2,yes,Stay safe 7.1 magnitude earthquake aint no joke.
+AUDITV2_0088,other_relevant_information,infrastructure_and_utility_damage,2,yes,Water up in Reedy River people in boat after Florence rain.
+AUDITV2_0089,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Please invade and help us we need extra assistance in fire.
+AUDITV2_0090,infrastructure_and_utility_damage,other_relevant_information,2,yes,Schools remain closed due to Hurricane Irma damage.
+AUDITV2_0091,injured_or_dead_people,other_relevant_information,2,yes,Actual number of deaths not being reported by government.
+AUDITV2_0092,injured_or_dead_people,sympathy_and_support,2,yes,11 people passed away send thoughts and prayers to victims families.
+AUDITV2_0093,other_relevant_information,,3,no,Cop telling truth about Maria aid terrible mayor is evil.
+AUDITV2_0094,requests_or_urgent_needs,,3,no,Live in camper need help getting a generator before Dorian.
+AUDITV2_0095,rescue_volunteering_or_donation_effort,,3,no,How to help the California wildfires people.
+AUDITV2_0096,caution_and_advice,other_relevant_information,2,yes,Storm lashes Dominican Republic after Puerto Rico.
+AUDITV2_0097,rescue_volunteering_or_donation_effort,,3,no,Caritas coordinating with members and civil defence for eqnz.
+AUDITV2_0098,sympathy_and_support,,3,no,Wonderful to see compassion extended toward wildfire victims and evacuees.
+AUDITV2_0099,injured_or_dead_people,sympathy_and_support,2,yes,Death toll up to 39 hearts and prayers to people in Texas.
+AUDITV2_0100,caution_and_advice,infrastructure_and_utility_damage,2,yes,Dorian category 5 major damage to Bahamas path discussion.
+AUDITV2_0101,other_relevant_information,,3,no,Mild intensity earthquake no damage reported.
+AUDITV2_0102,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Congress president met with victims at relief camp.
+AUDITV2_0103,missing_or_found_people,injured_or_dead_people,2,yes,203 still missing death toll stands at 88.
+AUDITV2_0104,caution_and_advice,infrastructure_and_utility_damage,2,yes,Advice on blueprints for bridges and trains based on flood videos.
+AUDITV2_0105,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Please assist Bahamian govt they have been obliterated need help.
+AUDITV2_0106,requests_or_urgent_needs,,3,no,People turn to social media for help as tourists caught in earthquake.
+AUDITV2_0107,caution_and_advice,,3,no,Flood water can kill you in many ways please be careful.
+AUDITV2_0108,injured_or_dead_people,other_relevant_information,2,yes,Silence by SADC on Cyclone Idai that left many dead and destroyed property.
+AUDITV2_0109,caution_and_advice,infrastructure_and_utility_damage,2,yes,San Marcos River approaching major flooding.
+AUDITV2_0110,rescue_volunteering_or_donation_effort,,3,no,Retweet with hashtag and State Farm will donate a dollar for fire recovery.
+AUDITV2_0111,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Items needed clothes food toiletries baby items everything helps.
+AUDITV2_0112,not_humanitarian,,3,no,Sports comparison of QB damage vs Dorian metaphorical.
+AUDITV2_0113,caution_and_advice,rescue_volunteering_or_donation_effort,2,yes,Tips and links to resources for recovering from Maria.
+AUDITV2_0114,caution_and_advice,other_relevant_information,2,yes,Authorities should have warned people to move to safer areas.
+AUDITV2_0115,sympathy_and_support,displaced_people_and_evacuations,2,yes,Continue to support employees and those evacuated.
+AUDITV2_0116,injured_or_dead_people,missing_or_found_people,2,yes,Aid workers widen search for survivors death toll implied.
+AUDITV2_0117,other_relevant_information,caution_and_advice,2,yes,Nursing homes still dont meet emergency power plan requirements after Irma.
+AUDITV2_0118,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Thank you for running the Harvey relief.
+AUDITV2_0119,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Government approved emergency funding for wildfire evacuees.
+AUDITV2_0120,sympathy_and_support,,3,no,Amir of Kuwait sent message of condolence to presidents of affected countries.
+AUDITV2_0121,sympathy_and_support,other_relevant_information,2,yes,Postcards and prayers for all in the path of the hurricane.
+AUDITV2_0122,infrastructure_and_utility_damage,sympathy_and_support,2,yes,Home was destroyed in 08 wildfire life gets better.
+AUDITV2_0123,other_relevant_information,,3,no,Link for further general information on Manitoba wildfires.
+AUDITV2_0124,sympathy_and_support,,3,no,Thoughts with Florida and victims of hurricane Irma.
+AUDITV2_0125,rescue_volunteering_or_donation_effort,,3,no,Asking for all swift water response team members to report for deployment.
+AUDITV2_0126,other_relevant_information,infrastructure_and_utility_damage,2,yes,Perspective on size of Camp Fire 223 square miles.
+AUDITV2_0127,caution_and_advice,,3,no,Severe thunderstorm warning in effect related to wildfire conditions.
+AUDITV2_0128,sympathy_and_support,displaced_people_and_evacuations,2,yes,Positive thoughts for homeowners as evacuees begin return and rebuild.
+AUDITV2_0129,infrastructure_and_utility_damage,sympathy_and_support,2,yes,Thank God it didn’t do as bad damage to my island as Irma and Maria.
+AUDITV2_0130,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,US Navy evacuates residents from storm-devastated Dominica after Maria.
+AUDITV2_0131,injured_or_dead_people,,3,no,Notice the number of deaths compared to Harvey and Irma.
+AUDITV2_0132,other_relevant_information,,3,no,AP CM conducts aerial survey of flood hit areas.
+AUDITV2_0133,missing_or_found_people,requests_or_urgent_needs,2,yes,Thousands remain missing millions left destitute without food or basic services.
+AUDITV2_0134,displaced_people_and_evacuations,caution_and_advice,2,yes,Wildfires spark evacuation order state of emergency.
+AUDITV2_0135,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Need help evacuating tagged people.
+AUDITV2_0136,rescue_volunteering_or_donation_effort,,3,no,Looking for consultants to assist with Hurricane Florence.
+AUDITV2_0137,other_relevant_information,caution_and_advice,2,yes,Florence is climate change triple threat destruction potential will get worse.
+AUDITV2_0138,rescue_volunteering_or_donation_effort,,3,no,Save the eqnz cows.
+AUDITV2_0139,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Sad events wildfires destroying homes you and I can help.
+AUDITV2_0140,injured_or_dead_people,caution_and_advice,2,yes,Heavy rain alert 210 dead so far focus shifts to restoration.
+AUDITV2_0141,injured_or_dead_people,sympathy_and_support,2,yes,Firefighters pray for mother and baby killed total at least 11 dead.
+AUDITV2_0142,rescue_volunteering_or_donation_effort,,3,no,Grocers providing support to those affected by YMM fire.
+AUDITV2_0143,sympathy_and_support,,3,no,Thoughts and prayers with East Coast affected by Florence especially Lumbee Tribe.
+AUDITV2_0144,other_relevant_information,,3,no,Center of Maria forecast to pass near NOAA tsunami buoy.
+AUDITV2_0145,caution_and_advice,,3,no,Five tornado warnings at once from Harvey.
+AUDITV2_0146,other_relevant_information,,3,no,Critique of leader using private jet while seeking aid.
+AUDITV2_0147,infrastructure_and_utility_damage,,3,no,Catastrophic destruction from Dorian inside a house with infant.
+AUDITV2_0148,other_relevant_information,caution_and_advice,2,yes,USPS will try to deliver Social Security checks early in affected areas.
+AUDITV2_0149,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,From evacuation to devastation from Florence.
+AUDITV2_0150,caution_and_advice,,3,no,Extreme Wind Warning issued for SW Collier County for Irma eyewall.
+AUDITV2_0151,other_relevant_information,caution_and_advice,2,yes,Lessons from prior floods helped residents and aid groups prepare quickly.
+AUDITV2_0152,rescue_volunteering_or_donation_effort,,3,no,Emergency co-ordination meeting scheduled for Idukki rebuild.
+AUDITV2_0153,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,MSF teams assessing health needs in hard to reach areas after bridges homes destroyed.
+AUDITV2_0154,rescue_volunteering_or_donation_effort,,3,no,Woman spearheads Hurricane Florence relief effort.
+AUDITV2_0155,sympathy_and_support,other_relevant_information,2,yes,Its going to take a lot more than thoughts and prayers.
+AUDITV2_0156,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,2,yes,Mosques will shelter Harvey victims through holiday.
+AUDITV2_0157,missing_or_found_people,other_relevant_information,2,yes,People cannot be located whether dead or alive while leader tours Europe.
+AUDITV2_0158,caution_and_advice,displaced_people_and_evacuations,2,yes,Heavy rain forecast risk of mudslides make sure to heed all evacuation orders.
+AUDITV2_0159,injured_or_dead_people,other_relevant_information,2,yes,Comparison of death tolls and government sanctions for floods.
+AUDITV2_0160,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Office of Emergency Services used satellite imagery to help fight fires.
+AUDITV2_0161,sympathy_and_support,,3,no,Hope friend is okay after the wildfires.
+AUDITV2_0162,other_relevant_information,infrastructure_and_utility_damage,2,yes,Houston flooding as seen from space.
+AUDITV2_0163,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,Wildfires fought with prison labor critique.
+AUDITV2_0164,injured_or_dead_people,other_relevant_information,2,yes,Historical hog deaths and waste lagoons from prior hurricane Florence poised worse.
+AUDITV2_0165,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,Basic health requirements in crisis water not potable.
+AUDITV2_0166,infrastructure_and_utility_damage,,3,no,Scenes from flood damage flood waters in 3-4 foot range.
+AUDITV2_0167,sympathy_and_support,,3,no,Miss America dedicated to Hurricane Irma victims show of support.
+AUDITV2_0168,other_relevant_information,requests_or_urgent_needs,2,yes,Cash or a house tough choice for wildfire victims.
+AUDITV2_0169,injured_or_dead_people,,3,no,2 more possible deaths in floodwaters.
+AUDITV2_0170,infrastructure_and_utility_damage,injured_or_dead_people,2,yes,After Irma deaths 60% of nursing homes still dont have backup power.
+AUDITV2_0171,sympathy_and_support,,3,no,Deeply saddened by destruction thoughts and prayers with victims.
+AUDITV2_0172,displaced_people_and_evacuations,other_relevant_information,2,yes,Estimated 1 million people displaced most of state with excess rain.
+AUDITV2_0173,injured_or_dead_people,other_relevant_information,2,yes,Matthew killed 22 in NC comparison of paths.
+AUDITV2_0174,caution_and_advice,displaced_people_and_evacuations,2,yes,Evacuation sirens blaring predicted waves.
+AUDITV2_0175,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Dorian wiping out homes leaving many dead climate crisis.
+AUDITV2_0176,missing_or_found_people,displaced_people_and_evacuations,2,yes,Almost 5000 children separated no one knows how many missing.
+AUDITV2_0177,not_humanitarian,,3,no,Beer review Coastal Evacuation unrelated metaphorical.
+AUDITV2_0178,caution_and_advice,,3,no,Mayor declared state of Emergency ahead of Dorian.
+AUDITV2_0179,infrastructure_and_utility_damage,displaced_people_and_evacuations,2,yes,Earthquakes tsunami evacuations floods have cut off from rest of NZ.
+AUDITV2_0180,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Mapping tools created to aid responders and NGOs meeting needs of vulnerable.
+AUDITV2_0181,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Rock hit dining hall which collapsed onto dormitory at school.
+AUDITV2_0182,other_relevant_information,,3,no,How people decorate safe spots for storms.
+AUDITV2_0183,injured_or_dead_people,requests_or_urgent_needs,2,yes,People dying because of Maria and leadership kids hungry scared.
+AUDITV2_0184,sympathy_and_support,,3,no,Cant believe this has happened again NZ earthquake.
+AUDITV2_0185,infrastructure_and_utility_damage,,3,no,Before-and-after photos show Harveys terrifying destruction.
+AUDITV2_0186,caution_and_advice,displaced_people_and_evacuations,2,yes,CampFire evacuation orders and warnings for Monday.
+AUDITV2_0187,rescue_volunteering_or_donation_effort,,3,no,Group helps rescue neighbors dog from flooding.
+AUDITV2_0188,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Mudslide killed 500 displaced 20000.
+AUDITV2_0189,other_relevant_information,,3,no,Trudeau touring wildfire-destroyed areas.
+AUDITV2_0190,infrastructure_and_utility_damage,,3,no,Home dangerously close to flooding.
+AUDITV2_0191,injured_or_dead_people,other_relevant_information,2,yes,Cyclone predicted killed many why leader went to Abu Dhabi.
+AUDITV2_0192,sympathy_and_support,infrastructure_and_utility_damage,2,yes,Damage mind boggling but people continue to persevere.
+AUDITV2_0193,infrastructure_and_utility_damage,,3,no,No significant damage from Hurricane Harvey reported by trust.
+AUDITV2_0194,other_relevant_information,,3,no,Earthquake information bulletin.
+AUDITV2_0195,other_relevant_information,,3,no,Businesses grapple with growing wildfire risks.
+AUDITV2_0196,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Keep those affected in thoughts if able.
+AUDITV2_0197,other_relevant_information,infrastructure_and_utility_damage,2,yes,Wind gusts hampering efforts to fight wildfire now 85000 hectares.
+AUDITV2_0198,caution_and_advice,,3,no,In wildfire evacuation pets have needs build a kit.
+AUDITV2_0199,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Extreme couponers could bring more aid than government.
+AUDITV2_0200,other_relevant_information,injured_or_dead_people,2,yes,More ambulances at Mugabe residence than helping CycloneIdai citizens.
+AUDITV2_0201,caution_and_advice,other_relevant_information,2,yes,Fires major health issue smoke and ash harmful even to healthy people.
+AUDITV2_0202,injured_or_dead_people,rescue_volunteering_or_donation_effort,2,yes,Dramatic footage from rescuers hundreds dead many more trapped.
+AUDITV2_0203,caution_and_advice,displaced_people_and_evacuations,2,yes,Residents along Texas coast prepare for Hurricane Harvey.
+AUDITV2_0204,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,4000 families evacuated in wake of heavy rains floods and power cuts.
+AUDITV2_0205,not_humanitarian,,2,yes,Personal meeting note with tangential wildfire mention.
+AUDITV2_0206,caution_and_advice,injured_or_dead_people,2,yes,Irma downgraded but still carving a deadly path.
+AUDITV2_0207,sympathy_and_support,infrastructure_and_utility_damage,2,yes,Nicest people lost homes in wildfire.
+AUDITV2_0208,rescue_volunteering_or_donation_effort,,3,no,USACE deployed vehicles for Florence to assist with communications.
+AUDITV2_0209,infrastructure_and_utility_damage,,3,no,Damage seen everywhere to trees lights power poles.
+AUDITV2_0210,requests_or_urgent_needs,,3,no,Please help Kerala we are suffering from flood need help soon.
+AUDITV2_0211,caution_and_advice,displaced_people_and_evacuations,2,yes,Warning where was evacuation notice prior to Harvey.
+AUDITV2_0212,other_relevant_information,,3,no,Prime Minister will visit to view the wildfire damage.
+AUDITV2_0213,displaced_people_and_evacuations,,3,no,Mandatory evacuation all packed and heading out.
+AUDITV2_0214,infrastructure_and_utility_damage,sympathy_and_support,2,yes,Could unleash storm surge damage on nearly 759000 homes thinking of those awaiting.
+AUDITV2_0215,other_relevant_information,,3,no,Looting houses after people evacuate from earthquake.
+AUDITV2_0216,injured_or_dead_people,other_relevant_information,2,yes,Thousands of people died because of incompetence.
+AUDITV2_0217,injured_or_dead_people,sympathy_and_support,2,yes,Please pray for victims already 12 are dead.
+AUDITV2_0218,caution_and_advice,displaced_people_and_evacuations,2,yes,In do not evacuate area unless Cat 3 or higher no flood risk.
+AUDITV2_0219,caution_and_advice,,3,no,Harvey dangerous storm on verge of major hurricane powerful wind storm surge.
+AUDITV2_0220,injured_or_dead_people,missing_or_found_people,2,yes,Wildfires leave 82 dead almost 700 unaccounted for.
+AUDITV2_0221,injured_or_dead_people,,3,no,Hardly 30 people died.
+AUDITV2_0222,displaced_people_and_evacuations,other_relevant_information,2,yes,Premier says around 5500 Fort McMurray residents.
+AUDITV2_0223,rescue_volunteering_or_donation_effort,,3,no,Donation or aid related.
+AUDITV2_0224,sympathy_and_support,,3,no,Support message.
+AUDITV2_0225,infrastructure_and_utility_damage,,3,no,Damage description.
+AUDITV2_0226,requests_or_urgent_needs,,3,no,Need stated.
+AUDITV2_0227,other_relevant_information,,3,no,Info update.
+AUDITV2_0228,caution_and_advice,,3,no,Warning.
+AUDITV2_0229,injured_or_dead_people,,3,no,Deaths.
+AUDITV2_0230,other_relevant_information,,3,no,Home on hill in dry California.
+AUDITV2_0231,caution_and_advice,,3,no,Tropical Storm Harvey makes landfall flash floods threaten.
+AUDITV2_0232,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Chimanimani people in desperate need for help join hands.
+AUDITV2_0233,requests_or_urgent_needs,,3,no,They need our help.
+AUDITV2_0234,rescue_volunteering_or_donation_effort,,3,no,Military and police giving out free food to recovering.
+AUDITV2_0235,injured_or_dead_people,sympathy_and_support,2,yes,RIP to the two people who died in earthquake.
+AUDITV2_0236,caution_and_advice,other_relevant_information,2,yes,Black citizens exercise second amendment rights against terrorists in affected areas.
+AUDITV2_0237,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Must approve aid package people are dying right now.
+AUDITV2_0238,rescue_volunteering_or_donation_effort,injured_or_dead_people,2,yes,Educators drove through hell death toll would have been higher.
+AUDITV2_0239,requests_or_urgent_needs,,3,no,Please help with the Fort McMurray wildfire.
+AUDITV2_0240,other_relevant_information,,3,no,Looking for stories in flood affected village.
+AUDITV2_0241,infrastructure_and_utility_damage,,3,no,Bridge river flooded after heavy rain.
+AUDITV2_0242,rescue_volunteering_or_donation_effort,,3,no,Animal rescue update from Alberta SPCA.
+AUDITV2_0243,caution_and_advice,infrastructure_and_utility_damage,2,yes,Tankers refilling reservoirs continue conserve.
+AUDITV2_0244,rescue_volunteering_or_donation_effort,,3,no,School workers kept shelters running unsung heroes.
+AUDITV2_0245,not_humanitarian,,2,yes,Joke about golfing supplies.
+AUDITV2_0246,injured_or_dead_people,,3,no,Marias death toll crisis grow in Puerto Rico.
+AUDITV2_0247,rescue_volunteering_or_donation_effort,,3,no,Helped homeless man during Dorian gave money for food.
+AUDITV2_0248,missing_or_found_people,rescue_volunteering_or_donation_effort,2,yes,Families separated or lost contact training volunteers to assist.
+AUDITV2_0249,caution_and_advice,,3,no,What to do with firearms and ammunition affected by flood waters.
+AUDITV2_0250,sympathy_and_support,displaced_people_and_evacuations,2,yes,Thank God for keeping grounded during last Irma evacuation.
+AUDITV2_0251,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Congresswoman meets with business leaders about Hurricane Maria relief.
+AUDITV2_0252,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Maria destroyed country people died injured only hospital damaged patients in need.
+AUDITV2_0253,caution_and_advice,other_relevant_information,2,yes,Supreme Court orders maintain water level in Mullaperiyar Dam.
+AUDITV2_0254,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,FEMA and DoD officials provide update on Maria relief efforts.
+AUDITV2_0255,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,Senior couple sustained heavy flood damage has some needs today moving.
+AUDITV2_0256,other_relevant_information,,3,no,Will cooler temperatures bring relief find out at 11 AM update.
+AUDITV2_0257,other_relevant_information,,3,no,Critique of headline about rescinding aid.
+AUDITV2_0258,caution_and_advice,rescue_volunteering_or_donation_effort,2,yes,PSA airspace used for rescue efforts must be kept clear for safety.
+AUDITV2_0259,requests_or_urgent_needs,sympathy_and_support,2,yes,People devastated by Maria need your help they are Americans too.
+AUDITV2_0260,infrastructure_and_utility_damage,other_relevant_information,2,yes,Video and pics of Fort McMurray wildfire damage media tour.
+AUDITV2_0261,other_relevant_information,caution_and_advice,2,yes,Smelling smoke from wildfire no air quality warning yet.
+AUDITV2_0262,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Could use some of your relief to help the evacuees of the wildfire.
+AUDITV2_0263,missing_or_found_people,sympathy_and_support,2,yes,Crying for missing children disaster getting worse in worst affected areas.
+AUDITV2_0264,displaced_people_and_evacuations,other_relevant_information,2,yes,List of Hurricane Florence pet friendly shelters.
+AUDITV2_0265,requests_or_urgent_needs,,3,no,Help is needed Puerto Rico.
+AUDITV2_0266,sympathy_and_support,other_relevant_information,2,yes,Learn from children Puerto Rico will be back now back to work.
+AUDITV2_0267,other_relevant_information,,3,no,Analysis why dams cannot control devastating floods.
+AUDITV2_0268,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Water being dropped fighting the fire in Arcata Community forest.
+AUDITV2_0269,caution_and_advice,other_relevant_information,2,yes,New Zealand needs a comprehensive working tsunami warning siren system.
+AUDITV2_0270,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Rivers keep rising and more deaths are feared as Florence pushes away.
+AUDITV2_0271,requests_or_urgent_needs,sympathy_and_support,2,yes,Please help the people living off the coast after 7.1 quake.
+AUDITV2_0272,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Teachers aides bus drivers loaded students drove through smoke flames to reunite families.
+AUDITV2_0273,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Marriott high-seas rescue after Irma stranded 620 hotel guests.
+AUDITV2_0274,injured_or_dead_people,,3,no,Threat of Camp Fire lessens as death toll rises 42 dead more expected.
+AUDITV2_0275,rescue_volunteering_or_donation_effort,,3,no,Cipla continues commitment second substantial donation received by naval command.
+AUDITV2_0276,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Praying for 1200 dead and 16 million displaced in Bangladesh India Nepal.
+AUDITV2_0277,caution_and_advice,,3,no,Dorian could be monster storm whole Florida under state of emergency.
+AUDITV2_0278,displaced_people_and_evacuations,caution_and_advice,2,yes,All Hurricane Florence evacuation orders state by state.
+AUDITV2_0279,other_relevant_information,caution_and_advice,2,yes,Most wildland fires extinguished by purposefully set backfires not enough water.
+AUDITV2_0280,caution_and_advice,displaced_people_and_evacuations,2,yes,Hotel chains should allow pets for those evacuating Florence.
+AUDITV2_0281,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Niece nephew lost everything if anyone can spare a few bucks to help.
+AUDITV2_0282,other_relevant_information,,3,no,Suspicion someone is already stealing Cyclone Idai donations.
+AUDITV2_0283,injured_or_dead_people,other_relevant_information,2,yes,No reports of deaths from Maria Puerto Rico governor says.
+AUDITV2_0284,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Houston wasnt only city use energy to help rather than spread toxicity.
+AUDITV2_0285,caution_and_advice,other_relevant_information,2,yes,Irma will continue track up FL Peninsula gradual weakening persistent rain.
+AUDITV2_0286,rescue_volunteering_or_donation_effort,,3,no,Pirates pull strings to send cargo plane to aid Puerto Rico relief.
+AUDITV2_0287,other_relevant_information,,3,no,Comparison Harvey dropped 20 trillion gallons vs Katrina 7 trillion.
+AUDITV2_0288,caution_and_advice,,3,no,Rough sea conditions fishermen advised not to venture into the sea.
+AUDITV2_0289,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Whether you need help or want to offer assistance to others in need.
+AUDITV2_0290,sympathy_and_support,requests_or_urgent_needs,2,yes,Hearts go out victims still trapped help is needed.
+AUDITV2_0291,requests_or_urgent_needs,not_humanitarian,2,yes,Where are the food stamps during hurricane.
+AUDITV2_0292,sympathy_and_support,,3,no,Stay safe everyone hope damage is minimal.
+AUDITV2_0293,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,If still in need of supplies check Academy they have water charcoal.
+AUDITV2_0294,other_relevant_information,infrastructure_and_utility_damage,2,yes,Lived through Andrew vivid memories of damage during and after eye.
+AUDITV2_0295,caution_and_advice,sympathy_and_support,2,yes,Concern diseases cholera malaria spreading after Idai please pray.
+AUDITV2_0296,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Child wants books pens food more tents mother given only 1 tent not enough.
+AUDITV2_0297,displaced_people_and_evacuations,,3,no,Irma evacuees from Keys with special needs find shelter under parking garage.
+AUDITV2_0298,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Homes near Whites Creek being evacuated water risen 13ft in two hours.
+AUDITV2_0299,other_relevant_information,infrastructure_and_utility_damage,2,yes,Climate change Florence severe flooding no power no water.
+AUDITV2_0300,other_relevant_information,,3,no,Economic comment on high prices demand supply after Harvey.
+AUDITV2_0301,caution_and_advice,displaced_people_and_evacuations,2,yes,If you live on low lying ground within 1km of coast evacuate.
+AUDITV2_0302,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Harvey totally destroyed Houston they really need our help.
+AUDITV2_0303,infrastructure_and_utility_damage,other_relevant_information,2,yes,Flooding in Houston from Harvey may be the worst the city has ever suffered.
+AUDITV2_0304,injured_or_dead_people,other_relevant_information,2,yes,Dozens dead thousands homeless millions suffering critique of Trump.
+AUDITV2_0305,other_relevant_information,,3,no,Critique of excuse timing about earthquake.
+AUDITV2_0306,displaced_people_and_evacuations,,3,no,Evacuated to neighbours house up the hill after tsunami siren.
+AUDITV2_0307,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Thoughts go out Airbnb hosts offering free lodging.
+AUDITV2_0308,rescue_volunteering_or_donation_effort,,3,no,Please donate to special earthquake appeal help neighbours friends Kiwis.
+AUDITV2_0309,requests_or_urgent_needs,caution_and_advice,2,yes,Provide emergency access to healthcare for all those who are injured.
+AUDITV2_0310,rescue_volunteering_or_donation_effort,,3,no,Hero saving lives if looking for way to help Carolinas donate to this cause.
+AUDITV2_0311,caution_and_advice,,3,no,Alert on electrical safety during floods.
+AUDITV2_0312,injured_or_dead_people,rescue_volunteering_or_donation_effort,2,yes,5 dead 1000+ rescued emergency crews still unable to reach worst-hit areas.
+AUDITV2_0313,displaced_people_and_evacuations,missing_or_found_people,2,yes,900000 children orphaned separated homeless or otherwise affected.
+AUDITV2_0314,infrastructure_and_utility_damage,,3,no,Damage to room caused by New Zealand earthquake video.
+AUDITV2_0315,other_relevant_information,,3,no,Chamisa visit to Idai hit areas a publicity stunt.
+AUDITV2_0316,other_relevant_information,sympathy_and_support,2,yes,Political critique of photo-op regarding fire victims.
+AUDITV2_0317,other_relevant_information,,3,no,Critique of partisan politics around Kerala floods.
+AUDITV2_0318,infrastructure_and_utility_damage,requests_or_urgent_needs,2,yes,Housing crisis getting worse with every wildfire destroying communities.
+AUDITV2_0319,infrastructure_and_utility_damage,caution_and_advice,2,yes,Devastation continues to cripple Puerto Rico fears damaged dam.
+AUDITV2_0320,other_relevant_information,,3,no,Mexico cancelled its aid to the US.
+AUDITV2_0321,rescue_volunteering_or_donation_effort,,3,no,Introducing WI Guard assisting with Hurricane Irma recovery efforts.
+AUDITV2_0322,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,DoD and FEMA Hurricane Maria relief efforts.
+AUDITV2_0323,requests_or_urgent_needs,,3,no,Victims of Irma Caribbean islands need your help.
+AUDITV2_0324,requests_or_urgent_needs,rescue_volunteering_or_donation_effort,2,yes,Ministry in need of your help Harvey flooded many.
+AUDITV2_0325,infrastructure_and_utility_damage,caution_and_advice,2,yes,Storm surge 300 Cedar Point Blvd is under water due to surge.
+AUDITV2_0326,caution_and_advice,displaced_people_and_evacuations,2,yes,Good option for Raglan residents to find alternate accommodation or own water supply.
+AUDITV2_0327,injured_or_dead_people,,3,no,Five dead at Florida nursing home as Irma aftereffects pose new threats.
+AUDITV2_0328,caution_and_advice,other_relevant_information,2,yes,Forecast maps and radar warnings watches flood Dorian.
+AUDITV2_0329,displaced_people_and_evacuations,,3,no,Do we know how many displaced?
+AUDITV2_0330,caution_and_advice,injured_or_dead_people,2,yes,Dorian now Category 5 mixed with other news.
+AUDITV2_0331,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Requesting spread message help in whichever way you can pray for Kerala.
+AUDITV2_0332,requests_or_urgent_needs,other_relevant_information,2,yes,Jones Act preventing Puerto Ricans from obtaining aid sign petition.
+AUDITV2_0333,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Deaths major damage after severe 7.5 quake.
+AUDITV2_0334,other_relevant_information,,3,no,Why national channels not showing heavy rains destruction in Kodagu only Kerala.
+AUDITV2_0335,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Irma evacuees return to wreckage of home death toll passes 60.
+AUDITV2_0336,displaced_people_and_evacuations,caution_and_advice,2,yes,Guards fleeing prisoners will not be evacuated collecting drinkable water.
+AUDITV2_0337,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,How you can help or if you need help.
+AUDITV2_0338,missing_or_found_people,requests_or_urgent_needs,2,yes,Who can help at Chimanimani high school looking for Shalin Mugano.
+AUDITV2_0339,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,Want help for USVI media ignoring devastation Maria caused.
+AUDITV2_0340,caution_and_advice,infrastructure_and_utility_damage,2,yes,How to pump out a flooded basement info video.
+AUDITV2_0341,other_relevant_information,,3,no,Are you aware who is in charge and status of red cross society of Kerala.
+AUDITV2_0342,other_relevant_information,,3,no,Lake Mead record low California drops water rules Alberta wildfire still spreading.
+AUDITV2_0343,missing_or_found_people,injured_or_dead_people,2,yes,Dozens missing two confirmed dead spare a prayer for affected.
+AUDITV2_0344,infrastructure_and_utility_damage,,3,no,Horrifying footage inside eye of Dorian deadly storm surge everything shredded.
+AUDITV2_0345,sympathy_and_support,,3,no,Can you assist are your folks okay?
+AUDITV2_0346,infrastructure_and_utility_damage,,3,no,Satellite images before wildfires and now vast expanse of scorched earth.
+AUDITV2_0347,other_relevant_information,rescue_volunteering_or_donation_effort,2,yes,While Zimbabweans donate wonderfully this is unacceptable.
+AUDITV2_0348,injured_or_dead_people,sympathy_and_support,2,yes,Pray no life be lost so far 122 people have died from the cyclone.
+AUDITV2_0349,sympathy_and_support,caution_and_advice,2,yes,Be safe with family during the hurricane.
+AUDITV2_0350,injured_or_dead_people,other_relevant_information,2,yes,Puerto Rico revised Maria death toll nearly equivalent to 9/11.
+AUDITV2_0351,other_relevant_information,infrastructure_and_utility_damage,2,yes,Tropical Storm Harvey flooding shatters records that could last for days.
+AUDITV2_0352,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,Financial crisis house damaged by flood total cost more than 4 lakhs.
+AUDITV2_0353,not_humanitarian,sympathy_and_support,2,yes,Sending thoughts and prayers that Dorian flattens Mar-a-lago political.
+AUDITV2_0354,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Fires costing loss of life and homes jobs contracts enough is enough.
+AUDITV2_0355,infrastructure_and_utility_damage,,3,no,2400 buildings lost in Fort McMurray wildfire.
+AUDITV2_0356,not_humanitarian,,2,yes,Claim about RSS preparing bombs for flood affected people.
+AUDITV2_0357,caution_and_advice,,3,no,If driving stay clear of trees electricity poles leave car find secure shelter.
+AUDITV2_0358,sympathy_and_support,,3,no,Keep people of Puerto Rico in thoughts and prayers as they recover.
+AUDITV2_0359,rescue_volunteering_or_donation_effort,caution_and_advice,2,yes,Need rapid response capability carriers bringing food medical water shelter.
+AUDITV2_0360,infrastructure_and_utility_damage,injured_or_dead_people,2,yes,No water sewage phone internet 2 people killed hope you hear from family.
+AUDITV2_0361,other_relevant_information,,3,no,Critique of declining foreign aid for Fort McMurray.
+AUDITV2_0362,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Worst floods in century killed dozens stranded tens of thousands closed airport.
+AUDITV2_0363,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Assuring displaced people of timely relief salute spirit committed to support.
+AUDITV2_0364,rescue_volunteering_or_donation_effort,,3,no,Artists to play Fire Aid benefit.
+AUDITV2_0365,not_humanitarian,,3,no,Joke about Florida man shooting into hurricane.
+AUDITV2_0366,sympathy_and_support,other_relevant_information,2,yes,Working disaster response watching Dorian partners in Bahamas please pray.
+AUDITV2_0367,other_relevant_information,infrastructure_and_utility_damage,2,yes,When safe to go outside report Irma damage here.
+AUDITV2_0368,caution_and_advice,infrastructure_and_utility_damage,2,yes,Maria regains strength to Category 3 after path of destruction in Puerto Rico.
+AUDITV2_0369,other_relevant_information,sympathy_and_support,2,yes,Trump in Texas Harvey storm of epic proportion pray for Texas.
+AUDITV2_0370,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,Supercomputers assist firefighters in evacuations as wildfires spread.
+AUDITV2_0371,caution_and_advice,other_relevant_information,2,yes,Make sure hospitality industry protects customers from price gouging.
+AUDITV2_0372,not_humanitarian,,2,yes,Political rant about military unrelated to disaster response.
+AUDITV2_0373,caution_and_advice,infrastructure_and_utility_damage,2,yes,Florence moving at 2 mph near stall no end to life-threatening flash flooding.
+AUDITV2_0374,requests_or_urgent_needs,other_relevant_information,2,yes,Nation screams for help that falls on deaf ears.
+AUDITV2_0375,caution_and_advice,injured_or_dead_people,2,yes,Boys in flooded river risk of drowning death toll continues to rise.
+AUDITV2_0376,other_relevant_information,infrastructure_and_utility_damage,2,yes,Think Fort McMurray wildfire damages are covered by home insurance?
+AUDITV2_0377,displaced_people_and_evacuations,caution_and_advice,2,yes,Providing rides to displaced families to shelters avoid unsafe flooded areas.
+AUDITV2_0378,other_relevant_information,,3,no,130 earthquakes since Saturday.
+AUDITV2_0379,injured_or_dead_people,rescue_volunteering_or_donation_effort,2,yes,100-year-old and daughter-in-law rescued son didnt make it.
+AUDITV2_0380,displaced_people_and_evacuations,,2,yes,Evacuees take devastation (truncated).
+AUDITV2_0381,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Irma forced residents to evacuate now time to assess the damage.
+AUDITV2_0382,sympathy_and_support,,3,no,Checking in on you everything ok since the earthquake?
+AUDITV2_0383,other_relevant_information,,3,no,Harvey isnt Trumps first relief test NC was denied funds after Matthew.
+AUDITV2_0384,other_relevant_information,infrastructure_and_utility_damage,2,yes,Exxon knew storms like Harvey were coming make them pay for destruction.
+AUDITV2_0385,sympathy_and_support,displaced_people_and_evacuations,2,yes,Those poor evacuees cant catch a break.
+AUDITV2_0386,injured_or_dead_people,,3,no,Kaikoura where at least one person has died emerging as worst-affected.
+AUDITV2_0387,rescue_volunteering_or_donation_effort,infrastructure_and_utility_damage,2,yes,Immediate payout of 19 million will help Dominica restore infrastructure.
+AUDITV2_0388,infrastructure_and_utility_damage,injured_or_dead_people,2,yes,Kaikoura and surrounds cut off phones power out two confirmed dead.
+AUDITV2_0389,injured_or_dead_people,displaced_people_and_evacuations,2,yes,Onam dedicated to thousands who lost life and people who are displaced.
+AUDITV2_0390,other_relevant_information,infrastructure_and_utility_damage,2,yes,Rebuild with more water power cell towers to prevent fires spreading.
+AUDITV2_0391,requests_or_urgent_needs,,3,no,Please get help to avoid humanitarian crisis for Americans in Puerto Rico.
+AUDITV2_0392,rescue_volunteering_or_donation_effort,,3,no,Anyone need photography ads digital design for business or nonprofit after eqnz.
+AUDITV2_0393,displaced_people_and_evacuations,,3,no,Knoxville hotels prepare for Hurricane Florence evacuees.
+AUDITV2_0394,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Dont forget to rescue poor animals stuck in floods of Kerala.
+AUDITV2_0395,caution_and_advice,infrastructure_and_utility_damage,2,yes,Rain extinguished most wildfires but comes with risk of mudslides.
+AUDITV2_0396,missing_or_found_people,injured_or_dead_people,2,yes,List of 297 still unaccounted for death toll grown to 56.
+AUDITV2_0397,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Wondering if still have apartments available for Fort Mac wildfire victims family of five.
+AUDITV2_0398,sympathy_and_support,,3,no,You are not alone we are all with you to flood affected families.
+AUDITV2_0399,caution_and_advice,,3,no,Remnants of Florence localized flooding possible be weather aware.
+AUDITV2_0400,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Earthquake evacuees say Red Cross is wonderful.
+AUDITV2_0401,requests_or_urgent_needs,displaced_people_and_evacuations,2,yes,Urgent intervention needed refusing people with service animals in shelters.
+AUDITV2_0402,requests_or_urgent_needs,,3,no,Folks need help San Jacinto River is high try Kingwood/Humble area.
+AUDITV2_0403,other_relevant_information,,3,no,Critique of logging and fire management claims about chaparral.
+AUDITV2_0404,injured_or_dead_people,,3,no,Death toll rises after powerful 8.1 quake strikes Mexico.
+AUDITV2_0405,displaced_people_and_evacuations,other_relevant_information,2,yes,Pet friendly shelters Central Florida Google map to help find shelters.
+AUDITV2_0406,requests_or_urgent_needs,infrastructure_and_utility_damage,2,yes,Cant imagine the shock add to that no food or water a nightmare.
+AUDITV2_0407,not_humanitarian,,3,no,Subway station reopened unrelated to Florence.
+AUDITV2_0408,infrastructure_and_utility_damage,rescue_volunteering_or_donation_effort,2,yes,At least 90 first responders lost their homes still continue to fight fire.
+AUDITV2_0409,caution_and_advice,infrastructure_and_utility_damage,2,yes,Warning rain could cause flash flooding and mudflows for devastated residents.
+AUDITV2_0410,injured_or_dead_people,,3,no,At least two people reportedly killed following 7.5 magnitude earthquake.
+AUDITV2_0411,injured_or_dead_people,requests_or_urgent_needs,2,yes,2.5 million need aid after powerful Mexico earthquake.
+AUDITV2_0412,rescue_volunteering_or_donation_effort,,3,no,ITDRC and Googleorg working together for California wildfires response ways you can help.
+AUDITV2_0413,rescue_volunteering_or_donation_effort,displaced_people_and_evacuations,2,yes,ASPCA on ground with water rescue teams ready to assist displaced animals help.
+AUDITV2_0414,other_relevant_information,,3,no,Political claim Dorian not going to hit Alabama.
+AUDITV2_0415,other_relevant_information,,3,no,They are guarding the water at Publix.
+AUDITV2_0416,requests_or_urgent_needs,,3,no,Urgent food and clothes for women in camp contact numbers.
+AUDITV2_0417,caution_and_advice,,3,no,Strong winds heavy rain on the way for areas hit by earthquake.
+AUDITV2_0418,other_relevant_information,,3,no,Please help share video RoyallyScrewed by Royal Caribbean.
+AUDITV2_0419,infrastructure_and_utility_damage,,3,no,Stars homes destroyed by California wildfires.
+AUDITV2_0420,injured_or_dead_people,missing_or_found_people,2,yes,Victims buried in mass grave at least 60 missing.
+AUDITV2_0421,other_relevant_information,,3,no,Political argument about carbon tax and forest mismanagement.
+AUDITV2_0422,injured_or_dead_people,,3,no,Florida nursing home deaths investigations underway.
+AUDITV2_0423,other_relevant_information,displaced_people_and_evacuations,2,yes,Puppy finding joy owners home submerged staying at guest house.
+AUDITV2_0424,injured_or_dead_people,other_relevant_information,2,yes,Floods killed 500+ in Bihar critique of media and regionalism.
+AUDITV2_0425,rescue_volunteering_or_donation_effort,,3,no,Help us make a difference and giveback to our community.
+AUDITV2_0426,rescue_volunteering_or_donation_effort,,3,no,State Farm teams head out to help hurricane victims.
+AUDITV2_0427,injured_or_dead_people,,3,no,12 people died from Leptospirosis 372 confirmed cases since August 1.
+AUDITV2_0428,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Help bring light and hope through Billy Graham Rapid Response Team.
+AUDITV2_0429,caution_and_advice,infrastructure_and_utility_damage,2,yes,Two years ago Irma destroyed mobile homes this time residents prepare.
+AUDITV2_0430,caution_and_advice,rescue_volunteering_or_donation_effort,2,yes,Donate wisely beware of thieves follow only reliable sources.
+AUDITV2_0431,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Busy day for Team Scott Hurricane Irma relief stay safe Airmen.
+AUDITV2_0432,other_relevant_information,,3,no,Let officials politicians behind rejection of Gadgil report pay relief cost.
+AUDITV2_0433,rescue_volunteering_or_donation_effort,,3,no,How you can make a difference in Harvey affected areas we will rebuild.
+AUDITV2_0434,infrastructure_and_utility_damage,,3,no,No Cook Strait ferries due to damage.
+AUDITV2_0435,rescue_volunteering_or_donation_effort,,3,no,If impacted by Camp Fire you can register for FEMA assistance.
+AUDITV2_0436,other_relevant_information,caution_and_advice,2,yes,Govt warned people beforehand through CPU path wasnt clear.
+AUDITV2_0437,injured_or_dead_people,other_relevant_information,2,yes,Trump is responsible for any and all deaths post Maria.
+AUDITV2_0438,other_relevant_information,,3,no,Conspiracy claim about weather warfare weapon maximum flooding damage.
+AUDITV2_0439,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Whole island devastated 47 dead and counting.
+AUDITV2_0440,other_relevant_information,,3,no,Didnt know there was an earthquake this morning cat was hiding.
+AUDITV2_0441,caution_and_advice,displaced_people_and_evacuations,2,yes,Maps show the tsunami evacuation zones for coastal areas.
+AUDITV2_0442,displaced_people_and_evacuations,,3,no,Hurricane Maria evacuees are sheltering in Shreveport with more to come.
+AUDITV2_0443,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Deeply distressed by tragic loss of lives and large scale damage to properties.
+AUDITV2_0444,missing_or_found_people,infrastructure_and_utility_damage,2,yes,15 people marooned blown away by landslide houses destroyed results unknown.
+AUDITV2_0445,injured_or_dead_people,other_relevant_information,2,yes,Why isnt news reporting about this family still reporting only 4 deaths.
+AUDITV2_0446,infrastructure_and_utility_damage,,3,no,Can only take cold showers because Irma fucked up water heater broken A/C.
+AUDITV2_0447,injured_or_dead_people,other_relevant_information,2,yes,Number of cholera cases almost doubled in Mozambique past 24 hours.
+AUDITV2_0448,rescue_volunteering_or_donation_effort,requests_or_urgent_needs,2,yes,Urgent request still time to directly support most vulnerable communities.
+AUDITV2_0449,requests_or_urgent_needs,sympathy_and_support,2,yes,Where are sex workers in wake of camp fire are yall safe need extra resources.
+AUDITV2_0450,infrastructure_and_utility_damage,,3,no,Water damage inside 222 student hostel.
+AUDITV2_0451,infrastructure_and_utility_damage,other_relevant_information,2,yes,Remnants of Idai made huge damage in Zimbabwe communities not used to climate change product.
+AUDITV2_0452,displaced_people_and_evacuations,rescue_volunteering_or_donation_effort,2,yes,Would be nice if listed US homes can receive refugees/evacuees from Maria needing temp housing.
+AUDITV2_0453,other_relevant_information,,3,no,Stay up-to-date with Hurricane Maria recovery efforts in Puerto Rico.
+AUDITV2_0454,rescue_volunteering_or_donation_effort,,3,no,Changing livestream due to friends leaving early for Dorian all donations go to GKTWVillage.
+AUDITV2_0455,infrastructure_and_utility_damage,,3,no,Drone shots show entire town of Chinquapin under water after Florence.
+AUDITV2_0456,displaced_people_and_evacuations,other_relevant_information,2,yes,Every community has an evacuation plan the devastation is the difference.
+AUDITV2_0457,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Family recipient of Red Cross aid claim fraudulently collected they sorted it.
+AUDITV2_0458,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Camp Fire consuming hundreds of structures causing at least five deaths.
+AUDITV2_0459,displaced_people_and_evacuations,,3,no,SE Texas evacuees bused to San Antonio after Beaumont closes largest shelters.
+AUDITV2_0460,rescue_volunteering_or_donation_effort,,3,no,3 days and food for 1 million people + 1 million gallons of water FEMA reports.
+AUDITV2_0461,other_relevant_information,,3,no,Political call for impeachment related to damage.
+AUDITV2_0462,other_relevant_information,,3,no,775 of 1893 villages affected about 41 percent not entire state.
+AUDITV2_0463,sympathy_and_support,,3,no,Thoughts go out to those suffering from the latest disasters.
+AUDITV2_0464,rescue_volunteering_or_donation_effort,,3,no,Contacted Drs and March of Dimes to help the preemies and their moms.
+AUDITV2_0465,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Describing vulnerable situation for thousands UNHCR emergency teams are helping.
+AUDITV2_0466,requests_or_urgent_needs,,3,no,People posting EVAC SOS for Port Arthur USCG operators need following info to help.
+AUDITV2_0467,other_relevant_information,caution_and_advice,2,yes,Dorian is still an active hurricane not in Alabama.
+AUDITV2_0468,requests_or_urgent_needs,,3,no,Retweeting in hope someone in Kaikoura sees this help a kiwi out.
+AUDITV2_0469,other_relevant_information,sympathy_and_support,2,yes,Alberta health officials focusing on mental health assistance in wake of wildfire.
+AUDITV2_0470,displaced_people_and_evacuations,other_relevant_information,2,yes,After Maria hurricane-weary US will get a breather mandatory evacuations.
+AUDITV2_0471,displaced_people_and_evacuations,infrastructure_and_utility_damage,2,yes,Family with 2 young kids tramping through river over hill away from damaged house cut-off community.
+AUDITV2_0472,caution_and_advice,other_relevant_information,2,yes,Albertans can call for info stay up to date on Emergency Alert and Wildfire apps.
+AUDITV2_0473,injured_or_dead_people,missing_or_found_people,2,yes,Stench of decomposing victims helping recovery of bodies sniffer dogs for missing relatives.
+AUDITV2_0474,other_relevant_information,,3,no,82 earthquakes and counting in past 2h15m since the 7.5 hit.
+AUDITV2_0475,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Whole community pitched in to save all residents proud of teachers.
+AUDITV2_0476,infrastructure_and_utility_damage,rescue_volunteering_or_donation_effort,2,yes,District command rescue furthest vehicles can access due to destroyed bridges.
+AUDITV2_0477,rescue_volunteering_or_donation_effort,other_relevant_information,2,yes,Trump is providing relief to rescue Americans in Cuba.
+AUDITV2_0478,other_relevant_information,,3,no,Political comment on presidential eloquence.
+AUDITV2_0479,missing_or_found_people,sympathy_and_support,2,yes,Town struggling to find their loved ones in the rubble after Idai heartbreaking.
+AUDITV2_0480,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Earthquake kills 2 strong aftershocks leave people stranded with no power blocked roads.
+AUDITV2_0481,requests_or_urgent_needs,,3,no,What is being done to help 3.5 million Americans in Puerto Rico they need government help.
+AUDITV2_0482,rescue_volunteering_or_donation_effort,sympathy_and_support,2,yes,Earnest appeal to everyone to help Kerala more stars influencers must come forward.
+AUDITV2_0483,caution_and_advice,,3,no,Ban on open fires has been expanded in Saskatchewan.
+AUDITV2_0484,rescue_volunteering_or_donation_effort,,3,no,Flood affected Kerala will see contributions coming in from 100PipersPlayForACause.
+AUDITV2_0485,other_relevant_information,caution_and_advice,2,yes,Sea level rise can make difference in whether hurricane waters flood communities.
+AUDITV2_0486,infrastructure_and_utility_damage,,3,no,Drone footage shows South Carolina highway damaged by Florence flooding.
+AUDITV2_0487,missing_or_found_people,rescue_volunteering_or_donation_effort,2,yes,Fear hundreds missing helping families find their missing loved ones.
+AUDITV2_0488,other_relevant_information,,3,no,Geonet revises earthquake size 7.5 15km deep.
+AUDITV2_0489,caution_and_advice,infrastructure_and_utility_damage,2,yes,Will Starship get to shelter launch pads and Cape infrastructure will be tested.
+AUDITV2_0490,injured_or_dead_people,other_relevant_information,2,yes,5 people killed in Texas many injured Dorian going to destroy homes in Florida.
+AUDITV2_0491,injured_or_dead_people,other_relevant_information,2,yes,PM Modi arrives for aerial survey death toll crosses 200.
+AUDITV2_0492,displaced_people_and_evacuations,other_relevant_information,2,yes,7 years after 2010 earthquake who remains displaced.
+AUDITV2_0493,displaced_people_and_evacuations,other_relevant_information,2,yes,Sleeping in shelters with family and constituents is authentic leadership.
+AUDITV2_0494,other_relevant_information,,3,no,California Fires and the Fallout of the Purposeful Destruction of a State.
+AUDITV2_0495,injured_or_dead_people,requests_or_urgent_needs,2,yes,Mozambique needs help so many people dead from the Cyclone.
+AUDITV2_0496,injured_or_dead_people,infrastructure_and_utility_damage,2,yes,Because they didnt have any electricity we didnt know the REAL DEATH toll.
+AUDITV2_0497,infrastructure_and_utility_damage,displaced_people_and_evacuations,2,yes,Houston facing dangerous flooding friends moving into attics to escape water.
+AUDITV2_0498,sympathy_and_support,rescue_volunteering_or_donation_effort,2,yes,Keep thoughts prayers and donations coming but no need for help putting out fires?
+AUDITV2_0499,rescue_volunteering_or_donation_effort,,3,no,Food and water en route to Puerto Rico and St Croix by US Air Force.
+AUDITV2_0500,sympathy_and_support,other_relevant_information,2,yes,Tinder dry forests high winds making things difficult hats off to those fighting fires.
