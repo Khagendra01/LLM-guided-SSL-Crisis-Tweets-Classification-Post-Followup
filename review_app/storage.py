@@ -241,12 +241,11 @@ def load_app_state():
 def save_app_state(obj):
     atomic_write_json(LOCAL_DIR / "app_state.json", obj)
 
-def validate_review_fields(d, require_reason=True):
+def validate_review_fields(d, require_reason=False):
     pl = d.get("primary","") or d.get("initial_primary_label","") or d.get("final_primary_label","")
     sl = d.get("secondary","") or d.get("initial_secondary_label","") or d.get("final_secondary_label","")
     conf = str(d.get("confidence","") or d.get("initial_confidence","") or d.get("final_confidence",""))
     amb = d.get("ambiguous","") or d.get("initial_ambiguous","") or d.get("final_ambiguous","")
-    reason = d.get("reason","") or d.get("initial_reason","") or d.get("review_notes","") or d.get("final_reason","")
     if pl not in LEGAL_LABELS:
         return False, "Primary label must be one of 10 legal labels"
     if sl:
@@ -258,7 +257,4 @@ def validate_review_fields(d, require_reason=True):
         return False, "Confidence must be 1, 2, or 3"
     if amb not in ("yes","no"):
         return False, "Ambiguity must be yes or no"
-    if require_reason:
-        if not reason or len(reason.strip()) < 5:
-            return False, "Meaningful reason/notes required (>=5 chars)"
     return True, ""

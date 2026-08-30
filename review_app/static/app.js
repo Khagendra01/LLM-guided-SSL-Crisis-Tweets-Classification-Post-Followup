@@ -98,7 +98,7 @@ function renderCard(d){
   ${labelButtons(selSecondary,'', 'secondary')}</div>
   <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Confidence *</label>${segButtons('ic', d.initial_confidence)}</div>
   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Ambiguity *</label>${toggleButtons('ia', d.initial_ambiguous)}</div>
-  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Reason / notes * (≥5 chars)</label><textarea id="ir" rows="3" placeholder="Why this label is best...">${esc(d.initial_reason||'')}</textarea></div>
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Reason / notes (optional)</label><textarea id="ir" rows="3" placeholder="Optional notes...">${esc(d.initial_reason||'')}</textarea></div>
   <div id="initStatus" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
  </div>`;
 
@@ -119,7 +119,7 @@ function renderCard(d){
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final secondary</label>${labelButtons(selFinalSec,'', 'finalSec')}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final confidence</label>${segButtons('fc', d.final_confidence||d.initial_confidence)}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final ambiguity</label>${toggleButtons('fa', d.final_ambiguous||d.initial_ambiguous)}</div>
-   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final notes</label><textarea id="fn" rows="3">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
+   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final notes (optional)</label><textarea id="fn" rows="3" placeholder="Optional...">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
    <div id="finalStatus2" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
    </div>`;
  } else if(d.has_initial){
@@ -186,8 +186,8 @@ async function tryAutosaveInitial(){
  if(!currentId) return;
  const reason=(el('ir')?.value||'').trim();
  const conf=getSegVal('ic'), amb=getToggleVal('ia');
- if(!selPrimary || !conf || !amb || reason.length<5){
-   setStatus('initStatus','○ incomplete — pick primary, confidence, ambiguity and ≥5-char reason','');
+ if(!selPrimary || !conf || !amb){
+   setStatus('initStatus','○ incomplete — pick primary, confidence and ambiguity','');
    return;
  }
  setStatus('initStatus','● saving...','');
@@ -221,8 +221,8 @@ async function tryAutosaveFinal(){
  if(!currentId || !currentData?.evidence_visible) return;
  const notes=(el('fn')?.value||'').trim();
  const fc=getSegVal('fc'), fa=getToggleVal('fa');
- if(!selFinal || !fc || !fa || notes.length<5){
-   setStatus('finalStatus2','○ complete final fields to autosave','');
+ if(!selFinal || !fc || !fa){
+   setStatus('finalStatus2','○ pick final primary, confidence and ambiguity to autosave','');
    return;
  }
  setStatus('finalStatus2','● saving final...','');

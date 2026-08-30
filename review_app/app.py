@@ -249,8 +249,6 @@ def save_initial(aid):
         return jsonify({"error":"Confidence must be 1,2,3"}), 400
     if amb not in ("yes","no"):
         return jsonify({"error":"Ambiguity must be yes/no"}), 400
-    if len(reason) < 5:
-        return jsonify({"error":"Reason required >=5 chars"}), 400
     prev = dict(row)
     row["initial_primary_label"] = pl
     row["initial_secondary_label"] = sl
@@ -317,8 +315,6 @@ def finalize(aid):
         return jsonify({"error":"Final confidence must be 1,2,3"}), 400
     if amb not in ("yes","no"):
         return jsonify({"error":"Final ambiguity must be yes/no"}), 400
-    if len(notes) < 5:
-        return jsonify({"error":"Final notes required >=5 chars"}), 400
     q = QUEUE_BY_ID[aid]
     first_pass = q.get("researcher_first_pass","")
     action = compute_review_action(pl, first_pass)
@@ -383,8 +379,6 @@ def validation():
                 issues.append({"annotation_id":aid,"issue":"invalid final_primary"})
             if row.get("final_secondary_label") and row["final_secondary_label"]==row["final_primary_label"]:
                 issues.append({"annotation_id":aid,"issue":"secondary equals primary"})
-            if row.get("review_notes","").strip()=="":
-                issues.append({"annotation_id":aid,"issue":"missing notes"})
             if row.get("review_action") not in ("accepted","changed"):
                 issues.append({"annotation_id":aid,"issue":"invalid review_action"})
         else:
@@ -419,8 +413,6 @@ def do_export():
         if r.get("human_review_status")=="reviewed":
             if r.get("final_primary_label") not in LEGAL_LABELS:
                 return jsonify({"error":f"Invalid label {aid}"}), 400
-            if r.get("review_notes","").strip()=="":
-                return jsonify({"error":f"Missing notes {aid}"}), 400
     # create exports
     exp_dir = LOCAL_DIR / "exports"
     exp_dir.mkdir(parents=True, exist_ok=True)
