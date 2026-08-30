@@ -1,4 +1,5 @@
 let currentId=null, currentData=null, legal=[], guide=[], selPrimary='', selSecondary='', selFinal='', selFinalSec='';
+let iaTimer=null, faTimer=null, initTimer=null;
 const el=id=>document.getElementById(id);
 function msg(t, isErr){ const m=el('msg'); m.textContent=t; m.style.display='block'; m.style.background=isErr?'#991b1b':'#111827'; setTimeout(()=>m.style.display='none',2600); }
 async function fetchJSON(u, opts){ const r=await fetch(u, opts); const j=await r.json().catch(()=>({})); if(!r.ok) throw new Error(j.error||'error'); return j; }
@@ -86,23 +87,24 @@ function renderCard(d){
  </div>
  <div class="tweet">${esc(d.tweet_text)}</div>`;
  if(d.is_reviewed){
-   html+=`<div style="margin-top:10px;padding:10px;background:#dcfce7;border:1px solid #86efac;border-radius:10px;font-size:13px">Already reviewed — <button id="editBtn" class="btn small">Edit & re-finalize</button></div>`;
+   html+=`<div style="margin-top:10px;padding:10px;background:#dcfce7;border:1px solid #86efac;border-radius:10px;font-size:13px">Already reviewed — <button id="editBtn" class="btn small">Edit</button> <span id="finalStatus" style="margin-left:8px;color:#065f46"></span></div>`;
  }
- html+=`<div class="section"><h3>Stage 1 — Your independent decision</h3>
-  <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Click a label to select. Choose secondary only if genuinely plausible (cannot equal primary).</div>
-  <label style="font-weight:700;font-size:12px">Primary label</label>
+ const autosaveHint = d.human_review_status==='reviewed' ? '' : '<span id="autoStatus" style="font-size:12px;color:#0e7c62;margin-left:8px">● autosave on</span>';
+ html+=`<div class="section"><h3>Stage 1 — Your decision ${autosaveHint}</h3>
+  <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Click labels — everything autosaves. No button needed.</div>
+  <label style="font-weight:700;font-size:12px">Primary label *</label>
   ${labelButtons(selPrimary,'', 'primary')}
-  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Secondary (optional) — click to toggle</label>
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Secondary (optional)</label>
   ${labelButtons(selSecondary,'', 'secondary')}</div>
-  <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Confidence</label>${segButtons('ic', d.initial_confidence)}</div>
-  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Ambiguity</label>${toggleButtons('ia', d.initial_ambiguous)}</div>
-  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Reason / notes (≥5 chars)</label><textarea id="ir" rows="3" placeholder="Why this label is best...">${esc(d.initial_reason||'')}</textarea></div>
-  <div class="action-row"><button id="saveInitial" class="btn primary">Save initial → reveal evidence</button><span style="font-size:12px;color:#6b7280;align-self:center">Ctrl+S</span></div>
+  <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Confidence *</label>${segButtons('ic', d.initial_confidence)}</div>
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Ambiguity *</label>${toggleButtons('ia', d.initial_ambiguous)}</div>
+  <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Reason / notes * (≥5 chars)</label><textarea id="ir" rows="3" placeholder="Why this label is best...">${esc(d.initial_reason||'')}</textarea></div>
+  <div id="initStatus" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
  </div>`;
 
  if(d.evidence_visible){
-   html+=`<div class="evidence"><h3 style="margin:0 0 8px">Stage 2 — Evidence & final adjudication</h3>
-   <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Revealed ${esc(d.evidence_revealed_at_utc||'')}. Keep your initial or adopt another — then Finalize.</div>
+   html+=`<div class="evidence"><h3 style="margin:0 0 8px">Stage 2 — Evidence & final <span id="finalAutoStatus" style="font-size:12px;color:#0e7c62;font-weight:400">● autosave on</span></h3>
+   <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Revealed ${esc(d.evidence_revealed_at_utc||'')} — changing anything autosaves final.</div>
    <table class="ev-table">
     <tr><td>HumAID</td><td>${esc(d.humaid_label)}</td></tr>
     <tr><td>GPT-4o</td><td>${esc(d.gpt4o_label)} <span style="color:#6b7280">conf ${esc(d.gpt4o_confidence)}</span></td></tr>
@@ -113,70 +115,133 @@ function renderCard(d){
     <tr><td>Consensus</td><td>${esc(d.model_consensus_type)} · top ${esc(d.model_top_label)} (${esc(d.model_top_count)})</td></tr>
     <tr><td>Bulk AI rec.</td><td>${esc(d.bulk_ai_recommended_label)} <span style="color:#6b7280">${esc(d.bulk_recommendation_basis)}</span></td></tr>
    </table>
-   <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Final primary</label>${labelButtons(selFinal,'', 'final')}</div>
+   <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Final primary *</label>${labelButtons(selFinal,'', 'final')}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final secondary</label>${labelButtons(selFinalSec,'', 'finalSec')}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final confidence</label>${segButtons('fc', d.final_confidence||d.initial_confidence)}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final ambiguity</label>${toggleButtons('fa', d.final_ambiguous||d.initial_ambiguous)}</div>
    <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final notes</label><textarea id="fn" rows="3">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
-   <div class="action-row"><button id="finalBtn" class="btn primary">✓ Finalize (marks reviewed)</button><span style="font-size:12px;color:#6b7280">Ctrl+Enter</span></div>
+   <div id="finalStatus2" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
    </div>`;
  } else if(d.has_initial){
-   html+=`<div style="margin-top:12px"><button id="revealBtn" class="btn primary">Reveal evidence</button></div>`;
+   html+=`<div id="revealStatus" style="margin-top:12px;font-size:12px;color:#0e7c62">✓ Initial autosaved — revealing evidence...</div>`;
  }
  el('card').innerHTML=html;
  attachCardHandlers(d);
+ if(d.has_initial && !d.evidence_visible){
+   setTimeout(()=>reveal(true), 300);
+ }
 }
 function attachCardHandlers(d){
  document.querySelectorAll('.label-btn').forEach(b=>{
    b.onclick=()=>{
      const v=b.dataset.val, kind=b.dataset.kind;
-     if(kind==='primary') selPrimary=v;
-     if(kind==='secondary') selSecondary = (selSecondary===v?'':v);
-     if(kind==='final') selFinal=v;
-     if(kind==='finalSec') selFinalSec = (selFinalSec===v?'':v);
-     if(selSecondary===selPrimary) selSecondary='';
-     if(selFinalSec===selFinal) selFinalSec='';
-     renderCard(currentData);
+     if(kind==='primary'){ selPrimary=v; updateLabelSelection('primary', v); scheduleInitAutosave(); }
+     else if(kind==='secondary'){ selSecondary = (selSecondary===v?'':v); updateLabelSelection('secondary', selSecondary); scheduleInitAutosave(); }
+     else if(kind==='final'){ selFinal=v; updateLabelSelection('final', v); scheduleFinalAutosave(); }
+     else if(kind==='finalSec'){ selFinalSec = (selFinalSec===v?'':v); updateLabelSelection('finalSec', selFinalSec); scheduleFinalAutosave(); }
    };
  });
  document.querySelectorAll('.seg').forEach(g=>{
    g.querySelectorAll('button').forEach(b=>b.onclick=()=>{
      g.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));
      b.classList.add('selected'); g.dataset.value=b.dataset.v;
+     if(g.dataset.name==='ic') scheduleInitAutosave();
+     else scheduleFinalAutosave();
    });
  });
  document.querySelectorAll('.toggle').forEach(g=>{
    g.querySelectorAll('button').forEach(b=>b.onclick=()=>{
      g.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));
      b.classList.add('selected'); g.dataset.value=b.dataset.v;
+     if(g.dataset.name==='ia') scheduleInitAutosave();
+     else scheduleFinalAutosave();
    });
  });
- const si=el('saveInitial'); if(si) si.onclick=saveInitial;
- const rb=el('revealBtn'); if(rb) rb.onclick=reveal;
- const fb=el('finalBtn'); if(fb) fb.onclick=finalize;
+ const ir=el('ir'); if(ir) ir.addEventListener('input', ()=>scheduleInitAutosave(true));
+ const fn=el('fn'); if(fn) fn.addEventListener('input', ()=>scheduleFinalAutosave(true));
  const eb=el('editBtn'); if(eb) eb.onclick=editMode;
  ['ir','fn'].forEach(id=>{ const e=el(id); if(e) e.addEventListener('keydown', ev=>{ if(ev.key==='Enter' && !ev.ctrlKey) ev.stopPropagation(); }); });
+}
+function updateLabelSelection(kind, val){
+ document.querySelectorAll(`.label-btn[data-kind="${kind}"]`).forEach(b=>{
+   b.classList.toggle('selected', b.dataset.val===val);
+ });
 }
 function getSegVal(name){ const g=document.querySelector(`.seg[data-name="${name}"]`); if(!g) return ''; const s=g.querySelector('.selected'); if(s) return s.dataset.v; return g.dataset.value||''; }
 function getToggleVal(name){ const g=document.querySelector(`.toggle[data-name="${name}"]`); if(!g) return ''; const s=g.querySelector('.selected'); if(s) return s.dataset.v; return g.dataset.value||''; }
 
-async function saveInitial(){
- const payload={initial_primary_label:selPrimary,initial_secondary_label:selSecondary,initial_confidence:getSegVal('ic'),initial_ambiguous:getToggleVal('ia'),initial_reason:el('ir').value};
- try{ await fetchJSON('/api/item/'+currentId+'/initial',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); msg('Initial saved'); loadItem(currentId); } catch(e){ msg(e.message,true); }
+function setStatus(id, txt, isErr){ const e=el(id); if(e){ e.textContent=txt; e.style.color=isErr?'#991b1b':'#0e7c62'; } }
+
+function scheduleInitAutosave(debounced=false){
+ clearTimeout(initTimer);
+ const delay = debounced ? 700 : 120;
+ initTimer=setTimeout(tryAutosaveInitial, delay);
 }
-async function reveal(){ try{ await fetchJSON('/api/item/'+currentId+'/reveal',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); msg('Evidence revealed'); loadItem(currentId); } catch(e){ msg(e.message,true); } }
-async function finalize(){
- if(!confirm('Finalize? Marks human-reviewed.')) return;
- const payload={final_primary_label:selFinal,final_secondary_label:selFinalSec,final_confidence:getSegVal('fc'),final_ambiguous:getToggleVal('fa'),review_notes:el('fn').value};
- try{ await fetchJSON('/api/item/'+currentId+'/finalize',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}); msg('Finalized ✓'); loadItem(currentId); } catch(e){ msg(e.message,true); }
+function scheduleFinalAutosave(debounced=false){
+ clearTimeout(faTimer);
+ const delay = debounced ? 700 : 150;
+ faTimer=setTimeout(tryAutosaveFinal, delay);
+}
+async function tryAutosaveInitial(){
+ if(!currentId) return;
+ const reason=(el('ir')?.value||'').trim();
+ const conf=getSegVal('ic'), amb=getToggleVal('ia');
+ if(!selPrimary || !conf || !amb || reason.length<5){
+   setStatus('initStatus','○ incomplete — pick primary, confidence, ambiguity and ≥5-char reason','');
+   return;
+ }
+ setStatus('initStatus','● saving...','');
+ const payload={initial_primary_label:selPrimary,initial_secondary_label:selSecondary,initial_confidence:conf,initial_ambiguous:amb,initial_reason:reason};
+ try{
+   await fetchJSON('/api/item/'+currentId+'/initial',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+   setStatus('initStatus','✓ autosaved','');
+   const wasVisible=currentData.evidence_visible;
+   const fresh=await fetchJSON('/api/item/'+currentId);
+   currentData=fresh;
+   if(!wasVisible && fresh.has_initial){
+     await reveal(true);
+   } else {
+     updateProgress();
+     loadQueue();
+   }
+ } catch(e){ setStatus('initStatus', e.message, true); }
+}
+async function reveal(silent=false){
+ try{ await fetchJSON('/api/item/'+currentId+'/reveal',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+   if(!silent) msg('Evidence revealed');
+   const fresh=await fetchJSON('/api/item/'+currentId);
+   currentData=fresh;
+   if(!selFinal) selFinal=selPrimary;
+   renderCard(fresh);
+   updateProgress(); loadQueue();
+   if(fresh.evidence_visible) scheduleFinalAutosave();
+ } catch(e){ if(!silent) msg(e.message,true); setStatus('initStatus', e.message, true); }
+}
+async function tryAutosaveFinal(){
+ if(!currentId || !currentData?.evidence_visible) return;
+ const notes=(el('fn')?.value||'').trim();
+ const fc=getSegVal('fc'), fa=getToggleVal('fa');
+ if(!selFinal || !fc || !fa || notes.length<5){
+   setStatus('finalStatus2','○ complete final fields to autosave','');
+   return;
+ }
+ setStatus('finalStatus2','● saving final...','');
+ const payload={final_primary_label:selFinal,final_secondary_label:selFinalSec,final_confidence:fc,final_ambiguous:fa,review_notes:notes};
+ try{
+   await fetchJSON('/api/item/'+currentId+'/finalize',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+   setStatus('finalStatus2','✓ final autosaved (reviewed)','');
+   const fresh=await fetchJSON('/api/item/'+currentId);
+   currentData=fresh;
+   updateProgress(); loadQueue();
+ } catch(e){ setStatus('finalStatus2', e.message, true); }
 }
 async function editMode(){ await fetchJSON('/api/item/'+currentId+'/edit',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); msg('Edit mode'); loadItem(currentId); }
 async function toggleBookmark(){ await fetchJSON('/api/bookmark/'+currentId,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}); loadItem(currentId); updateProgress(); }
 function nav(dir){ if(!currentData) return; const nid=dir<0?currentData.prev_id:currentData.next_id; if(nid) loadItem(nid); }
 function onKey(e){
  if(e.target.tagName==='TEXTAREA' || e.target.tagName==='INPUT'){
-   if(e.ctrlKey && e.key==='s'){ e.preventDefault(); saveInitial(); }
-   if(e.ctrlKey && e.key==='Enter'){ e.preventDefault(); const f=el('finalBtn'); if(f) finalize(); }
+   if(e.ctrlKey && e.key==='s'){ e.preventDefault(); tryAutosaveInitial(); }
+   if(e.ctrlKey && e.key==='Enter'){ e.preventDefault(); tryAutosaveFinal(); }
    return;
  }
  if(e.key==='ArrowLeft') nav(-1);
