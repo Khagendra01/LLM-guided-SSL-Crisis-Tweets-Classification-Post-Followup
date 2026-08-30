@@ -1,0 +1,9 @@
+LOOK FOR ANY OF THESE ON OLD DOWNLOADS / BACKUPS:
+
+- a complete humaid_500_source_with_hidden_labels.csv (500 rows)
+- any older reviewer/audit ZIP containing AUDIT0351 through AUDIT0500 source rows
+- any source-selection CSV/JSON with 500 event + tweet_id pairs
+- any pre-display / selected500 / full500 intermediate file
+- historical GPT-4o train-pred CSVs matching the blob fingerprints in AUDIT_351_500_RECOVERY_STATUS.md
+
+DO NOT accept regenerated rows 351-500 unless the same reconstruction reproduces AUDIT0001-AUDIT0350 exactly by annotation_id, event, and tweet_id.
