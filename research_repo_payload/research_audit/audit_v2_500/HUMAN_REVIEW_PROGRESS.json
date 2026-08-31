@@ -1,21 +1,22 @@
 {
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "complete",
   "researcher": "Khagendra01",
-  "reviewed_rows": 100,
-  "pending_rows": 400,
-  "accepted_rows": 45,
-  "changed_rows": 55,
+  "reviewed_rows": 500,
+  "pending_rows": 0,
+  "accepted_rows": 175,
+  "changed_rows": 325,
   "completed_batches": [
     1,
-    2
+    2,
+    3
   ],
-  "last_completed_batch": 2,
-  "last_batch_file": "research_repo_payload/research_audit/audit_v2_500/human_review_batches/batch_002_APPROVED.csv",
-  "researcher_confirmation": "approve batch 2",
+  "last_completed_batch": 3,
+  "last_batch_file": "research_repo_payload/research_audit/audit_v2_500/human_review_batches/batch_003_FINAL_400.csv",
+  "researcher_confirmation": "approve all 500 - human benchmark complete",
   "confirmation_date_utc": "2026-08-31",
   "ledger_path": "research_repo_payload/research_audit/audit_v2_500/researcher_human_review_ledger.csv",
-  "note": "100 reviewed (95 new P1, all manual human adjudications). 400 pending (including 1 remaining P1 AUDITV2_0499). No AI-assisted subset.",
+  "note": "500/500 manually reviewed. All as manual human adjudications. P1 101/101, P2 78/78, P3 90/90, P4 231/231 complete.",
   "bulk_ai_adjudication": {
     "status": "complete",
     "rows": 500,
@@ -28,5 +29,11 @@
     "validation_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/validation.json",
     "repaired_two_one_one_rows": 46
   },
-  "human_reviewed_manual_count": 100
+  "human_reviewed_manual_count": 500,
+  "freeze": {
+    "export_dir": "research_repo_payload/research_audit/audit_v2_500/local_human_review/exports/20260831T053053Z",
+    "manifest": "79e8ec89f71f49750088ce1e74c8ef7c4291b0ab19c19d0889158e185ff938a7  final_human_labels.csv\n54724af0d4dd3d7158ed1571740ddc9e4f78b48d389bc1ff6b360029e9b7a537  researcher_human_review_ledger_UPDATED.csv\ndb9eb4372e08b9fdf14db8d28955048153e4ad3dca76303c5b103ad1215640be  researcher_review_queue_UPDATED.csv\nd0c526d44eeb08ce0b4ec3b0bd27e7994d37ada96a40b3b7464b5d588f96ea07  initial_blind_human_decisions.csv\ne24f64aaa18ab39fa38b73b3a9e6a3d5648ae3af42def51d1fd2750700cd25d5  human_review_completion_summary.js",
+    "total": 500,
+    "hash_file": "research_repo_payload/research_audit/audit_v2_500/local_human_review/exports/20260831T053053Z/human_review_completion_manifest.sha256"
+  }
 }
