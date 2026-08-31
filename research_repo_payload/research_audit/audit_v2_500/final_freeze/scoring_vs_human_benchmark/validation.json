@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "errors": [],
+  "annotators": [
+    "human",
+    "researcher_first_pass",
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "expected_rows": 500
+}

@@ -1,0 +1,6 @@
+annotator,contested_n,sided_gpt4o_n,sided_gpt4o_rate,sided_humaid_n,sided_humaid_rate,sided_neither_n,sided_neither_rate,consensus_n,consensus_match_n,consensus_match_rate,humaid_primary_or_secondary_rate,gpt4o_primary_or_secondary_rate
+human,250,78,0.312,70,0.28,102,0.408,250,119,0.476,0.378,0.396
+researcher_first_pass,250,135,0.54,71,0.284,44,0.176,250,188,0.752,0.732,0.808
+claude,250,130,0.52,63,0.252,57,0.228,250,179,0.716,0.714,0.796
+gemini,250,123,0.492,70,0.28,57,0.228,250,189,0.756,0.75,0.828
+grok,250,127,0.508,74,0.296,49,0.196,250,191,0.764,0.706,0.788

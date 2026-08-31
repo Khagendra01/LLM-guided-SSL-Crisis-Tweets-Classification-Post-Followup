@@ -1,0 +1,22 @@
+{
+  "valid": true,
+  "n": 500,
+  "annotators": [
+    "human",
+    "researcher_first_pass",
+    "claude",
+    "gemini",
+    "grok"
+  ],
+  "humaid_gpt4o_contested_n": 250,
+  "humaid_gpt4o_consensus_n": 250,
+  "adjudication_queue_n": 427,
+  "outputs": [
+    "headline_metrics.csv",
+    "contested_siding.csv",
+    "per_class_metrics.csv",
+    "ambiguity_summary.csv",
+    "adjudication_queue.csv",
+    "validation.json"
+  ]
+}
