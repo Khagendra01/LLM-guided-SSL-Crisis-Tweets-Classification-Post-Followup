@@ -219,7 +219,8 @@ async function revealAndFinalize(silent=true){
    currentData=fresh;
    renderCard(fresh);
    updateProgress(); loadQueue();
-   setStatus('initStatus','✓ reviewed','');
+   setStatus('initStatus','✓ reviewed → next...','');
+   setTimeout(()=>nav(1), 450);
  } catch(e){ setStatus('initStatus', e.message, true); }
 }
 async function tryAutosaveFinal(){
