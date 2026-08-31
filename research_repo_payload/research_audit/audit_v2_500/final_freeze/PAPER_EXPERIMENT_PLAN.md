@@ -4,14 +4,14 @@
 - 500/500 manually reviewed (P1 101/101, P2 78/78, P3 90/90, P4 231/231)
 - Canonical: `researcher_adjudicated_canonical_500.csv` (hash d06926...)
 - Export: `local_human_review/exports/20260831T053053Z` (manifest verified)
-- All original labels and model outputs preserved separately (Humaid/GPT-4o/claude/gemini/grok + researcher_first_pass)
+- All original labels and model outputs preserved separately (Humaid/gpt 5.6/claude/gemini/grok + researcher_first_pass)
 
 ## Benchmark Comparison (human as ground truth, 500)
 - human vs HumAID: 37.8% exact, macroF1 0.391, kappa 0.303
-- human vs GPT-4o: 39.4%, 0.412, 0.322
+- human vs gpt 5.6: 39.4%, 0.412, 0.322
 - human vs researcher_first_pass: 35.0% (175 accepted / 325 changed)
 - human vs claude 38.2%, gemini 40.6%, grok 40.2%
-- Contested 250: human sided GPT-4o 31.2%, HumAID 28.0%, neither 40.8% (researcher_first_pass sided GPT-4o 54%)
+- Contested 250: human sided gpt 5.6 31.2%, HumAID 28.0%, neither 40.8% (researcher_first_pass sided gpt 5.6 54%)
 - Per-class recall collapse on human `other_relevant` (0.65 recall but 0.17 precision vs HumAID) — human conservative
 - `other_relevant` remains high across all priorities (P1 51.5%, P2 32.1%, P3 46.7%, P4 41.1%) — not P1-specific
 
@@ -33,7 +33,7 @@ python -m lg_cotrain.run_experiment --pseudo-label-source human-corrected --even
 ```
 
 ### C. Human + pseudo-labelled
-Combine corrected 500 with GPT-4o pseudo-labelled pool:
+Combine corrected 500 with gpt 5.6 pseudo-labelled pool:
 ```bash
 python -m lg_cotrain.run_experiment --pseudo-label-source gpt-4o --events ... # baseline
 # vs human-corrected + pseudo
