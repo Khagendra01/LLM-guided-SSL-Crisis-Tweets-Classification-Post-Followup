@@ -1,501 +1,501 @@
 annotation_id,primary_label,secondary_label,confidence,ambiguous,reason
-AUDITV2_0001,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0002,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0003,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0004,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0005,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0006,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0007,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0008,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0009,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0010,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0011,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0012,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0013,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0014,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0015,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0016,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0017,displaced_people_and_evacuations,,3,no,[batch_001] Opening shelters directly concerns accommodation of affected people.
-AUDITV2_0018,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0019,rescue_volunteering_or_donation_effort,,3,no,[batch_001] The speaker wants to provide help rather than requesting survival assistance as an affected person.
-AUDITV2_0020,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0021,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0022,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0023,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0024,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0025,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0026,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0027,not_humanitarian,,3,no,[batch_001] The primary intent is an unrelated business-news roundup; the flood hashtags are incidental.
-AUDITV2_0028,other_relevant_information,,3,no,[batch_001] The visible text reports viewing homes after the wildfire but does not explicitly state that the homes were damaged.
-AUDITV2_0029,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0030,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0031,other_relevant_information,,3,no,"[batch_001] The tweet discusses the real earthquake and fault activity, so it is on-topic disaster information."
-AUDITV2_0032,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0033,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0034,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0035,other_relevant_information,,3,no,human adjudicated
-AUDITV2_0036,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0037,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0038,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0039,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0040,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0041,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0042,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0043,sympathy_and_support,,3,no,human adjudicated
-AUDITV2_0044,requests_or_urgent_needs,,3,no,human adjudicated
-AUDITV2_0045,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0046,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0047,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0048,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0049,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0050,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0051,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0052,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0053,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0054,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0055,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0056,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0057,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0058,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0059,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0060,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0061,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0062,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0063,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0064,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0065,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0066,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0067,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0068,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0069,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0070,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0071,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0072,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0073,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0074,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0075,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0076,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0077,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0078,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0079,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0080,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0081,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0082,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0083,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0084,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0085,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0086,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0087,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0088,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0089,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0090,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0091,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0092,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0093,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0094,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0095,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0096,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0097,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0098,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0099,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0100,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0101,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0102,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0103,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0104,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0105,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0106,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0107,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0108,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0109,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0110,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0111,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0112,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0113,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0114,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0115,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0116,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0117,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0118,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0119,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0120,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0121,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0122,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0123,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0124,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0125,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0126,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0127,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0128,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0129,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0130,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0131,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0132,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0133,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0134,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0135,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0136,other_relevant_information,not_humanitarian,2,no,human adjudicated
-AUDITV2_0137,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0138,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0139,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0140,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0141,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0142,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0143,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0144,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0145,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0146,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0147,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0148,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0149,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0150,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0151,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0152,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0153,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0154,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0155,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0156,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0157,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0158,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0159,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0160,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0161,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0162,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0163,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0164,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0165,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0166,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0167,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0168,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0169,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0170,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0171,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0172,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0173,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0174,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0175,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0176,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0177,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0178,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0179,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0180,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0181,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0182,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0183,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0184,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0185,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0186,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0187,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0188,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0189,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0190,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0191,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0192,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0193,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0194,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0195,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0196,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0197,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0198,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0199,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0200,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0201,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0202,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0203,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0204,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0205,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0206,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0207,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0208,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0209,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0210,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0211,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0212,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0213,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0214,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0215,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0216,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0217,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0218,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0219,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0220,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0221,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0222,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0223,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0224,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0225,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0226,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0227,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0228,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0229,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0230,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0231,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0232,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0233,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0234,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0235,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0236,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0237,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0238,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0239,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0240,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0241,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0242,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0243,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0244,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0245,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0246,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0247,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0248,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0249,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0250,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0251,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0252,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0253,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0254,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0255,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0256,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0257,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0258,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0259,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0260,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0261,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0262,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0263,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0264,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0265,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0266,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0267,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0268,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0269,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0270,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0271,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0272,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0273,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0274,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0275,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0276,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0277,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0278,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0279,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0280,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0281,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0282,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0283,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0284,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0285,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0286,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0287,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0288,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0289,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0290,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0291,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0292,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0293,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0294,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0295,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0296,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0297,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0298,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0299,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0300,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0301,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0302,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0303,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0304,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0305,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0306,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0307,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0308,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0309,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0310,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0311,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0312,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0313,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0314,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0315,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0316,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0317,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0318,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0319,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0320,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0321,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0322,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0323,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0324,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0325,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0326,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0327,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0328,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0329,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0330,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0331,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0332,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0333,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0334,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0335,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0336,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0337,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0338,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0339,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0340,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0341,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0342,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0343,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0344,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0345,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0346,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0347,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0348,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0349,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0350,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0351,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0352,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0353,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0354,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0355,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0356,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0357,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0358,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0359,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0360,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0361,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0362,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0363,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0364,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0365,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0366,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0367,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0368,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0369,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0370,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0371,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0372,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0373,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0374,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0375,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0376,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0377,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0378,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0379,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0380,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0381,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0382,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0383,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0384,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0385,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0386,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0387,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0388,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0389,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0390,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0391,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0392,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0393,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0394,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0395,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0396,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0397,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0398,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0399,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0400,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0401,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0402,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0403,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0404,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0405,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0406,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0407,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0408,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0409,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0410,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0411,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0412,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0413,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0414,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0415,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0416,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0417,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0418,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0419,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0420,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0421,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0422,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0423,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0424,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0425,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0426,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0427,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0428,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0429,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0430,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0431,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0432,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0433,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0434,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0435,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0436,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0437,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0438,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0439,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0440,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0441,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0442,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0443,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0444,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0445,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0446,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0447,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0448,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0449,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0450,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0451,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0452,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0453,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0454,rescue_volunteering_or_donation_effort,,2,no,human adjudicated
-AUDITV2_0455,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0456,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0457,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0458,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0459,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0460,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0461,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0462,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0463,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0464,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0465,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0466,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0467,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0468,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0469,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0470,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0471,requests_or_urgent_needs,,2,no,human adjudicated
-AUDITV2_0472,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0473,displaced_people_and_evacuations,,2,no,human adjudicated
-AUDITV2_0474,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0475,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0476,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0477,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0478,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0479,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0480,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0481,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0482,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0483,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0484,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0485,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0486,infrastructure_and_utility_damage,,2,no,human adjudicated
-AUDITV2_0487,missing_or_found_people,,2,no,human adjudicated
-AUDITV2_0488,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0489,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0490,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0491,injured_or_dead_people,,2,no,human adjudicated
-AUDITV2_0492,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0493,not_humanitarian,,2,no,human adjudicated
-AUDITV2_0494,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0495,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0496,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0497,caution_and_advice,,2,no,human adjudicated
-AUDITV2_0498,sympathy_and_support,,2,no,human adjudicated
-AUDITV2_0499,other_relevant_information,,2,no,human adjudicated
-AUDITV2_0500,sympathy_and_support,,2,no,human adjudicated
+AUDITV2_0001,not_humanitarian,,,,
+AUDITV2_0002,other_relevant_information,,,,
+AUDITV2_0003,other_relevant_information,,,,
+AUDITV2_0004,other_relevant_information,,,,
+AUDITV2_0005,other_relevant_information,,,,
+AUDITV2_0006,not_humanitarian,,,,
+AUDITV2_0007,injured_or_dead_people,,,,
+AUDITV2_0008,other_relevant_information,,,,
+AUDITV2_0009,sympathy_and_support,,,,
+AUDITV2_0010,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0011,caution_and_advice,,,,
+AUDITV2_0012,other_relevant_information,,,,
+AUDITV2_0013,other_relevant_information,,,,
+AUDITV2_0014,not_humanitarian,,,,
+AUDITV2_0015,sympathy_and_support,,,,
+AUDITV2_0016,other_relevant_information,,,,
+AUDITV2_0017,displaced_people_and_evacuations,,3,,[batch_001] Opening shelters directly concerns accommodation of affected people.
+AUDITV2_0018,not_humanitarian,,,,
+AUDITV2_0019,rescue_volunteering_or_donation_effort,,3,,[batch_001] The speaker wants to provide help rather than requesting survival assistance as an affected person.
+AUDITV2_0020,not_humanitarian,,,,
+AUDITV2_0021,not_humanitarian,,,,
+AUDITV2_0022,injured_or_dead_people,,,,
+AUDITV2_0023,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0024,other_relevant_information,,,,
+AUDITV2_0025,other_relevant_information,,,,
+AUDITV2_0026,other_relevant_information,,,,
+AUDITV2_0027,not_humanitarian,,3,,[batch_001] The primary intent is an unrelated business-news roundup; the flood hashtags are incidental.
+AUDITV2_0028,other_relevant_information,,3,,[batch_001] The visible text reports viewing homes after the wildfire but does not explicitly state that the homes were damaged.
+AUDITV2_0029,other_relevant_information,,,,
+AUDITV2_0030,other_relevant_information,,,,
+AUDITV2_0031,other_relevant_information,,3,,"[batch_001] The tweet discusses the real earthquake and fault activity, so it is on-topic disaster information."
+AUDITV2_0032,injured_or_dead_people,,,,
+AUDITV2_0033,not_humanitarian,,,,
+AUDITV2_0034,infrastructure_and_utility_damage,,,,
+AUDITV2_0035,other_relevant_information,,3,,
+AUDITV2_0036,missing_or_found_people,,,,
+AUDITV2_0037,not_humanitarian,,,,
+AUDITV2_0038,other_relevant_information,,,,
+AUDITV2_0039,other_relevant_information,,,,
+AUDITV2_0040,not_humanitarian,,,,
+AUDITV2_0041,other_relevant_information,,,,
+AUDITV2_0042,caution_and_advice,,,,
+AUDITV2_0043,sympathy_and_support,,3,,
+AUDITV2_0044,requests_or_urgent_needs,,3,,
+AUDITV2_0045,other_relevant_information,,,,
+AUDITV2_0046,other_relevant_information,,,,
+AUDITV2_0047,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0048,other_relevant_information,,,,
+AUDITV2_0049,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0050,sympathy_and_support,,,,
+AUDITV2_0051,sympathy_and_support,,,,
+AUDITV2_0052,other_relevant_information,,,,
+AUDITV2_0053,other_relevant_information,,,,
+AUDITV2_0054,other_relevant_information,,,,
+AUDITV2_0055,missing_or_found_people,,,,
+AUDITV2_0056,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0057,infrastructure_and_utility_damage,,,,
+AUDITV2_0058,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0059,displaced_people_and_evacuations,,,,
+AUDITV2_0060,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0061,not_humanitarian,,,,
+AUDITV2_0062,other_relevant_information,,,,
+AUDITV2_0063,not_humanitarian,,,,
+AUDITV2_0064,not_humanitarian,,,,
+AUDITV2_0065,other_relevant_information,,,,
+AUDITV2_0066,not_humanitarian,,,,
+AUDITV2_0067,other_relevant_information,,,,
+AUDITV2_0068,other_relevant_information,,,,
+AUDITV2_0069,sympathy_and_support,,,,
+AUDITV2_0070,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0071,sympathy_and_support,,,,
+AUDITV2_0072,sympathy_and_support,,,,
+AUDITV2_0073,other_relevant_information,,,,
+AUDITV2_0074,caution_and_advice,,,,
+AUDITV2_0075,other_relevant_information,,,,
+AUDITV2_0076,other_relevant_information,,,,
+AUDITV2_0077,infrastructure_and_utility_damage,,,,
+AUDITV2_0078,injured_or_dead_people,,,,
+AUDITV2_0079,caution_and_advice,,,,
+AUDITV2_0080,not_humanitarian,,,,
+AUDITV2_0081,other_relevant_information,,,,
+AUDITV2_0082,requests_or_urgent_needs,,,,
+AUDITV2_0083,other_relevant_information,,,,
+AUDITV2_0084,caution_and_advice,,,,
+AUDITV2_0085,other_relevant_information,,,,
+AUDITV2_0086,not_humanitarian,,,,
+AUDITV2_0087,other_relevant_information,,,,
+AUDITV2_0088,not_humanitarian,,,,
+AUDITV2_0089,not_humanitarian,,,,
+AUDITV2_0090,other_relevant_information,,,,
+AUDITV2_0091,not_humanitarian,,,,
+AUDITV2_0092,sympathy_and_support,,,,
+AUDITV2_0093,not_humanitarian,,,,
+AUDITV2_0094,requests_or_urgent_needs,,,,
+AUDITV2_0095,sympathy_and_support,,,,
+AUDITV2_0096,other_relevant_information,,,,
+AUDITV2_0097,other_relevant_information,,,,
+AUDITV2_0098,sympathy_and_support,,,,
+AUDITV2_0099,sympathy_and_support,,,,
+AUDITV2_0100,other_relevant_information,,,,
+AUDITV2_0101,other_relevant_information,,,,
+AUDITV2_0102,other_relevant_information,,,,
+AUDITV2_0103,missing_or_found_people,,,,
+AUDITV2_0104,other_relevant_information,,,,
+AUDITV2_0105,sympathy_and_support,,,,
+AUDITV2_0106,other_relevant_information,,,,
+AUDITV2_0107,caution_and_advice,,,,
+AUDITV2_0108,injured_or_dead_people,,,,
+AUDITV2_0109,caution_and_advice,,,,
+AUDITV2_0110,sympathy_and_support,,,,
+AUDITV2_0111,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0112,other_relevant_information,,,,
+AUDITV2_0113,caution_and_advice,,,,
+AUDITV2_0114,caution_and_advice,,,,
+AUDITV2_0115,sympathy_and_support,,,,
+AUDITV2_0116,other_relevant_information,,,,
+AUDITV2_0117,requests_or_urgent_needs,,,,
+AUDITV2_0118,other_relevant_information,,,,
+AUDITV2_0119,other_relevant_information,,,,
+AUDITV2_0120,sympathy_and_support,,,,
+AUDITV2_0121,sympathy_and_support,,,,
+AUDITV2_0122,other_relevant_information,,,,
+AUDITV2_0123,sympathy_and_support,,,,
+AUDITV2_0124,sympathy_and_support,,,,
+AUDITV2_0125,other_relevant_information,,,,
+AUDITV2_0126,not_humanitarian,,,,
+AUDITV2_0127,caution_and_advice,,,,
+AUDITV2_0128,other_relevant_information,,,,
+AUDITV2_0129,not_humanitarian,,,,
+AUDITV2_0130,displaced_people_and_evacuations,,,,
+AUDITV2_0131,other_relevant_information,,,,
+AUDITV2_0132,other_relevant_information,,,,
+AUDITV2_0133,missing_or_found_people,,,,
+AUDITV2_0134,other_relevant_information,,,,
+AUDITV2_0135,requests_or_urgent_needs,,,,
+AUDITV2_0136,other_relevant_information,not_humanitarian,,,
+AUDITV2_0137,caution_and_advice,,,,
+AUDITV2_0138,not_humanitarian,,,,
+AUDITV2_0139,sympathy_and_support,,,,
+AUDITV2_0140,caution_and_advice,,,,
+AUDITV2_0141,sympathy_and_support,,,,
+AUDITV2_0142,sympathy_and_support,,,,
+AUDITV2_0143,sympathy_and_support,,,,
+AUDITV2_0144,caution_and_advice,,,,
+AUDITV2_0145,other_relevant_information,,,,
+AUDITV2_0146,not_humanitarian,,,,
+AUDITV2_0147,other_relevant_information,,,,
+AUDITV2_0148,other_relevant_information,,,,
+AUDITV2_0149,other_relevant_information,,,,
+AUDITV2_0150,caution_and_advice,,,,
+AUDITV2_0151,other_relevant_information,,,,
+AUDITV2_0152,other_relevant_information,,,,
+AUDITV2_0153,infrastructure_and_utility_damage,,,,
+AUDITV2_0154,other_relevant_information,,,,
+AUDITV2_0155,sympathy_and_support,,,,
+AUDITV2_0156,sympathy_and_support,,,,
+AUDITV2_0157,not_humanitarian,,,,
+AUDITV2_0158,caution_and_advice,,,,
+AUDITV2_0159,injured_or_dead_people,,,,
+AUDITV2_0160,other_relevant_information,,,,
+AUDITV2_0161,sympathy_and_support,,,,
+AUDITV2_0162,other_relevant_information,,,,
+AUDITV2_0163,other_relevant_information,,,,
+AUDITV2_0164,injured_or_dead_people,,,,
+AUDITV2_0165,sympathy_and_support,,,,
+AUDITV2_0166,other_relevant_information,,,,
+AUDITV2_0167,sympathy_and_support,,,,
+AUDITV2_0168,other_relevant_information,,,,
+AUDITV2_0169,missing_or_found_people,,,,
+AUDITV2_0170,infrastructure_and_utility_damage,,,,
+AUDITV2_0171,sympathy_and_support,,,,
+AUDITV2_0172,other_relevant_information,,,,
+AUDITV2_0173,other_relevant_information,,,,
+AUDITV2_0174,caution_and_advice,,,,
+AUDITV2_0175,infrastructure_and_utility_damage,,,,
+AUDITV2_0176,missing_or_found_people,,,,
+AUDITV2_0177,not_humanitarian,,,,
+AUDITV2_0178,caution_and_advice,,,,
+AUDITV2_0179,other_relevant_information,,,,
+AUDITV2_0180,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0181,caution_and_advice,,,,
+AUDITV2_0182,not_humanitarian,,,,
+AUDITV2_0183,other_relevant_information,,,,
+AUDITV2_0184,other_relevant_information,,,,
+AUDITV2_0185,other_relevant_information,,,,
+AUDITV2_0186,caution_and_advice,,,,
+AUDITV2_0187,other_relevant_information,,,,
+AUDITV2_0188,injured_or_dead_people,,,,
+AUDITV2_0189,other_relevant_information,,,,
+AUDITV2_0190,other_relevant_information,,,,
+AUDITV2_0191,not_humanitarian,,,,
+AUDITV2_0192,other_relevant_information,,,,
+AUDITV2_0193,other_relevant_information,,,,
+AUDITV2_0194,other_relevant_information,,,,
+AUDITV2_0195,not_humanitarian,,,,
+AUDITV2_0196,sympathy_and_support,,,,
+AUDITV2_0197,other_relevant_information,,,,
+AUDITV2_0198,other_relevant_information,,,,
+AUDITV2_0199,not_humanitarian,,,,
+AUDITV2_0200,other_relevant_information,,,,
+AUDITV2_0201,caution_and_advice,,,,
+AUDITV2_0202,missing_or_found_people,,,,
+AUDITV2_0203,caution_and_advice,,,,
+AUDITV2_0204,displaced_people_and_evacuations,,,,
+AUDITV2_0205,not_humanitarian,,,,
+AUDITV2_0206,caution_and_advice,,,,
+AUDITV2_0207,infrastructure_and_utility_damage,,,,
+AUDITV2_0208,caution_and_advice,,,,
+AUDITV2_0209,other_relevant_information,,,,
+AUDITV2_0210,requests_or_urgent_needs,,,,
+AUDITV2_0211,other_relevant_information,,,,
+AUDITV2_0212,other_relevant_information,,,,
+AUDITV2_0213,displaced_people_and_evacuations,,,,
+AUDITV2_0214,infrastructure_and_utility_damage,,,,
+AUDITV2_0215,other_relevant_information,,,,
+AUDITV2_0216,not_humanitarian,,,,
+AUDITV2_0217,sympathy_and_support,,,,
+AUDITV2_0218,caution_and_advice,,,,
+AUDITV2_0219,caution_and_advice,,,,
+AUDITV2_0220,injured_or_dead_people,,,,
+AUDITV2_0221,injured_or_dead_people,,,,
+AUDITV2_0222,displaced_people_and_evacuations,,,,
+AUDITV2_0223,missing_or_found_people,,,,
+AUDITV2_0224,not_humanitarian,,,,
+AUDITV2_0225,other_relevant_information,,,,
+AUDITV2_0226,other_relevant_information,,,,
+AUDITV2_0227,other_relevant_information,,,,
+AUDITV2_0228,other_relevant_information,,,,
+AUDITV2_0229,sympathy_and_support,,,,
+AUDITV2_0230,not_humanitarian,,,,
+AUDITV2_0231,other_relevant_information,,,,
+AUDITV2_0232,sympathy_and_support,,,,
+AUDITV2_0233,other_relevant_information,,,,
+AUDITV2_0234,sympathy_and_support,,,,
+AUDITV2_0235,injured_or_dead_people,,,,
+AUDITV2_0236,other_relevant_information,,,,
+AUDITV2_0237,requests_or_urgent_needs,,,,
+AUDITV2_0238,other_relevant_information,,,,
+AUDITV2_0239,sympathy_and_support,,,,
+AUDITV2_0240,other_relevant_information,,,,
+AUDITV2_0241,displaced_people_and_evacuations,,,,
+AUDITV2_0242,other_relevant_information,,,,
+AUDITV2_0243,other_relevant_information,,,,
+AUDITV2_0244,other_relevant_information,,,,
+AUDITV2_0245,other_relevant_information,,,,
+AUDITV2_0246,other_relevant_information,,,,
+AUDITV2_0247,sympathy_and_support,,,,
+AUDITV2_0248,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0249,other_relevant_information,,,,
+AUDITV2_0250,sympathy_and_support,,,,
+AUDITV2_0251,other_relevant_information,,,,
+AUDITV2_0252,other_relevant_information,,,,
+AUDITV2_0253,caution_and_advice,,,,
+AUDITV2_0254,other_relevant_information,,,,
+AUDITV2_0255,requests_or_urgent_needs,,,,
+AUDITV2_0256,other_relevant_information,,,,
+AUDITV2_0257,other_relevant_information,,,,
+AUDITV2_0258,caution_and_advice,,,,
+AUDITV2_0259,sympathy_and_support,,,,
+AUDITV2_0260,other_relevant_information,,,,
+AUDITV2_0261,not_humanitarian,,,,
+AUDITV2_0262,sympathy_and_support,,,,
+AUDITV2_0263,sympathy_and_support,,,,
+AUDITV2_0264,other_relevant_information,,,,
+AUDITV2_0265,requests_or_urgent_needs,,,,
+AUDITV2_0266,other_relevant_information,,,,
+AUDITV2_0267,other_relevant_information,,,,
+AUDITV2_0268,other_relevant_information,,,,
+AUDITV2_0269,other_relevant_information,,,,
+AUDITV2_0270,other_relevant_information,,,,
+AUDITV2_0271,requests_or_urgent_needs,,,,
+AUDITV2_0272,other_relevant_information,,,,
+AUDITV2_0273,other_relevant_information,,,,
+AUDITV2_0274,injured_or_dead_people,,,,
+AUDITV2_0275,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0276,sympathy_and_support,,,,
+AUDITV2_0277,other_relevant_information,,,,
+AUDITV2_0278,other_relevant_information,,,,
+AUDITV2_0279,not_humanitarian,,,,
+AUDITV2_0280,other_relevant_information,,,,
+AUDITV2_0281,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0282,not_humanitarian,,,,
+AUDITV2_0283,other_relevant_information,,,,
+AUDITV2_0284,other_relevant_information,,,,
+AUDITV2_0285,other_relevant_information,,,,
+AUDITV2_0286,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0287,other_relevant_information,,,,
+AUDITV2_0288,caution_and_advice,,,,
+AUDITV2_0289,sympathy_and_support,,,,
+AUDITV2_0290,sympathy_and_support,,,,
+AUDITV2_0291,not_humanitarian,,,,
+AUDITV2_0292,sympathy_and_support,,,,
+AUDITV2_0293,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0294,other_relevant_information,,,,
+AUDITV2_0295,caution_and_advice,,,,
+AUDITV2_0296,other_relevant_information,,,,
+AUDITV2_0297,displaced_people_and_evacuations,,,,
+AUDITV2_0298,displaced_people_and_evacuations,,,,
+AUDITV2_0299,other_relevant_information,,,,
+AUDITV2_0300,not_humanitarian,,,,
+AUDITV2_0301,caution_and_advice,,,,
+AUDITV2_0302,sympathy_and_support,,,,
+AUDITV2_0303,other_relevant_information,,,,
+AUDITV2_0304,other_relevant_information,,,,
+AUDITV2_0305,not_humanitarian,,,,
+AUDITV2_0306,other_relevant_information,,,,
+AUDITV2_0307,sympathy_and_support,,,,
+AUDITV2_0308,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0309,other_relevant_information,,,,
+AUDITV2_0310,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0311,caution_and_advice,,,,
+AUDITV2_0312,injured_or_dead_people,,,,
+AUDITV2_0313,injured_or_dead_people,,,,
+AUDITV2_0314,other_relevant_information,,,,
+AUDITV2_0315,not_humanitarian,,,,
+AUDITV2_0316,not_humanitarian,,,,
+AUDITV2_0317,not_humanitarian,,,,
+AUDITV2_0318,other_relevant_information,,,,
+AUDITV2_0319,other_relevant_information,,,,
+AUDITV2_0320,other_relevant_information,,,,
+AUDITV2_0321,other_relevant_information,,,,
+AUDITV2_0322,caution_and_advice,,,,
+AUDITV2_0323,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0324,other_relevant_information,,,,
+AUDITV2_0325,caution_and_advice,,,,
+AUDITV2_0326,other_relevant_information,,,,
+AUDITV2_0327,injured_or_dead_people,,,,
+AUDITV2_0328,other_relevant_information,,,,
+AUDITV2_0329,other_relevant_information,,,,
+AUDITV2_0330,injured_or_dead_people,,,,
+AUDITV2_0331,sympathy_and_support,,,,
+AUDITV2_0332,other_relevant_information,,,,
+AUDITV2_0333,injured_or_dead_people,,,,
+AUDITV2_0334,not_humanitarian,,,,
+AUDITV2_0335,injured_or_dead_people,,,,
+AUDITV2_0336,other_relevant_information,,,,
+AUDITV2_0337,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0338,requests_or_urgent_needs,,,,
+AUDITV2_0339,other_relevant_information,,,,
+AUDITV2_0340,other_relevant_information,,,,
+AUDITV2_0341,other_relevant_information,,,,
+AUDITV2_0342,other_relevant_information,,,,
+AUDITV2_0343,injured_or_dead_people,,,,
+AUDITV2_0344,other_relevant_information,,,,
+AUDITV2_0345,other_relevant_information,,,,
+AUDITV2_0346,other_relevant_information,,,,
+AUDITV2_0347,other_relevant_information,,,,
+AUDITV2_0348,injured_or_dead_people,,,,
+AUDITV2_0349,sympathy_and_support,,,,
+AUDITV2_0350,not_humanitarian,,,,
+AUDITV2_0351,other_relevant_information,,,,
+AUDITV2_0352,other_relevant_information,,,,
+AUDITV2_0353,sympathy_and_support,,,,
+AUDITV2_0354,sympathy_and_support,,,,
+AUDITV2_0355,infrastructure_and_utility_damage,,,,
+AUDITV2_0356,other_relevant_information,,,,
+AUDITV2_0357,caution_and_advice,,,,
+AUDITV2_0358,sympathy_and_support,,,,
+AUDITV2_0359,caution_and_advice,,,,
+AUDITV2_0360,injured_or_dead_people,,,,
+AUDITV2_0361,not_humanitarian,,,,
+AUDITV2_0362,injured_or_dead_people,,,,
+AUDITV2_0363,sympathy_and_support,,,,
+AUDITV2_0364,other_relevant_information,,,,
+AUDITV2_0365,other_relevant_information,,,,
+AUDITV2_0366,sympathy_and_support,,,,
+AUDITV2_0367,other_relevant_information,,,,
+AUDITV2_0368,caution_and_advice,,,,
+AUDITV2_0369,sympathy_and_support,,,,
+AUDITV2_0370,other_relevant_information,,,,
+AUDITV2_0371,other_relevant_information,,,,
+AUDITV2_0372,not_humanitarian,,,,
+AUDITV2_0373,caution_and_advice,,,,
+AUDITV2_0374,not_humanitarian,,,,
+AUDITV2_0375,other_relevant_information,,,,
+AUDITV2_0376,infrastructure_and_utility_damage,,,,
+AUDITV2_0377,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0378,other_relevant_information,,,,
+AUDITV2_0379,injured_or_dead_people,,,,
+AUDITV2_0380,not_humanitarian,,,,
+AUDITV2_0381,displaced_people_and_evacuations,,,,
+AUDITV2_0382,other_relevant_information,,,,
+AUDITV2_0383,other_relevant_information,,,,
+AUDITV2_0384,other_relevant_information,,,,
+AUDITV2_0385,other_relevant_information,,,,
+AUDITV2_0386,other_relevant_information,,,,
+AUDITV2_0387,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0388,other_relevant_information,,,,
+AUDITV2_0389,sympathy_and_support,,,,
+AUDITV2_0390,other_relevant_information,,,,
+AUDITV2_0391,sympathy_and_support,,,,
+AUDITV2_0392,not_humanitarian,,,,
+AUDITV2_0393,other_relevant_information,,,,
+AUDITV2_0394,sympathy_and_support,,,,
+AUDITV2_0395,other_relevant_information,,,,
+AUDITV2_0396,missing_or_found_people,,,,
+AUDITV2_0397,requests_or_urgent_needs,,,,
+AUDITV2_0398,sympathy_and_support,,,,
+AUDITV2_0399,caution_and_advice,,,,
+AUDITV2_0400,other_relevant_information,,,,
+AUDITV2_0401,requests_or_urgent_needs,,,,
+AUDITV2_0402,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0403,other_relevant_information,,,,
+AUDITV2_0404,other_relevant_information,,,,
+AUDITV2_0405,displaced_people_and_evacuations,,,,
+AUDITV2_0406,not_humanitarian,,,,
+AUDITV2_0407,not_humanitarian,,,,
+AUDITV2_0408,infrastructure_and_utility_damage,,,,
+AUDITV2_0409,caution_and_advice,,,,
+AUDITV2_0410,injured_or_dead_people,,,,
+AUDITV2_0411,other_relevant_information,,,,
+AUDITV2_0412,other_relevant_information,,,,
+AUDITV2_0413,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0414,other_relevant_information,,,,
+AUDITV2_0415,other_relevant_information,,,,
+AUDITV2_0416,requests_or_urgent_needs,,,,
+AUDITV2_0417,caution_and_advice,,,,
+AUDITV2_0418,other_relevant_information,,,,
+AUDITV2_0419,infrastructure_and_utility_damage,,,,
+AUDITV2_0420,missing_or_found_people,,,,
+AUDITV2_0421,not_humanitarian,,,,
+AUDITV2_0422,injured_or_dead_people,,,,
+AUDITV2_0423,not_humanitarian,,,,
+AUDITV2_0424,other_relevant_information,,,,
+AUDITV2_0425,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0426,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0427,injured_or_dead_people,,,,
+AUDITV2_0428,other_relevant_information,,,,
+AUDITV2_0429,other_relevant_information,,,,
+AUDITV2_0430,other_relevant_information,,,,
+AUDITV2_0431,other_relevant_information,,,,
+AUDITV2_0432,other_relevant_information,,,,
+AUDITV2_0433,other_relevant_information,,,,
+AUDITV2_0434,not_humanitarian,,,,
+AUDITV2_0435,sympathy_and_support,,,,
+AUDITV2_0436,other_relevant_information,,,,
+AUDITV2_0437,not_humanitarian,,,,
+AUDITV2_0438,other_relevant_information,,,,
+AUDITV2_0439,injured_or_dead_people,,,,
+AUDITV2_0440,other_relevant_information,,,,
+AUDITV2_0441,caution_and_advice,,,,
+AUDITV2_0442,displaced_people_and_evacuations,,,,
+AUDITV2_0443,sympathy_and_support,,,,
+AUDITV2_0444,missing_or_found_people,,,,
+AUDITV2_0445,other_relevant_information,,,,
+AUDITV2_0446,not_humanitarian,,,,
+AUDITV2_0447,caution_and_advice,,,,
+AUDITV2_0448,caution_and_advice,,,,
+AUDITV2_0449,other_relevant_information,,,,
+AUDITV2_0450,infrastructure_and_utility_damage,,,,
+AUDITV2_0451,other_relevant_information,,,,
+AUDITV2_0452,other_relevant_information,,,,
+AUDITV2_0453,other_relevant_information,,,,
+AUDITV2_0454,rescue_volunteering_or_donation_effort,,,,
+AUDITV2_0455,other_relevant_information,,,,
+AUDITV2_0456,other_relevant_information,,,,
+AUDITV2_0457,other_relevant_information,,,,
+AUDITV2_0458,injured_or_dead_people,,,,
+AUDITV2_0459,other_relevant_information,,,,
+AUDITV2_0460,other_relevant_information,,,,
+AUDITV2_0461,not_humanitarian,,,,
+AUDITV2_0462,other_relevant_information,,,,
+AUDITV2_0463,sympathy_and_support,,,,
+AUDITV2_0464,other_relevant_information,,,,
+AUDITV2_0465,other_relevant_information,,,,
+AUDITV2_0466,other_relevant_information,,,,
+AUDITV2_0467,injured_or_dead_people,,,,
+AUDITV2_0468,other_relevant_information,,,,
+AUDITV2_0469,other_relevant_information,,,,
+AUDITV2_0470,other_relevant_information,,,,
+AUDITV2_0471,requests_or_urgent_needs,,,,
+AUDITV2_0472,caution_and_advice,,,,
+AUDITV2_0473,displaced_people_and_evacuations,,,,
+AUDITV2_0474,other_relevant_information,,,,
+AUDITV2_0475,sympathy_and_support,,,,
+AUDITV2_0476,infrastructure_and_utility_damage,,,,
+AUDITV2_0477,other_relevant_information,,,,
+AUDITV2_0478,not_humanitarian,,,,
+AUDITV2_0479,other_relevant_information,,,,
+AUDITV2_0480,injured_or_dead_people,,,,
+AUDITV2_0481,other_relevant_information,,,,
+AUDITV2_0482,sympathy_and_support,,,,
+AUDITV2_0483,caution_and_advice,,,,
+AUDITV2_0484,sympathy_and_support,,,,
+AUDITV2_0485,not_humanitarian,,,,
+AUDITV2_0486,infrastructure_and_utility_damage,,,,
+AUDITV2_0487,missing_or_found_people,,,,
+AUDITV2_0488,other_relevant_information,,,,
+AUDITV2_0489,other_relevant_information,,,,
+AUDITV2_0490,other_relevant_information,,,,
+AUDITV2_0491,injured_or_dead_people,,,,
+AUDITV2_0492,other_relevant_information,,,,
+AUDITV2_0493,not_humanitarian,,,,
+AUDITV2_0494,other_relevant_information,,,,
+AUDITV2_0495,other_relevant_information,,,,
+AUDITV2_0496,other_relevant_information,,,,
+AUDITV2_0497,caution_and_advice,,,,
+AUDITV2_0498,sympathy_and_support,,,,
+AUDITV2_0499,other_relevant_information,,,,
+AUDITV2_0500,sympathy_and_support,,,,

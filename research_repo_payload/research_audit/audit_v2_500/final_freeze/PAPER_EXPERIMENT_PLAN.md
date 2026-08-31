@@ -39,10 +39,11 @@ python -m lg_cotrain.run_experiment --pseudo-label-source gpt-4o --events ... # 
 # vs human-corrected + pseudo
 ```
 
-### Expected
-- Sub-70 macro-F1 on original likely inflated by label noise; human benchmark will show lower absolute agreement (37-40% exact) indicating noisy originals
-- Training on corrected should raise true F1 on human test, especially `other_relevant` vs `rescue`/`infra` confusion
-- Human+pseudo should further improve, testing whether improvement is model- or label-limited
+### Hypotheses (to be tested by A/B/C)
+- H1: Sub-70 macro-F1 on original data may be partly due to potential label noise — to be tested; current 37.8-40.6% agreement on disagreement-enriched audit describes this sample only, not corpus-wide accuracy.
+- H2: Training/evaluating on corrected human labels is hypothesized to improve macro-F1 on the human benchmark, especially `other_relevant` vs `rescue`/`infra`/`urgent-needs` confusion — awaiting A/B/C results.
+- H3: Human + pseudo is hypothesized to further improve over human-only — awaiting A/B/C results.
+- All are hypotheses until the leakage-safe 5-fold A/B/C retraining reports pooled out-of-fold metrics with bootstrap CIs.
 
 ### Reliability (optional)
 Second human on stratified 100 (25 per priority) to compute Cohen's kappa vs your benchmark — not to replace ownership.
