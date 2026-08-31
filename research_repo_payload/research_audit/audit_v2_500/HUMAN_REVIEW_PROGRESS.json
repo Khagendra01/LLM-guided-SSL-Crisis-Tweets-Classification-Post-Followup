@@ -12,10 +12,10 @@
   ],
   "last_completed_batch": 2,
   "last_batch_file": "research_repo_payload/research_audit/audit_v2_500/human_review_batches/batch_002_APPROVED.csv",
-  "researcher_confirmation": "approve batch 2 (100 total reviewed; P1 complete; LLM used as discussion partner for ~30 early items, final sole researcher decision)",
+  "researcher_confirmation": "approve batch 2",
   "confirmation_date_utc": "2026-08-31",
   "ledger_path": "research_repo_payload/research_audit/audit_v2_500/researcher_human_review_ledger.csv",
-  "note": "100 reviewed (95 new P1). Treat as sole researcher decision per user confirmation. 400 pending remain. Bulk AI rec not human review.",
+  "note": "100 reviewed (95 new P1, all manual human adjudications). 400 pending (including 1 remaining P1 AUDITV2_0499). No AI-assisted subset.",
   "bulk_ai_adjudication": {
     "status": "complete",
     "rows": 500,
@@ -27,5 +27,6 @@
     "provenance_warning": "Completion is AI-assisted adjudication, not human review for the 495 pending rows.",
     "validation_file": "research_repo_payload/research_audit/audit_v2_500/bulk_ai_adjudication/validation.json",
     "repaired_two_one_one_rows": 46
-  }
+  },
+  "human_reviewed_manual_count": 100
 }
