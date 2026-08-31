@@ -106,28 +106,9 @@ function renderCard(d){
  </div>`;
 
  if(d.evidence_visible){
-   html+=`<div class="evidence"><h3 style="margin:0 0 8px">Stage 2 — Evidence & final <span id="finalAutoStatus" style="font-size:12px;color:#0e7c62;font-weight:400">● autosave on</span></h3>
-   <div style="font-size:12px;color:#6b7280;margin-bottom:8px">Revealed ${esc(d.evidence_revealed_at_utc||'')} — changing anything autosaves final.</div>
-   <table class="ev-table">
-    <tr><td>HumAID</td><td>${esc(d.humaid_label)}</td></tr>
-    <tr><td>GPT-4o</td><td>${esc(d.gpt4o_label)} <span style="color:#6b7280">conf ${esc(d.gpt4o_confidence)}</span></td></tr>
-    <tr><td>Researcher 1st pass</td><td>${esc(d.researcher_first_pass)} ${d.researcher_first_pass_secondary?'→ '+esc(d.researcher_first_pass_secondary):''} <span style="color:#6b7280">c${esc(d.researcher_first_pass_confidence)} ${esc(d.researcher_first_pass_ambiguous)}</span></td></tr>
-    <tr><td>Claude</td><td>${esc(d.claude)} <span style="color:#6b7280">amb ${esc(d.claude_ambiguous)}</span></td></tr>
-    <tr><td>Gemini</td><td>${esc(d.gemini)} <span style="color:#6b7280">amb ${esc(d.gemini_ambiguous)}</span></td></tr>
-    <tr><td>Grok</td><td>${esc(d.grok)} <span style="color:#6b7280">amb ${esc(d.grok_ambiguous)}</span></td></tr>
-    <tr><td>Consensus</td><td>${esc(d.model_consensus_type)} · top ${esc(d.model_top_label)} (${esc(d.model_top_count)})</td></tr>
-    <tr><td>Bulk AI rec.</td><td>${esc(d.bulk_ai_recommended_label)} <span style="color:#6b7280">${esc(d.bulk_recommendation_basis)}</span></td></tr>
-   </table>
-   <div style="margin-top:12px"><label style="font-weight:700;font-size:12px">Final primary *</label>${labelButtons(selFinal,'', 'final')}</div>
-   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final secondary</label>${labelButtons(selFinalSec,'', 'finalSec')}</div>
-   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final confidence</label>${segButtons('fc', d.final_confidence||d.initial_confidence)}</div>
-   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final ambiguity</label>${toggleButtons('fa', d.final_ambiguous||d.initial_ambiguous)}</div>
-   <div style="margin-top:10px"><label style="font-weight:700;font-size:12px">Final notes (optional)</label><textarea id="fn" rows="3" placeholder="Optional...">${esc(d.review_notes||d.initial_reason||'')}</textarea></div>
-   <div id="finalStatus2" style="font-size:12px;color:#6b7280;margin-top:6px"></div>
-   <div style="display:flex;gap:8px;margin-top:12px"><button id="cardPrev2" class="btn ghost">← Prev</button><button id="cardNext2" class="btn primary">Next →</button></div>
-   </div>`;
+   html+=`<div style="margin-top:12px;padding:10px;background:#dcfce7;border:1px solid #86efac;border-radius:10px;font-size:13px">✓ Reviewed and saved</div>`;
  } else if(d.has_initial){
-   html+=`<div id="revealStatus" style="margin-top:12px;font-size:12px;color:#0e7c62">✓ Initial autosaved — revealing evidence...</div>`;
+   html+=`<div id="revealStatus" style="margin-top:12px;font-size:12px;color:#0e7c62">✓ Autosaved — finalizing...</div>`;
  }
   el('card').innerHTML=html;
  attachCardHandlers(d);
@@ -208,7 +189,7 @@ async function tryAutosaveInitial(){
    const fresh=await fetchJSON('/api/item/'+currentId);
    currentData=fresh;
    if(!wasVisible && fresh.has_initial){
-     await reveal(true);
+     await revealAndFinalize(true);
    } else {
      updateProgress();
      loadQueue();
@@ -225,6 +206,21 @@ async function reveal(silent=false){
    updateProgress(); loadQueue();
    if(fresh.evidence_visible) scheduleFinalAutosave();
  } catch(e){ if(!silent) msg(e.message,true); setStatus('initStatus', e.message, true); }
+}
+async function revealAndFinalize(silent=true){
+ try{
+   await fetchJSON('/api/item/'+currentId+'/reveal',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});
+   let fc=getSegVal('fc')||getSegVal('ic')||'2', fa=getToggleVal('fa')||getToggleVal('ia')||'no';
+   const notes=(el('ir')?.value||'').trim();
+   if(!selFinal) selFinal=selPrimary;
+   const payload={final_primary_label:selFinal||selPrimary,final_secondary_label:selFinalSec||selSecondary,final_confidence:fc,final_ambiguous:fa,review_notes:notes};
+   await fetchJSON('/api/item/'+currentId+'/finalize',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+   const fresh=await fetchJSON('/api/item/'+currentId);
+   currentData=fresh;
+   renderCard(fresh);
+   updateProgress(); loadQueue();
+   setStatus('initStatus','✓ reviewed','');
+ } catch(e){ setStatus('initStatus', e.message, true); }
 }
 async function tryAutosaveFinal(){
  if(!currentId || !currentData?.evidence_visible) return;
